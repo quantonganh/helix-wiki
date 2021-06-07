@@ -58,6 +58,6 @@ helix
 
 Err, maybe we should count escape key?
 
-TODO swapping key value position in code
-TODO xml editing, joining child, removing parent, splitting child, swapping key position
-TODO (rare use cases) drawing boxes
+- TODO swapping key value position in code
+- TODO xml editing, joining child, removing parent, splitting child, swapping key position
+- TODO (rare use cases) drawing boxes
