@@ -42,3 +42,18 @@ kakoune
 
 helix
 - @pickfire `Vmvld` (6) if we follow vim, with count (current) `ghV5jgld` (9), with count (current + X) `ghV5Xd` (8)
+
+## Case two
+
+Add line comment before `Self {` to matching `}` all on same column, starting at `Self {`.
+
+vim
+- @pickfire `ctrl-vI// ` (7)
+
+kakoune
+- @pickfire `CCCCCi// ` (10) - I wish there is a better way, with count `5Ci// ` (7)
+
+helix
+- @pickfire maybe we need to have visual block?
+
+Err, maybe we should count escape key?
