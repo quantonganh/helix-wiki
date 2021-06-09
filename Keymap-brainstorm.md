@@ -9,6 +9,7 @@ kakoune
 
 both
 - we don't want to hold `ctrl-f` to page down (should be like in `V` kakoune as pager)
+- keep visual, linewise visual, visual block mode in vim while having the ability to be visual first
 
 Cases below may not be able to utilize lsp functions. Should be real cases for normal workflow. Commenting functions also won't be useful.
 
