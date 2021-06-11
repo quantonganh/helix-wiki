@@ -38,12 +38,14 @@ Delete the whole line starting from `Self {` to `}` (including last newline), cu
 
 vim
 - @pickfire `V%d` (5), with count `6dd` (3)
+- @CBenoit `V%d` is (4) not (5)
 
 kakoune
 - @pickfire `ghMLd` (6), with count `6Xd` (4)
 
 helix
 - @pickfire `Vmvld` (6) if we follow vim, with count (current) `ghV5jgld` (9), with count (current + X) `ghV5Xd` (8)
+- @CBenoit with helix line-wise extend mode (like in vim), we should get `Vmd` (4) without count and `V5jd` (5) with count.
 
 ## Case two
 
