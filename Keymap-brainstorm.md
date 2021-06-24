@@ -65,6 +65,7 @@ Err, maybe we should count escape key?
 - TODO swapping key value position in code
 - TODO xml editing, joining child, removing parent, splitting child, swapping key position
 - TODO (rare use cases) drawing boxes
+- TODO I noticed that helix requires a lot more keys just to change till end of line (not including newline)
 
 Reference:
 - https://github.com/mawww/kakoune/blob/master/doc/pages/keys.asciidoc#object-selection (@archseer initial design based on this)
