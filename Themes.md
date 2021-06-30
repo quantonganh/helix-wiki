@@ -16,3 +16,7 @@
 
 ![onedark.toml preview](https://user-images.githubusercontent.com/23398472/121844415-9695e780-cd01-11eb-9e68-9a67b0a0b580.png)
 <sup>Font: mononoki</sup>
+
+## [Gruvbox (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/gruvbox.toml)
+
+![gruvbox.toml preview](https://github.com/jbaa/helix-gruvbox/blob/main/screenshot.png)
