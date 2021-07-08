@@ -20,3 +20,7 @@
 ## [Gruvbox (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/gruvbox.toml)
 
 ![gruvbox.toml preview](https://github.com/jbaa/helix-gruvbox/blob/main/screenshot.png)
+
+## [VSCode Dark+](https://github.com/helix-editor/helix/blob/master/runtime/themes/dark_plus.toml)
+
+![dark_plus.toml preview](https://user-images.githubusercontent.com/67773714/124850220-3dbb1700-df6e-11eb-8ef2-b724ba015890.PNG)
