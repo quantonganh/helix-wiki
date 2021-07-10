@@ -57,6 +57,7 @@ vim
 
 kakoune
 - @pickfire `CCCCCi// ` (10) - I wish there is a better way, with count `5Ci// ` (7)
+- @vbauerster `m<a-x><a-s>ghi//`
 
 helix
 - @pickfire maybe we need to have visual block?
