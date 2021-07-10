@@ -42,6 +42,7 @@ vim
 
 kakoune
 - @pickfire `ghMLd` (6), with count `6Xd` (4)
+- @vbauerster `m<a-x>d` (4)
 
 helix
 - @pickfire `Vmvld` (6) if we follow vim, with count (current) `ghV5jgld` (9), with count (current + X) `ghV5Xd` (8)
