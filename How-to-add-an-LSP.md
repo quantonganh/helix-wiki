@@ -8,7 +8,7 @@ chmod +x ~/.local/bin/rust-analyzer
 ```
 __Run them separately!!
 Make sure that `~/.local/bin` is there in $PATH.
-If not, see this wiki.__
+If not, see this [wiki](https://github.com/helix-editor/helix/wiki/Adding-%60~-.local-bin%60-to-$PATH).__
 
 > Go to this [site](https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary) for more info.
 
