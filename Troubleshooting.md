@@ -1,3 +1,10 @@
-# Highlighting, completion (other LSP stuff)... not working
+* [Missing syntax highlighting](#missing-syntax-highlighting)
+* [LSP isn't working](#lsp-isn-t-working)
 
-1. Is the LSP server in `$PATH`? LSP server is supposed to be bundled by system.
+### Missing syntax highlighting
+
+Did you copy the `runtime` folder along with the `languages.toml` configuration file? By default, Helix will look for the runtime inside the same folder as the executable, but that can be overridden via the `HELIX_RUNTIME` environment variable.
+
+### LSP isn't working
+
+Is the LSP server in `$PATH`? LSP server is supposed to be bundled by system.
