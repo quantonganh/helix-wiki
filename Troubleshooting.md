@@ -7,4 +7,4 @@ Did you copy the `runtime` folder along with the `languages.toml` configuration 
 
 ### LSP isn't working
 
-Is the LSP server in `$PATH`? LSP server is supposed to be bundled by system.
+Is the LSP server in `$PATH`? If not, you will need to download it.
