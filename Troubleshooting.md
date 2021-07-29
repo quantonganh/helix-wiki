@@ -1,3 +1,3 @@
-# Highlighting, completion (other lsp stuff)... not working
+# Highlighting, completion (other LSP stuff)... not working
 
-1. Is the lsp server in `$PATH`?
+1. Is the LSP server in `$PATH`? LSP server is supposed to be bundled by system.
