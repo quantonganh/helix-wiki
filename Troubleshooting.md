@@ -7,4 +7,4 @@ Did you copy the `runtime` folder along with the `languages.toml` configuration 
 
 ### LSP isn't working
 
-Is the LSP server in `$PATH`?
+Is the LSP server (E.g. `rust-analyzer`) in `$PATH`?
