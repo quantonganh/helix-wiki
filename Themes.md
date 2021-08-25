@@ -24,3 +24,7 @@
 ## [VSCode Dark+](https://github.com/helix-editor/helix/blob/master/runtime/themes/dark_plus.toml)
 
 ![dark_plus.toml preview](https://user-images.githubusercontent.com/67773714/124850220-3dbb1700-df6e-11eb-8ef2-b724ba015890.PNG)
+
+## [Monokai](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai.toml)
+
+![monokai.toml preview](https://user-images.githubusercontent.com/67773714/130168602-7fe53f80-8538-4a18-83d7-ec0f260e38f9.PNG)
