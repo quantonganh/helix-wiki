@@ -7,4 +7,6 @@ Did you configure (or copy from source code) the location of the the `runtime` f
 
 ### LSP isn't working
 
-Is the LSP server (E.g. `rust-analyzer`) in `$PATH`? Try starting helix with the `-v` flag and checking the log file (`~/.cache/helix/helix.log`) for LSP related messages.
+Is the LSP server (E.g. `rust-analyzer`) in `$PATH`?
+
+Try starting helix with the `-v` flag and checking the log file (`~/.cache/helix/helix.log`) for LSP related messages.
