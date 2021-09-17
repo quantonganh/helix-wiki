@@ -28,3 +28,7 @@
 ## [Monokai (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai.toml)
 
 ![monokai.toml preview](https://user-images.githubusercontent.com/67773714/130168602-7fe53f80-8538-4a18-83d7-ec0f260e38f9.PNG)
+
+## [Everforest (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/everforest_dark.toml)
+
+![everforest_dark.toml preview](https://user-images.githubusercontent.com/3957610/133824474-f9d0bd8a-6473-450c-81a3-da8a8d1c4bbe.png)
