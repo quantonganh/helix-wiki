@@ -1,4 +1,3 @@
-= FAQ
 :toc:
 
 == How to...
