@@ -8,6 +8,6 @@ Is the LSP server (E.g. `rust-analyzer`) in `$PATH`?
 
 Try starting helix with the `-v` flag and checking the log file (`~/.cache/helix/helix.log`) for LSP related messages.
 
-### Failed to execute C compiler
+### Failed to Execute C Compiler (building from source)
 
 Both a C and a C++ compiler need to be installed.
