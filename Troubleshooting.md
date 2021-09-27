@@ -14,4 +14,4 @@ Both a C and a C++ compiler need to be installed.
 
 ### Rendering issues on MacOS terminal
 
-The MacOS terminal lacks true color support: https://gist.github.com/XVilka/8346728
+The MacOS terminal lacks [true color support](https://gist.github.com/XVilka/8346728), so you'll need to install a terminal that has it.
