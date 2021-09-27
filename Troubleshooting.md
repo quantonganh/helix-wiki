@@ -11,3 +11,7 @@ Try starting helix with the `-v` flag and checking the log file (`~/.cache/helix
 ### Failed to execute C compiler (building from source)
 
 Both a C and a C++ compiler need to be installed.
+
+### Rendering issues on MacOS terminal
+
+The MacOS terminal lacks true colour support: https://gist.github.com/XVilka/8346728
