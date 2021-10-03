@@ -32,3 +32,7 @@
 ## [Everforest (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/everforest_dark.toml)
 
 ![everforest_dark.toml preview](https://user-images.githubusercontent.com/3957610/133824474-f9d0bd8a-6473-450c-81a3-da8a8d1c4bbe.png)
+
+## [Nord (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/nord.toml)
+
+![nord theme preview](https://user-images.githubusercontent.com/14265337/135727143-a3b7e3e4-d4ab-47fc-a2a1-4ac2a40b3e76.png)
