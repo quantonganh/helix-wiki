@@ -3,7 +3,7 @@
 == How to...
 
 ==== Collapse to single cursor after using multiple cursors / Keep only primary cursor
-- Use the default keybind `<space><space>` bound to the `keep_primary_selection` command.
+- Use the default keybind `,` bound to the `keep_primary_selection` command.
 
 ==== Map `jk` or `jj` to exit insert mode
 
