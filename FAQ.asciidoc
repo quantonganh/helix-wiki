@@ -22,6 +22,10 @@ the terminal's colors in a theme file; refer the
 https://docs.helix-editor.com/themes.html#color-palettes[theme color palette]
 documentation.
 
+==== Perform find-and-replace
+
+- Type `%` to select the entire file, then `s` to bring up a `select:` prompt. Enter your search , and press enter. All matches in the file will be selected; you can now use `c` to change them all simultaneously.
+
 == General Questions
 
 ==== How to write plugins / Is there a plugin system in place yet ?
