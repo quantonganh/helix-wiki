@@ -1,6 +1,6 @@
 ### Missing syntax highlighting
 
-Did you configure (or copy from source code) the location of the the `runtime` folder **within** config directory (like `~/.config/helix/runtime/`)? By default, Helix will look for the runtime inside the same folder as the executable or in the config directory (`~/.config/helix/` on Linux/MacOS and `~/AppData/Roaming/helix/` on Windows), but that can be overridden via the `HELIX_RUNTIME` environment variable. (This is only required if building from source, packaged releases by distributions already handle this for you by specifying the HELIX_RUNTIME variable)
+If you are not using a package manager to install Helix, then you may have misplaced the required `runtime` folder. By default, it should be placed inside the same directory as the executable or [inside the system's config directory](https://docs.rs/dirs/4.0.0/dirs/fn.config_dir.html). This is `~/.config/helix/` on Linux/MacOS, and `~/AppData/Roaming/helix/` on Windows. However, this can be overridden by setting the `HELIX_RUNTIME` environment variable to equal your desired directory.
 
 Additionally, check if the `runtime/grammars` folder contains the associated compiled tree-sitter grammar for the language. It should not be empty.
 
