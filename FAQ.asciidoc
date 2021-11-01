@@ -28,10 +28,16 @@ documentation.
 
 ==== Access the log file
 
-| Platform | Location |
-|----------|----------|
-| Mac OS/Linux | `~/.cache/helix/helix.log` |
-| Windows | `C:\Users\____\AppData\Local\helix\helix.log` |
+[cols="1,1"]
+|===
+| Platform
+| Location
+| Mac OS/Linux
+| `~/.cache/helix/helix.log` 
+| Windows
+| `C:\Users\____\AppData\Local\helix\helix.log`
+|
+|===
 
 == General Questions
 
