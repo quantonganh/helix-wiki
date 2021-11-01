@@ -8,7 +8,7 @@ Additionally, check if the `runtime/grammars` folder contains the associated com
 
 Is the LSP server (E.g. `rust-analyzer`) in `$PATH`?
 
-Try starting helix with the `-v` flag and checking the log file (`~/.cache/helix/helix.log`) for LSP related messages.
+Try starting helix with the `-v` flag and [checking the log file](https://github.com/helix-editor/helix/wiki/FAQ#access-the-log-file) for LSP related messages.
 
 ### Failed to execute C compiler (building from source)
 
