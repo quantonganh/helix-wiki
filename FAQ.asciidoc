@@ -30,8 +30,7 @@ documentation.
 
 [cols="1,1"]
 |===
-| Platform
-| Location
+| Platform | Location
 | Mac OS/Linux
 | `~/.cache/helix/helix.log` 
 | Windows
