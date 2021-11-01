@@ -36,3 +36,11 @@
 ## [Nord (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/nord.toml)
 
 ![nord theme preview](https://user-images.githubusercontent.com/14265337/135727143-a3b7e3e4-d4ab-47fc-a2a1-4ac2a40b3e76.png)
+
+## [Base16 (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/base16_default_dark.toml)
+
+![base16_dark_default.toml](https://user-images.githubusercontent.com/14265337/138372260-c5c107c1-ed16-4b4a-8d86-8c41c0b6794a.png)
+
+## [Rose Pine (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine.toml)
+
+![rose_pine.toml](https://user-images.githubusercontent.com/14265337/138571680-a8758098-6ca1-472b-afeb-bc51f8d0c574.png)
