@@ -26,6 +26,17 @@ documentation.
 
 - Type `%` to select the entire file, then `s` to bring up a `select:` prompt. Enter your search , and press enter. All matches in the file will be selected; you can now use `c` to change them all simultaneously.
 
+==== Access the Helix config directory
+
+[cols="1,1"]
+|===
+| Platform | Location
+| Mac OS/Linux
+| `~/.cache/helix`
+| Windows
+| `C:\Users\\____\AppData\Roaming\helix`
+|===
+
 ==== Access the log file
 
 [cols="1,1"]
