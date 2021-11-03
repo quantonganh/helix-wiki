@@ -48,6 +48,37 @@ documentation.
 | `C:\Users\\____\AppData\Local\helix\helix.log`
 |===
 
+==== Adding a language
+
+All languages are defined in [`languages.toml`](https://github.com/helix-editor/helix/blob/master/languages.toml) which should be copied into your config folder. However, Helix already embeds the file within the binary and will automatically merge that with any new `languages.toml` file you create. Add a new entry like so:
+
+```toml
+[[language]]
+# This is the name of the language. It will correspond to the tree-sitter grammar (we'll get to that later).
+name = "<language>"
+# This is the tree-sitter scope that identifies the language.
+scope = "scope.<language>"
+# This is the used in injection queries to determine if this language should be used there.
+injection-regex = ""
+# An array of file type suffix strings for which this language will be used on (e.g. "rs" for Rust).
+file-types = []
+# Does nothing at the moment.
+roots = []
+
+# Whether files of this language should be LSP auto-formatted.
+auto-format = true
+# The text insert for commenting out code (e.g. "//" for Rust).
+comment-token = ""
+# The LSP executable. It should be either an absolute path, or the name of the executable if it is in $PATH.
+# There is a problem for Windows users where LSPs in $PATH are not called, see https://github.com/helix-editor/helix/wiki/Troubleshooting#on-windows
+language-server = { command = "" }
+# Indentation for the language. This will be overridden based on the file's 
+indent = { tab-width = 4, unit = "    " }
+
+# This is the LSP config. https://github.com/helix-editor/helix/pull/807
+[language.config]
+```
+
 == General Questions
 
 ==== How to write plugins / Is there a plugin system in place yet ?
