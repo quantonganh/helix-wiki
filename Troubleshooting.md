@@ -17,7 +17,7 @@ If you are on PowerShell, try these steps:
 
 ![Image showing output of gcm command](https://i.imgur.com/cJmVLCy.png) 
 
-- Under Name column, notice the extension of these files. `rust-analyzer` ends with `.exe`, which is great, as it would work out of the box. But `typescript-language-server` ends with `.ps1`. In this case we would check if could find a server file with `.cmd` extension:
+- Under Name column, notice the extension of these files. `rust-analyzer` ends with `.exe`, which is great, as it would work out of the box. But `typescript-language-server` ends with `.ps1`. In this case we would try to find a server file with `.cmd` extension:
 
 ![output of `gcm typescript-language-server.cmd` showing that the corresponding file is available](https://i.imgur.com/SV86JLp.png)
 
@@ -29,7 +29,7 @@ name = "typescript"
 language-server.command = "typescript-language-server.cmd"
 ```
 
-- Once you save the above file, close Helix, and try to open your project again. Open the file you are expecting for LSP to work in. Within few seconds,  Helix would be giving you errors and autocompletion.
+- Once you save the above file, close Helix and try to open your project again. Open the file you are expecting for LSP to work in. Within few seconds,  Helix would be giving you errors and autocompletion.
 
 ### Failed to execute C compiler (building from source)
 
