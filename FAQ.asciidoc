@@ -50,7 +50,7 @@ documentation.
 
 ==== Adding a language
 
-All languages are defined in [`languages.toml`](https://github.com/helix-editor/helix/blob/master/languages.toml) which should be copied into your config folder. However, Helix already embeds the file within the binary and will automatically merge that with any new `languages.toml` file you create. Add a new entry like so:
+All languages are defined in https://github.com/helix-editor/helix/blob/master/languages.toml[`languages.toml`] which should be copied into your config folder. However, Helix already embeds the file within the binary and will automatically merge that with any new `languages.toml` file you create. Add a new entry like so:
 
 ```toml
 [[language]]
@@ -85,7 +85,7 @@ If you want syntax highlighting, you'll also want to build the associated tree-s
 $ git submodule add --shallow <repository> helix-syntax/languages/tree-sitter-<name>
 ```
 
-Then you'll have to add highlighting queries for the language in `runtime/queries/<language>`. Currently, we only support `highlights.scm`, `locals.scm`, `injections.scm`, `textobjects.scm`, and `indents.toml`. It is not necessary you define all of these files, and `highlights.scm` is the minimum needed for syntax highlighting. While most tree-sitter repositories will provide default queries, it's recommended that you use the ones from [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) because they usually offer superior highlighting. It's recommended you read [tree-sitter's docs on queries](https://tree-sitter.github.io/tree-sitter/syntax-highlighting#basics) as you'll likely have to modify them to use [the scopes used by Helix.](https://docs.helix-editor.com/themes.html#scopes)
+Then you'll have to add highlighting queries for the language in `runtime/queries/<language>`. Currently, we only support `highlights.scm`, `locals.scm`, `injections.scm`, `textobjects.scm`, and `indents.toml`. It is not necessary you define all of these files, and `highlights.scm` is the minimum needed for syntax highlighting. While most tree-sitter repositories will provide default queries, it's recommended that you use the ones from https://github.com/nvim-treesitter/nvim-treesitter[`nvim-treesitter`] because they usually offer superior highlighting. It's recommended you read https://tree-sitter.github.io/tree-sitter/syntax-highlighting#basics[tree-sitter's docs on queries] as you'll likely have to modify them to use https://docs.helix-editor.com/themes.html#scopes[the scopes used by Helix.]
 
 == General Questions
 
