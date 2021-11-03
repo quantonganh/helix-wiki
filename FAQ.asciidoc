@@ -79,6 +79,14 @@ indent = { tab-width = 4, unit = "    " }
 [language.config]
 ```
 
+If you want syntax highlighting, you'll also want to build the associated tree-sitter grammar for the language. To do this, add it as a submodule to `helix-syntax` via:
+
+```sh
+$ git submodule add --shallow <repository> helix-syntax/languages/tree-sitter-<name>
+```
+
+Then you'll have to add highlighting queries for the language in `runtime/queries/<language>`. Currently, we only support `highlights.scm`, `locals.scm`, `injections.scm`, `textobjects.scm`, and `indents.toml`. It is not necessary you define all of these files, and `highlights.scm` is the minimum needed for syntax highlighting. While most tree-sitter repositories will provide default queries, it's recommended that you use the ones from [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) because they usually offer superior highlighting. It's recommended you read [tree-sitter's docs on queries](https://tree-sitter.github.io/tree-sitter/syntax-highlighting#basics) as you'll likely have to modify them to use [the scopes used by Helix.](https://docs.helix-editor.com/themes.html#scopes)
+
 == General Questions
 
 ==== How to write plugins / Is there a plugin system in place yet ?
