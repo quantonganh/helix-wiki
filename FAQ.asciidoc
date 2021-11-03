@@ -32,7 +32,7 @@ documentation.
 |===
 | Platform | Location
 | Mac OS/Linux
-| `~/.cache/helix`
+| `~/.config/helix`
 | Windows
 | `C:\Users\\____\AppData\Roaming\helix`
 |===
