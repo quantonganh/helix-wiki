@@ -75,7 +75,7 @@ language-server = { command = "" }
 # Indentation for the language. This will be overridden based on the file's 
 indent = { tab-width = 4, unit = "    " }
 
-# This is the LSP config. https://github.com/helix-editor/helix/pull/807
+# This is the LSP config, see https://github.com/helix-editor/helix/pull/807
 [language.config]
 ```
 
