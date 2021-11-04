@@ -69,9 +69,10 @@ roots = []
 auto-format = true
 # The text insert for commenting out code (e.g. "//" for Rust).
 comment-token = ""
-# The LSP executable. It should be either an absolute path, or the name of the executable if it is in $PATH.
+# The LSP executable. It should be either an absolute path, or the name of the executable if it is in $PATH. For it to work,
+# the LSP must be using stdio. You can also pass arguments to the LSP through the args array.
 # There is a problem for Windows users where LSPs in $PATH are not called, see https://github.com/helix-editor/helix/wiki/Troubleshooting#on-windows
-language-server = { command = "" }
+language-server = { command = "", args = [] }
 # Indentation for the language. This will be overridden based on the file's indentation.
 indent = { tab-width = 4, unit = "    " }
 
