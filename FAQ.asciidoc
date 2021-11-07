@@ -50,56 +50,7 @@ documentation.
 
 ==== Adding a language
 
-All languages are defined in https://github.com/helix-editor/helix/blob/master/languages.toml[`languages.toml`] which should be copied into your config folder. However, Helix already embeds the file within the binary and will automatically merge that with any new `languages.toml` file you create. Add a new entry like so:
-
-```toml
-[[language]]
-# This is the name of the language. It will correspond to the tree-sitter grammar (we'll get to that later).
-name = "<language>"
-# This is the tree-sitter scope that identifies the language.
-scope = "scope.<language>"
-# This is the used in injection queries to determine if this language should be used there.
-injection-regex = ""
-# An array of file type suffix strings for which this language will be used on (e.g. "rs" for Rust).
-file-types = []
-# Does nothing at the moment.
-roots = []
-
-# Whether files of this language should be LSP auto-formatted.
-auto-format = true
-# The text insert for commenting out code (e.g. "//" for Rust).
-comment-token = ""
-# The LSP executable. It should be either an absolute path, or the name of the executable if it is in $PATH. For it to work,
-# the LSP must be using stdio. You can also pass arguments to the LSP through the args array.
-# There is a problem for Windows users where LSPs in $PATH are not called, see https://github.com/helix-editor/helix/wiki/Troubleshooting#on-windows
-language-server = { command = "", args = [] }
-# Indentation for the language. This will be overridden based on the file's indentation.
-indent = { tab-width = 4, unit = "    " }
-
-# This is the LSP config, see https://github.com/helix-editor/helix/pull/807
-[language.config]
-```
-
-If you want syntax highlighting, you'll also want to build the associated tree-sitter grammar for the language. To do this, add it as a submodule to `helix-syntax` via:
-
-```sh
-git submodule add --shallow <repository> helix-syntax/languages/tree-sitter-<name>
-```
-
-and in case new grammars were added:
-
-```sh
-git submodule update --init
-```
-
-Now build it with:
-```sh
-cargo build --release
-```
-
-The compiled grammar file will be located in the _project's_ `runtime/grammars` directory (not the one in your config folder).
-
-Then you'll have to add highlighting queries for the language in `runtime/queries/<language>`. Currently, we only support `highlights.scm`, `locals.scm`, `injections.scm`, `textobjects.scm`, and `indents.toml`. It is not necessary you define all of these files, and `highlights.scm` is the minimum needed for syntax highlighting. While most tree-sitter repositories will provide default queries, it's recommended that you use the ones from https://github.com/nvim-treesitter/nvim-treesitter[`nvim-treesitter`] because they usually offer superior highlighting. It's recommended you read https://tree-sitter.github.io/tree-sitter/syntax-highlighting#basics[tree-sitter's docs on queries] as you'll likely have to modify them to use https://docs.helix-editor.com/themes.html#scopes[the scopes used by Helix.]
+Check https://docs.helix-editor.com/guides/adding_languages.html
 
 == General Questions
 
