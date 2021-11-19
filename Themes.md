@@ -44,3 +44,7 @@
 ## [Rose Pine (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine.toml)
 
 ![rose_pine.toml](https://user-images.githubusercontent.com/14265337/138571680-a8758098-6ca1-472b-afeb-bc51f8d0c574.png)
+
+## [Spacebones (Light)](https://github.com/helix-editor/helix/blob/master/runtime/themes/spacebones_light.toml)
+
+![spacebones_light.toml](https://user-images.githubusercontent.com/5460/142634548-dd827412-5c84-4d70-aa13-1c03c7965bf7.png)
