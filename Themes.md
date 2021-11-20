@@ -48,3 +48,11 @@
 ## [Spacebones (Light)](https://github.com/helix-editor/helix/blob/master/runtime/themes/spacebones_light.toml)
 
 ![spacebones_light.toml](https://user-images.githubusercontent.com/5460/142634548-dd827412-5c84-4d70-aa13-1c03c7965bf7.png)
+
+## [Solarized (Dark)](https://github.com/helix-editor/helix/blob/master/runtime/themes/solarized_dark.toml)
+
+![solarized_dark.toml](https://user-images.githubusercontent.com/846275/141829230-1fc719c3-6ea3-4c0c-94a5-a9f5eeb50e9f.png)
+
+## [Solarized (Light)](https://github.com/helix-editor/helix/blob/master/runtime/themes/solarized_light.toml)
+
+![solarized_light.toml](https://user-images.githubusercontent.com/846275/141829721-c2c534ca-eca0-490f-9ec8-38193f6853f2.png)
