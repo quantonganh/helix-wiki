@@ -1,6 +1,6 @@
 Current keymap:
 
-[![Preview](https://user-images.githubusercontent.com/43980777/140440280-dcc31d86-c87d-46d1-8bb3-d1c6d9610c92.png)](http://www.keyboard-layout-editor.com/#/gists/fb432523c4e62a6d3babfdaa0152b5d0)
+[![Preview](https://user-images.githubusercontent.com/43980777/143209950-2db9bda7-32ce-49a7-bb8a-065e685336e1.png)](http://www.keyboard-layout-editor.com/#/gists/fb432523c4e62a6d3babfdaa0152b5d0)
 
 We are still thinking about visual mode and there are some issues with kakoune and vim that we want to address.
 
@@ -19,6 +19,27 @@ both
 Cases below may not be able to utilize lsp functions. Should be real cases for normal workflow. Commenting functions also won't be useful.
 
 We want to provide one way without using count and one way using count since we may not always use count. Keystrokes count, pressing shift is considered a count.
+
+# Note
+
+From [`vision.md`](https://github.com/helix-editor/helix/blob/master/docs/vision.md#goals):
+> - **Modal.**  Vim is a great idea.
+> - **Selection -> Action**, not Verb -> Object.  Interaction models aren't linguistics, and "selection first" lets you see what you're doing (among other benefits).
+> - **We aren't playing code golf.**  It's more important for the keymap to be consistent and easy to memorize than it is to save a key stroke or two when editing.
+
+Start holding down a mod key (shift, ctrl, alt) is count as a keypress. Therefore we don't need a key combo that have the same keypress and do the same things as an existing key sequence, we only use a key combo for repeatable action.
+
+<details>
+<summary>E.g</summary>
+
+| Example | Keypress |
+| ------- | -------- |
+| <kbd>a</kbd> | 1 |
+| <kbd>A</kbd> | 2 |
+| <kbd>a</kbd><kbd>b</kbd> | 2 |
+| <kbd>A</kbd><kbd>A</kbd> = <kbd>shift down</kbd><kbd>a</kbd><kbd>a</kbd>_\[shift release\]_ | 3 |
+
+</details>
 
 # Sample one
 
