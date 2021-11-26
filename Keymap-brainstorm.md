@@ -1,6 +1,6 @@
 Current keymap:
 
-[![Preview](https://user-images.githubusercontent.com/43980777/143209950-2db9bda7-32ce-49a7-bb8a-065e685336e1.png)](http://www.keyboard-layout-editor.com/#/gists/fb432523c4e62a6d3babfdaa0152b5d0)
+[![Preview](https://user-images.githubusercontent.com/43980777/143537137-3ea4354a-da51-40c0-9c54-56074c9504fa.png)](http://www.keyboard-layout-editor.com/#/gists/fb432523c4e62a6d3babfdaa0152b5d0)
 
 We are still thinking about visual mode and there are some issues with kakoune and vim that we want to address.
 
