@@ -1,1 +1,1 @@
-Welcome to the helix wiki!
+Welcome to the Helix wiki!
