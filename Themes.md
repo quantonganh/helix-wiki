@@ -47,6 +47,28 @@
 
 ![solarized_dark.toml](https://user-images.githubusercontent.com/846275/141829230-1fc719c3-6ea3-4c0c-94a5-a9f5eeb50e9f.png)
 
+### Monokai Pro
+
+#### [Standard](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai_pro.toml)
+
+![monokai_pro.toml](https://user-images.githubusercontent.com/22256154/143980163-3fa084c6-12ec-4e6f-8fea-925266d564b1.png)
+
+#### [Machine](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai_pro_machine.toml)
+
+![monokai_pro_machine.toml](https://user-images.githubusercontent.com/22256154/144379585-be16751d-e7fd-41ac-902d-f98e3e61a6fa.png)
+
+#### [Octagon](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai_pro_octagon.toml)
+
+![monokai_pro_octagon.toml](https://user-images.githubusercontent.com/22256154/144379593-f4fa8e99-939b-4354-ad51-410f97adb041.png)
+
+#### [Ristretto](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai_pro_ristretto.toml)
+
+![monokai_pro_ristretto.toml](https://user-images.githubusercontent.com/22256154/144379606-b0c60bc4-cc64-4649-be6d-0c2b5f98b9d2.png)
+
+#### [Spectrum](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai_pro_spectrum.toml)
+
+![monokai_pro_spectrum.toml](https://user-images.githubusercontent.com/22256154/144379621-85a9750a-313a-4a0f-939a-34a6cce95980.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
