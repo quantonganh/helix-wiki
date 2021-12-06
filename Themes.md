@@ -75,6 +75,9 @@
 
 ![ingrid.toml preview](https://raw.githubusercontent.com/inTarga/dotfiles/master/previews/ingrid.png)
 
+### [Rose Pine Dawn](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine_dawn.toml)
+
+![rose_pine_dawn](https://user-images.githubusercontent.com/24458075/144779340-83a7198d-145b-42d9-af31-a0797a405c72.png)
 
 ### [Spacebones](https://github.com/helix-editor/helix/blob/master/runtime/themes/spacebones_light.toml)
 
@@ -83,3 +86,4 @@
 ### [Solarized Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/solarized_light.toml)
 
 ![solarized_light.toml](https://user-images.githubusercontent.com/846275/141829721-c2c534ca-eca0-490f-9ec8-38193f6853f2.png)
+
