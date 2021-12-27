@@ -37,7 +37,11 @@
 
 ### [Base16](https://github.com/helix-editor/helix/blob/master/runtime/themes/base16_default_dark.toml)
 
-![base16_dark_default.toml](https://user-images.githubusercontent.com/14265337/138372260-c5c107c1-ed16-4b4a-8d86-8c41c0b6794a.png)
+![base16_default_dark.toml](https://user-images.githubusercontent.com/14265337/138372260-c5c107c1-ed16-4b4a-8d86-8c41c0b6794a.png)
+
+### [Base16 (Terminal)](https://github.com/helix-editor/helix/blob/master/runtime/themes/base16_terminal.toml)
+
+![base16_terminal.toml](https://user-images.githubusercontent.com/67773714/147512554-835e4570-b2e2-4293-bf00-dd9af1137044.PNG)
 
 ### [Rose Pine](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine.toml)
 
@@ -69,6 +73,10 @@
 
 ![monokai_pro_spectrum.toml](https://user-images.githubusercontent.com/22256154/144379621-85a9750a-313a-4a0f-939a-34a6cce95980.png)
 
+### [Dracula](https://github.com/helix-editor/helix/blob/master/runtime/themes/dracula.toml)
+
+![dracula.toml](https://user-images.githubusercontent.com/67773714/147512438-266f367e-5e60-4042-af5f-9541510b14c8.PNG)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
@@ -87,3 +95,6 @@
 
 ![solarized_light.toml](https://user-images.githubusercontent.com/846275/141829721-c2c534ca-eca0-490f-9ec8-38193f6853f2.png)
 
+### [Base16](https://github.com/helix-editor/helix/blob/master/runtime/themes/base16_default_light.toml)
+
+![base16_default_light.toml](https://user-images.githubusercontent.com/67773714/147512619-50965153-bc14-4b9c-b59d-ba493a95f2f1.PNG)
