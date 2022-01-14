@@ -95,6 +95,9 @@
 
 ![solarized_light.toml](https://user-images.githubusercontent.com/846275/141829721-c2c534ca-eca0-490f-9ec8-38193f6853f2.png)
 
+### [Gruvbox Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/gruvbox_light.toml)                                                                                                                      
+![gruvbox_light.toml](https://user-images.githubusercontent.com/343499/149549502-f770706c-0db6-40f6-aa11-69fdf447c0e4.png)
+
 ### [Base16](https://github.com/helix-editor/helix/blob/master/runtime/themes/base16_default_light.toml)
 
 ![base16_default_light.toml](https://user-images.githubusercontent.com/67773714/147512619-50965153-bc14-4b9c-b59d-ba493a95f2f1.PNG)
