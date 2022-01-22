@@ -43,7 +43,7 @@
 
 ![base16_terminal.toml](https://user-images.githubusercontent.com/67773714/147512554-835e4570-b2e2-4293-bf00-dd9af1137044.PNG)
 
-### [Rose Pine](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine.toml)
+### [Rosé Pine](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine.toml)
 
 ![rose_pine.toml](https://user-images.githubusercontent.com/14265337/138571680-a8758098-6ca1-472b-afeb-bc51f8d0c574.png)
 
@@ -83,7 +83,7 @@
 
 ![ingrid.toml preview](https://raw.githubusercontent.com/inTarga/dotfiles/master/previews/ingrid.png)
 
-### [Rose Pine Dawn](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine_dawn.toml)
+### [Rosé Pine Dawn](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine_dawn.toml)
 
 ![rose_pine_dawn](https://user-images.githubusercontent.com/24458075/144779340-83a7198d-145b-42d9-af31-a0797a405c72.png)
 
