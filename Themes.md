@@ -77,6 +77,10 @@
 
 ![dracula.toml](https://user-images.githubusercontent.com/67773714/147512438-266f367e-5e60-4042-af5f-9541510b14c8.PNG)
 
+### [Serika Dark](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-dark.toml)
+
+![serika-dark.toml preview](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-dark.toml)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
@@ -101,3 +105,7 @@
 ### [Base16](https://github.com/helix-editor/helix/blob/master/runtime/themes/base16_default_light.toml)
 
 ![base16_default_light.toml](https://user-images.githubusercontent.com/67773714/147512619-50965153-bc14-4b9c-b59d-ba493a95f2f1.PNG)
+
+### [Serika light](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-light.toml)
+
+![serika-light.toml preview](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-light.toml)
