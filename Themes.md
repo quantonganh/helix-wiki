@@ -79,7 +79,7 @@
 
 ### [Serika Dark](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-dark.toml)
 
-![serika-dark.toml preview](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-dark.toml)
+![serika-dark.toml preview](https://user-images.githubusercontent.com/4779365/150943344-e706b286-9913-4a00-8d41-95acf3dfcc90.png)
 
 ## Light
 
@@ -108,4 +108,4 @@
 
 ### [Serika light](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-light.toml)
 
-![serika-light.toml preview](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-light.toml)
+![serika-light.toml preview](https://user-images.githubusercontent.com/4779365/150943338-367026d6-3615-4f04-a5fb-4c83abdfcdeb.png)
