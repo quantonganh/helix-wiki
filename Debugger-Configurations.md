@@ -3,6 +3,10 @@ This page can provide additional debugger configurations beyond [the ones shippe
 
 ## Rust (with `codelldb`)
 
+Helix supports debugging Rust, by default, with [`lldb-vscode`](https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode), which is part of `llvm/lldb`.
+
+However, you can also use [`vscode-lldb`](https://github.com/vadimcn/vscode-lldb)'s [adapter](https://github.com/vadimcn/vscode-lldb/tree/master/adapter) named `codelldb`. (Note, the names can be confusing. `vscode-lldb` is a separate project from the aforementioned `lldb-vscode`.)
+
 ```toml
 [[language]]
 name = "rust"
