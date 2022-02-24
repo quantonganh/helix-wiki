@@ -26,6 +26,10 @@ documentation.
 
 - Type `%` to select the entire file, then `s` to bring up a `select:` prompt. Enter your search, and press enter. All matches in the file will be selected; you can now use `c` to change them all simultaneously.
 
+==== Strip whitespace or format the buffer
+
+If the LSP for the language is active and supports autoformat, and the auto-format option is on (check your and the repo's `languages.toml`), then this will happen on save. If there is an alternative command you can run in the terminal to format, you can pipe the whole buffer to it manually with `%|<formatter><enter>`.
+
 ==== Access the Helix config directory
 
 [cols="1,1"]
