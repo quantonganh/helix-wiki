@@ -38,7 +38,7 @@ If the LSP for the language is active and supports autoformat, and the auto-form
 | Mac OS/Linux
 | `~/.config/helix`
 | Windows
-| `C:\Users\\____\AppData\Roaming\helix`
+| `~\AppData\Roaming\helix`
 |===
 
 ==== Access the log file
@@ -51,7 +51,7 @@ Enable logging via the `-v` flag, with each use (up to `-vvv`) increasing the ve
 | Mac OS/Linux
 | `~/.cache/helix/helix.log` 
 | Windows
-| `C:\Users\\____\AppData\Local\helix\helix.log`
+| `~\AppData\Local\helix\helix.log`
 |===
 
 ==== Adding a language
