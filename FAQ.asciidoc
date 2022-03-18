@@ -43,6 +43,8 @@ If the LSP for the language is active and supports autoformat, and the auto-form
 
 ==== Access the log file
 
+Enable logging via the `-v` flag, with each use (max 3, e.g. `-vvv`) increasing the verbosity.
+
 [cols="1,1"]
 |===
 | Platform | Location
