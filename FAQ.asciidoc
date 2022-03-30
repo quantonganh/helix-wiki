@@ -64,7 +64,6 @@ Check https://docs.helix-editor.com/guides/adding_languages.html
 
 * It's currently under discussion, with the general plan of using WebAssembly to
 provide plugin support. Some links regarding ongoing discussions:
-* Update (Nov. 3rd, 2021): The move towards beginning implementation was decided a month ago, but time constraints have delayed it. Please be patient with us :)
  ** https://github.com/helix-editor/helix/issues/122[Initial discussion]
  ** https://github.com/helix-editor/helix/discussions/580[Pre-RFC discussion]
  ** https://github.com/helix-editor/helix/pull/455[Plugin system MVP]
