@@ -67,3 +67,15 @@ provide plugin support. Some links regarding ongoing discussions:
  ** https://github.com/helix-editor/helix/issues/122[Initial discussion]
  ** https://github.com/helix-editor/helix/discussions/580[Pre-RFC discussion]
  ** https://github.com/helix-editor/helix/pull/455[Plugin system MVP]
+
+== Installation
+
+=== Error when building tree-sitter language grammars in Fedora
+
+Ensure that you have a C compiler installed:
+
+```shell
+sudo dnf group install "C Development Tools and Libraries"
+```
+
+Previous issues: https://github.com/helix-editor/helix/issues/773, https://github.com/helix-editor/helix/issues/1223, https://github.com/helix-editor/helix/issues/1915.
