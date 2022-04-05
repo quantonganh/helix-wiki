@@ -81,6 +81,10 @@
 
 ![serika-dark.toml preview](https://user-images.githubusercontent.com/4779365/150943344-e706b286-9913-4a00-8d41-95acf3dfcc90.png)
 
+### [boo berry](https://github.com/helix-editor/helix/blob/master/runtime/themes/boo_berry.toml)
+
+![boo_berry](https://user-images.githubusercontent.com/91094662/161813420-b41ce728-d233-420b-b198-c9302432cbcb.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
