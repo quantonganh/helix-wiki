@@ -2,7 +2,9 @@ To show the list of default language servers for your version of Helix please us
 
 For Helix to use these language servers they must first be installed onto your computer. Once installed they will be used automatically with no further setup needed.
 
-Check if your operating system repository has them available, or install them manually following the instructions below. [^1]
+Check if your operating system repository has them available, or install them manually following the instructions below.
+
+Much of this information was originally sourced from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
 
 ## bashls
 
@@ -261,5 +263,3 @@ npm install -g svelte-language-server
 Zig LSP implementation + Zig Language Server.
 
 https://github.com/zigtools/zls
-
-[^1]: Much of this information was originally taken from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
