@@ -177,6 +177,14 @@ https://www.mint-lang.com
 Install Mint using the [instructions](https://www.mint-lang.com/install).
 The language server is included since version 0.12.0.
 
+## R languageserver
+
+An implementation of the Language Server Protocol for R.
+
+https://github.com/REditorSupport/languageserver
+
+The language server can be installed by running `R -e 'install.packages("languageserver")'`.
+
 ## rnix
 
 A language server for Nix providing basic completion and formatting via nixpkgs-fmt.
