@@ -323,3 +323,13 @@ npm install -g svelte-language-server
 Zig LSP implementation + Zig Language Server.
 
 https://github.com/zigtools/zls
+
+## ocamllsp
+
+https://github.com/ocaml/ocaml-lsp
+
+The OCaml language server `ocamllsp` can be installed via OPAM:
+
+```sh
+opam install ocaml-lsp-server
+```
