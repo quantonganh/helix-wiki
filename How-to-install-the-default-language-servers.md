@@ -28,6 +28,16 @@ clangd relies on a [JSON compilation database](https://clang.llvm.org/docs/JSONC
 as compile_commands.json or, for simpler projects, a compile_flags.txt.
 For details on how to automatically generate one using CMake look [here](https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html). Alternatively, you can use [Bear](https://github.com/rizsotto/Bear).
 
+## cssls
+
+https://github.com/hrsh7th/vscode-langservers-extracted
+
+`css-languageserver` can be installed via `npm`:
+
+```sh
+npm i -g vscode-langservers-extracted
+```
+
 ## omnisharp
 
 https://github.com/omnisharp/omnisharp-roslyn
@@ -87,11 +97,31 @@ Google's lsp server for golang.
 
 https://github.com/golang/tools/tree/master/gopls
 
+## html
+
+https://github.com/hrsh7th/vscode-langservers-extracted
+
+`vscode-html-language-server` can be installed via `npm`:
+```sh
+npm i -g vscode-langservers-extracted
+```
+
 ## hls
 
 Haskell Language Server.
 
 https://github.com/haskell/haskell-language-server
+
+## jsonls
+
+https://github.com/hrsh7th/vscode-langservers-extracted
+
+vscode-json-language-server, a language server for JSON and JSON schema
+
+`vscode-json-language-server` can be installed via `npm`:
+```sh
+npm i -g vscode-langservers-extracted
+```
 
 ## tsserver
 
