@@ -234,6 +234,16 @@ To install manually, run `cargo install rnix-lsp`. If you are using nix, rnix-ls
 
 This server accepts configuration via the `settings` key.
 
+## sourcekit-lsp and swift-format
+
+A language server for Swift, formatting provided via swift-format
+
+https://github.com/apple/sourcekit-lsp
+https://github.com/apple/swift-format
+
+Follow the [Getting Started](https://github.com/apple/sourcekit-lsp#getting-started) guide to get sourcekit-lsp installed correctly for your OS.
+No additional configuration is needed, though note to use the same toolchain for both your installed LSP, and that you use to build.
+
 ## pylsp
 
 A Python 3.6+ implementation of the Language Server Protocol.
