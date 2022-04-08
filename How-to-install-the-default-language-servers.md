@@ -239,6 +239,7 @@ This server accepts configuration via the `settings` key.
 A language server for Swift, formatting provided via swift-format
 
 https://github.com/apple/sourcekit-lsp
+
 https://github.com/apple/swift-format
 
 Follow the [Getting Started](https://github.com/apple/sourcekit-lsp#getting-started) guide to get sourcekit-lsp installed correctly for your OS.
