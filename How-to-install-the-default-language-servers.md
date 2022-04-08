@@ -112,6 +112,15 @@ Haskell Language Server.
 
 https://github.com/haskell/haskell-language-server
 
+## intelephense
+
+https://intelephense.com/
+
+`intelephense` can be installed via `npm`:
+```sh
+npm install -g intelephense
+```
+
 ## jsonls
 
 https://github.com/hrsh7th/vscode-langservers-extracted
