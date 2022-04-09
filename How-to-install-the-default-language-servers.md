@@ -333,3 +333,12 @@ The OCaml language server `ocamllsp` can be installed via OPAM:
 ```sh
 opam install ocaml-lsp-server
 ```
+## vls
+
+https://github.com/vuejs/vetur/tree/master/server
+
+The Vue language server `vls` can be installed via npm:
+
+```sh
+npm install -g vls
+```
