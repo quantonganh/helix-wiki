@@ -83,6 +83,8 @@ unzip elixir-ls.zip -d /path/to/elixir-ls
 chmod +x /path/to/elixir-ls/language_server.sh
 ```
 
+You also need to rename `language_server.sh` to `elixir-ls` and add it to your `$PATH`, because that's how `helix` expects to find it.
+
 ## elmls
 
 https://github.com/elm-tooling/elm-language-server#installation
