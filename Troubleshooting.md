@@ -47,11 +47,11 @@ So when you press escape to return to normal mode in Helix, the terminal multipl
 For changing or disabling the timeout, both tmux.conf and screenrc accept a timeout in milliseconds.
 
 If you don't use escape in your tmux or screen escape sequences, you can disable it:
-For tmux.conf (~/.tmux.conf or /etc/tmux.conf), add `set -sg escape-time 0`
-For screenrc (~/.screenrc or /etc/screenrc), `maptimeout 0`
+- For tmux.conf (`~/.tmux.conf` or `/etc/tmux.conf`), add `set -sg escape-time 0`
+- For screenrc (`~/.screenrc` or `/etc/screenrc`), `maptimeout 0`
 
 You can also set the timeout to a low value instead:
-For tmux.conf, `set -sg escape-time 10`
-For screenrc, `maptimeout 10`
+- For tmux.conf, `set -sg escape-time 10`
+- For screenrc, `maptimeout 10`
 
 For why this doesn't appear to happen in Neovim and Vim, see: https://github.com/neovim/neovim/wiki/FAQ#esc-in-tmux-or-gnu-screen-is-delayed
