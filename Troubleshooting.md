@@ -38,3 +38,20 @@ Both a C and a C++ compiler need to be installed.
 ### Rendering issues on MacOS terminal
 
 The MacOS terminal lacks [true color support](https://gist.github.com/XVilka/8346728), so you'll need to install a terminal that has it.
+
+### When using tmux or screen, there is a delay after hitting Escape before it's registered
+
+This is because your terminal multiplexer is listening for escape keypresses itself, as part of its own escape sequences, and only passing them to Helix after a delay when it's stopped listening for more keypresses in the sequence.
+So when you press escape to return to normal mode in Helix, the terminal multiplexer catches it, and only passes it to Helix after the delay. 
+
+For changing or disabling the timeout, both tmux.conf and screenrc accept a timeout in milliseconds.
+
+If you don't use escape in your tmux or screen escape sequences, you can disable it:
+For tmux.conf (~/.tmux.conf or /etc/tmux.conf), add `set -sg escape-time 0`
+For screenrc (~/.screenrc or /etc/screenrc), `maptimeout 0`
+
+You can also set the timeout to a low value instead:
+For tmux.conf, `set -sg escape-time 10`
+For screenrc, `maptimeout 10`
+
+For why this doesn't appear to happen in Neovim and Vim, see: https://github.com/neovim/neovim/wiki/FAQ#esc-in-tmux-or-gnu-screen-is-delayed
