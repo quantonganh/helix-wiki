@@ -4,4 +4,4 @@ Helix's editing model is strongly inspired from vim and kakoune, and a notable d
 
 # Kakoune
 
-Helix has a extend mode (`v` like vim) to prevent holding shift to extend and not being able to extend in cases like page up/down in kakoune.
+Helix has an extend mode (`v` like vim) to prevent holding shift to extend and not being able to extend in cases like page up/down in kakoune.
