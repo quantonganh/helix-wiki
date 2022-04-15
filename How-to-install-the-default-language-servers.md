@@ -6,6 +6,14 @@ Check if your operating system repository has them available, or install them ma
 
 Much of this information was originally sourced from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
 
+> If your language server does not support stdio, you can use `netcat` as a drop-in proxy, just add this to your languages.toml:
+> ```
+> [[language]]
+> name = "example"
+> ...
+> language-server = { command = "nc", args = ["localhost", "6008"] }
+> ```
+
 ## bashls
 
 Language server for bash, written using tree sitter in typescript.
