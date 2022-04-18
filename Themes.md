@@ -85,6 +85,11 @@
 
 ![boo_berry](https://user-images.githubusercontent.com/91094662/161813420-b41ce728-d233-420b-b198-c9302432cbcb.png)
 
+### [Tokyo Night](https://github.com/helix-editor/helix/blob/master/runtime/themes/tokyonight.toml)
+
+![Tokyo Night](https://user-images.githubusercontent.com/43348144/163849080-8359cc26-935b-41d6-9572-98f05f4a2564.png)
+
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
