@@ -56,7 +56,7 @@ You can also set the timeout to a low value instead:
 
 For why this doesn't appear to happen in Neovim and Vim, see: https://github.com/neovim/neovim/wiki/FAQ#esc-in-tmux-or-gnu-screen-is-delayed
 
-### Cannot neither paste from nor copy to system clipboard
+### Copy/paste from/ton system clipboard not working
 Neither `Space-p` nor `Space-Y` is working.
 #### On Linux
 Check that `xsel` package is installed in your system.
