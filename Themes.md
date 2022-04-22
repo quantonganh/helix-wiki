@@ -89,6 +89,10 @@
 
 ![Tokyo Night](https://user-images.githubusercontent.com/43348144/163849080-8359cc26-935b-41d6-9572-98f05f4a2564.png)
 
+### [Autumn](https://github.com/helix-editor/helix/blob/master/runtime/themes/autumn.toml)
+
+![Autumn](https://user-images.githubusercontent.com/579082/164730009-0c38d934-12c9-49dc-b6e2-37bb286e4b7c.png)
+
 
 ## Light
 
