@@ -80,6 +80,10 @@ provide plugin support. Some links regarding ongoing discussions:
  ** https://github.com/helix-editor/helix/discussions/580[Pre-RFC discussion]
  ** https://github.com/helix-editor/helix/pull/455[Plugin system MVP]
 
+==== When will the next release be?
+
+We shoot to cut a release every two months. The version is in CalVer format, so if the current latest release is `22.03`, the next will be `22.05` (May, 2022).
+
 == Installation
 
 === Error when building tree-sitter language grammars in Fedora
