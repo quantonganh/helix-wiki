@@ -38,7 +38,7 @@ documentation.
 
 - Type `%` to select the entire file, then `s` to bring up a `select:` prompt. Enter your search, and press enter. All matches in the file will be selected; you can now use `c` to change them all simultaneously.
 
-To make search fully case sensitive add the following to `config.toml':
+To make search fully case sensitive add the following to `config.toml`:
 ```
 [editor.search]
 smart-case = false
