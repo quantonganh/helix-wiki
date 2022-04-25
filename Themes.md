@@ -43,6 +43,10 @@
 
 ![base16_terminal.toml](https://user-images.githubusercontent.com/67773714/147512554-835e4570-b2e2-4293-bf00-dd9af1137044.PNG)
 
+### [Pop Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/pop-dark.toml)
+
+![pop-dark.toml](https://github.com/workingJ/helix-pop-theme/blob/main/helix-pop-dark-theme-preview.png)
+
 ### [Rosé Pine](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine.toml)
 
 ![rose_pine.toml](https://user-images.githubusercontent.com/14265337/138571680-a8758098-6ca1-472b-afeb-bc51f8d0c574.png)
