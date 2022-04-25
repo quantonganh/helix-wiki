@@ -37,7 +37,7 @@ Both a C and a C++ compiler need to be installed.
 
 ### Rendering issues on MacOS terminal
 
-The MacOS terminal lacks [true color support](https://gist.github.com/XVilka/8346728#terminal-emulators), so you'll need to install a terminal that has it. Alternatively, you may use a theme prefixed with `base16_`.
+The MacOS terminal lacks [true color support](https://gist.github.com/XVilka/8346728#terminal-emulators), so you'll need to install a terminal that has it.
 
 ### When using tmux or screen, there is a delay after hitting Escape before it's registered
 
