@@ -37,7 +37,7 @@ Both a C and a C++ compiler need to be installed.
 
 ### Rendering issues on MacOS terminal
 
-The MacOS terminal lacks [true color support](https://gist.github.com/XVilka/8346728#terminal-emulators), so you'll need to install a terminal that has it.
+The MacOS terminal lacks [true color support](https://gist.github.com/XVilka/8346728#terminal-emulators), so you'll need to install a terminal that has it. Alternatively, you may use a theme prefixed with `base16_`.
 
 ### When using tmux or screen, there is a delay after hitting Escape before it's registered
 
@@ -57,6 +57,9 @@ You can also set the timeout to a low value instead:
 For why this doesn't appear to happen in Neovim and Vim, see: https://github.com/neovim/neovim/wiki/FAQ#esc-in-tmux-or-gnu-screen-is-delayed
 
 ### Copy/paste from/to system clipboard not working
-Neither `Space-p` nor `Space-Y` is working.
+
+Neither `Space-p` nor `Space-y` is working.
+
 #### On Linux
+
 Check that `xsel` package is installed in your system.
