@@ -132,3 +132,8 @@
 ### [Serika light](https://github.com/VuiMuich/helix/blob/510703330cbd04a2126e1e6cd5e3685c4a26eea8/runtime/themes/serika-light.toml)
 
 ![serika-light.toml preview](https://user-images.githubusercontent.com/4779365/150943338-367026d6-3615-4f04-a5fb-4c83abdfcdeb.png)
+
+### [OneLight](https://github.com/helix-editor/helix/blob/master/runtime/themes/onelight.toml)
+
+<img width="715" alt="WX20220427-212817@2x" src="https://user-images.githubusercontent.com/716514/165530761-3e8f3464-ceb8-4314-99b0-1a832664ca27.png">
+
