@@ -352,3 +352,26 @@ The Vue language server `vls` can be installed via npm:
 ```sh
 npm install -g vls
 ```
+
+## toml
+
+https://taplo.tamasfe.dev/
+
+The toml language server `taplo` can be installed via:
+
+`cargo`:
+```sh
+cargo install taplo-cli
+```
+
+`yarn`:
+```sh
+yarn global add @taplo/cli
+```
+
+`npm`:
+```sh
+npm install -g @taplo/cli
+```
+
+Run `taplo lsp --help` for more info.
