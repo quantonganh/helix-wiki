@@ -103,6 +103,9 @@
 
 ![Autumn](https://user-images.githubusercontent.com/579082/164730009-0c38d934-12c9-49dc-b6e2-37bb286e4b7c.png)
 
+### [Night Owl](https://github.com/helix-editor/helix/blob/master/runtime/themes/night_owl.toml)
+
+![Night Owl](https://user-images.githubusercontent.com/96927121/166098928-a92d11e4-9ab8-4ac1-8875-db533a271ba5.png)
 
 ## Light
 
