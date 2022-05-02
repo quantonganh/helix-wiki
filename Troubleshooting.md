@@ -1,3 +1,7 @@
+### Healthcheck
+
+If you haven't already you should try to check out the [helix healthcheck](https://github.com/helix-editor/helix/wiki/Healthcheck).
+
 ### Missing syntax highlighting
 
 If you are not using a package manager to install Helix, then you may have misplaced the required `runtime` folder. By default, it should be placed inside the same directory as the executable or [inside the system's config directory](https://docs.rs/dirs/4.0.0/dirs/fn.config_dir.html). This is `~/.config/helix/` on Linux/MacOS, and `~/AppData/Roaming/helix/` on Windows. However, this can be overridden by setting the `HELIX_RUNTIME` environment variable to your desired directory.
