@@ -49,6 +49,6 @@ Check that `xsel` package is installed in your system.
 
 #### On WSL
 
-Check that `win32yank.exe` is in your path.
+Check that `win32yank.exe` is in your Windows path.
 
 Either download the [binaries](https://github.com/equalsraf/win32yank/releases/tag/v0.0.4) manually or use scoop (`scoop install win32yank`).
