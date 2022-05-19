@@ -169,6 +169,12 @@ Here's an example that disables type checking in JavaScript files.
   "exclude": ["node_modules"]
 }
 ```
+## Eclipse JDT Language Server
+
+https://github.com/eclipse/eclipse.jdt.ls
+
+Installation instructions can be found on the [projects README](https://github.com/eclipse/eclipse.jdt.ls)
+On MacOS installation can also be done via `brew install jdtls`
 
 ## julials
 
