@@ -65,9 +65,12 @@ test ('stuff', t => {
 
 To move from basic asserts to tape’s asserts:
 
-1. Select and start changing the first assert <kbd>w</kbd><kbd>c</kbd> and start typing `t.tr`<kbd>tab</kbd>` and select `true` from the list to auto-complete.
-2. Select the completed text (`t.true`) (<kdb>v</kbd><kbd>alt</kbd><kbd>←</kbd> to select adjacent sibling) and yank it (<kbd>y<.kbd>)
-3. Select the lines with the two remaining `assert`s using <kbd>x</kbd> and select the asserts using <kbd>s</kbd> `assert`
+1. Select and start changing the first assert pass:[<kbd>w</kbd><kbd>c</kbd>] and start typing `t.tr` pass:[<kbd>tab</kbd>] and select `true` from the list to auto-complete.
+
+2. Select the completed text (`t.true`) (pass:[<kbd>v</kbd><kbd>alt</kbd><kbd>←</kbd>] to select adjacent sibling) and yank it (pass:[<kbd>y</kbd>])
+
+3. Select the lines with the two remaining `assert` statements using pass:[<kbd>x</kbd>] and select the asserts using pass:[<kbd>s</kbd>] `assert`
+
 4. Paste the yanked text over them to get:
 
 ```js
