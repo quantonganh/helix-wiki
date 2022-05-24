@@ -382,3 +382,14 @@ npm install -g @taplo/cli
 ```
 
 Run `taplo lsp --help` for more info.
+
+
+# lua 
+
+https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
+
+`mac`
+```sh
+brew install lua-language-server
+```
+ 
