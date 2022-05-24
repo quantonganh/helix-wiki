@@ -73,7 +73,7 @@ To move from basic asserts to tape’s asserts:
 
 3. Select the lines with the two remaining `assert` statements using pass:[<kbd>x</kbd>] and select the asserts using pass:[<kbd>s</kbd>] `assert`
 
-4. Paste the yanked text over them to get:
+4. Replace the selected text with the yanked text (pass:[<kbd>R</kbd>]) to get:
 
 ```js
 import assert from 'assert'
