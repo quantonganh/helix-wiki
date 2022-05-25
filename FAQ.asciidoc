@@ -50,44 +50,6 @@ _Note:_ If you use LSP autocomplete, only the first match will be auto-completed
 
 If the LSP for the language is active and supports autoformat, and the auto-format option is on (check your and the repo's `languages.toml`), then this will happen on save. If there is an alternative command you can run in the terminal to format, you can pipe the whole buffer to it manually with `%|<formatter><enter>`.
 
-==== Use LSP autocomplete with multiple selections (temporary workaround)
-
-Until the https://github.com/helix-editor/helix/issues/2016[*bug with LSP autocomplete with multiple selections*] is fixed, you can use this workaround:
-
-```js
-import assert from 'assert'
-import test from 'tape'
-
-test ('stuff', t => {
-  assert(x)
-  assert(y)
-  assert(z)
-})
-```
-
-To move from basic asserts to tape’s asserts:
-
-1. Select and start changing the first assert pass:[<kbd>w</kbd><kbd>c</kbd>] and start typing `t.tr` pass:[<kbd>tab</kbd>] and select `true` from the list to auto-complete.
-
-2. Select the completed text (`t.true`) (pass:[<kbd>alt</kbd><kbd>←</kbd>] to select previous adjacent sibling) and yank it (pass:[<kbd>y</kbd>])
-
-3. Select the lines with the two remaining `assert` statements using pass:[<kbd>x</kbd>] and select the asserts using pass:[<kbd>s</kbd>] `assert`
-
-4. Replace the selected text with the yanked text (pass:[<kbd>R</kbd>]) to get:
-
-```js
-import assert from 'assert'
-import test from 'tape'
-
-test ('stuff', t => {
-  t.true(x)
-  t.true(y)
-  t.true(z)
-})
-```
-
-Once the https://github.com/helix-editor/helix/issues/2016[*bug with LSP autocomplete with multiple selections*] is fixed you will simply be able to select all three asserts and replace them all using auto-complete.
-
 ==== Access the Helix config directory
 
 [cols="1,1"]
