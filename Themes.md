@@ -107,6 +107,10 @@
 
 ![Night Owl](https://user-images.githubusercontent.com/96927121/166098928-a92d11e4-9ab8-4ac1-8875-db533a271ba5.png)
 
+### [Catppuccin](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin.toml)
+
+![image](https://user-images.githubusercontent.com/62714538/169872279-a0c1d7b8-e502-4835-8b49-18b0c1e9e988.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
@@ -139,7 +143,3 @@
 ### [OneLight](https://github.com/helix-editor/helix/blob/master/runtime/themes/onelight.toml)
 
 <img width="715" alt="WX20220427-212817@2x" src="https://user-images.githubusercontent.com/716514/165530761-3e8f3464-ceb8-4314-99b0-1a832664ca27.png">
-
-### [Catppuccin](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin.toml)
-
-![image](https://user-images.githubusercontent.com/62714538/169872279-a0c1d7b8-e502-4835-8b49-18b0c1e9e988.png)
