@@ -262,6 +262,12 @@ https://github.com/apple/swift-format
 Follow the [Getting Started](https://github.com/apple/sourcekit-lsp#getting-started) guide to get sourcekit-lsp installed correctly for your OS.
 No additional configuration is needed, though note to use the same toolchain for both your installed LSP, and that you use to build.
 
+## nimlsp
+
+https://github.com/PMunch/nimlsp
+
+`nimble install nimlsp`
+
 ## pylsp
 
 A Python 3.6+ implementation of the Language Server Protocol.
