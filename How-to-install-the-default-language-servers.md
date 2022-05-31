@@ -392,4 +392,18 @@ https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
 ```sh
 brew install lua-language-server
 ```
+
+# deno
+
+Install deno from https://deno.land/#installation
+
+deno requires custom configuration in languages.toml see https://github.com/denoland/deno/issues/14455
+
+```toml
+[[language]]
+name = "typescript"
+file-types = ["ts","js"]
+language-server = { command = "deno", args = ["lsp"]}
+config = { deno = { enable = true, lint = true } }
+```
  
