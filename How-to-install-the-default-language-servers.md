@@ -390,7 +390,7 @@ npm install -g @taplo/cli
 Run `taplo lsp --help` for more info.
 
 
-# lua 
+## lua 
 
 https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
 
@@ -399,7 +399,7 @@ https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
 brew install lua-language-server
 ```
 
-# deno
+## deno
 
 Install deno from https://deno.land/#installation
 
