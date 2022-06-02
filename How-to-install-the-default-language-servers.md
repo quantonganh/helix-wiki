@@ -412,4 +412,4 @@ file-types = ["ts","js"]
 language-server = { command = "deno", args = ["lsp"]}
 config = { deno = { enable = true, lint = true } }
 ```
- 
+Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a deno lsp extension https://deno.land/manual/language_server/overview.
