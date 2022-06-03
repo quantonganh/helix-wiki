@@ -45,7 +45,9 @@ Neither `Space-p` nor `Space-y` is working.
 
 #### On Linux
 
-Check that `xsel` package is installed in your system.
+In an X session, check that either the [`xclip`](https://repology.org/project/xclip/versions) or [`xsel`](https://repology.org/project/xsel/versions) package is installed on your system and either of these commands is in your `PATH`.
+
+In a Wayland session, check that the [`wl-clipboard`](https://repology.org/project/wl-clipboard/versions) package is installed on your system and the provided `wl-copy` and `wl-paste` commands are in your `PATH`.
 
 #### On WSL
 
