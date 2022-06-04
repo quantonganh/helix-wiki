@@ -108,6 +108,6 @@ sudo dnf group install "C Development Tools and Libraries"
 
 Ensure that you have mapped the Option key to `ESC+` in the iTerm2 preferences via Preferences > Profiles > Keys 
 
-<img width="1128" alt="Screen Shot 2022-06-04 at 12 56 23 pm" src="https://user-images.githubusercontent.com/863286/171976728-95814760-653c-4623-9441-0eb05c036bac.png">
+<img width="1128" alt="Screen Shot 2022-06-04 at 12 57 15 pm" src="https://user-images.githubusercontent.com/863286/171976896-e7dcc77d-4773-41a8-a96f-e163e207cfe4.png">
 
 Previous issues: https://github.com/helix-editor/helix/issues/773, https://github.com/helix-editor/helix/issues/1223, https://github.com/helix-editor/helix/issues/1915.
