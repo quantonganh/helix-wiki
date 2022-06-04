@@ -102,4 +102,12 @@ Ensure that you have a C compiler installed:
 sudo dnf group install "C Development Tools and Libraries"
 ```
 
+== Common Issues
+
+=== `Alt-*` key combinations do not work on MacOS iTerm2
+
+Ensure that you have mapped the Option key to `ESC+` in the iTerm2 preferences via Preferences > Profiles > Keys 
+
+<img width="1128" alt="Screen Shot 2022-06-04 at 12 56 23 pm" src="https://user-images.githubusercontent.com/863286/171976728-95814760-653c-4623-9441-0eb05c036bac.png">
+
 Previous issues: https://github.com/helix-editor/helix/issues/773, https://github.com/helix-editor/helix/issues/1223, https://github.com/helix-editor/helix/issues/1915.
