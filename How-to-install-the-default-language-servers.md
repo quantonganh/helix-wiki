@@ -413,3 +413,13 @@ language-server = { command = "deno", args = ["lsp"]}
 config = { deno = { enable = true, lint = true } }
 ```
 Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a deno lsp extension https://deno.land/manual/language_server/overview.
+
+## prisma
+
+https://github.com/prisma/language-tools/tree/main/packages/language-server
+
+`prisma-language-server` can be installed via npm:
+
+```sh
+npm install -g @prisma/language-server
+```
