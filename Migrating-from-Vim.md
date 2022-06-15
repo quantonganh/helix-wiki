@@ -45,6 +45,10 @@ Note due to [go to line end does not select the text](https://github.com/helix-e
 
 `t<ret>` selects "'til" the newline represented by `<ret>`.
 
+jump to matching bracket:
+* vim: `%`
+* helix: `mm`
+
 auto complete:
 * vim: `C-p`
 * helix: `C-x`
