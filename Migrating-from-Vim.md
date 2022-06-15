@@ -38,10 +38,12 @@ go to line end:
 
 delete to line end:
 * vim: `D`
-* helix: `vgld`
+* helix: `vgld` or `t<ret>d`
 
 Note due to [go to line end does not select the text](https://github.com/helix-editor/helix/issues/1630
 ), `v` is required.
+
+`t<ret>` selects "'til" the newline represented by `<ret>`.
 
 auto complete:
 * vim: `C-p`
