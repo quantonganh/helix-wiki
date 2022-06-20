@@ -111,6 +111,10 @@
 
 ![image](https://user-images.githubusercontent.com/62714538/169872279-a0c1d7b8-e502-4835-8b49-18b0c1e9e988.png)
 
+### [Noctis Bordo](https://github.com/helix-editor/helix/blob/master/runtime/themes/noctis_bordo.toml)
+
+![Noctis Bordo preview](https://user-images.githubusercontent.com/19535809/174642673-26e7482e-6153-484a-a38e-02c9523e313b.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
