@@ -341,6 +341,16 @@ https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 npm install -g svelte-language-server
 ```
 
+## wgsl_analyzer
+
+https://github.com/wgsl-analyzer/wgsl-analyzer
+
+`wgsl_analyzer` can be installed via `cargo`:
+```sh
+cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
+```
+
+
 ## zls
 
 Zig LSP implementation + Zig Language Server.
