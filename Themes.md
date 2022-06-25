@@ -147,3 +147,9 @@
 ### [OneLight](https://github.com/helix-editor/helix/blob/master/runtime/themes/onelight.toml)
 
 <img width="715" alt="WX20220427-212817@2x" src="https://user-images.githubusercontent.com/716514/165530761-3e8f3464-ceb8-4314-99b0-1a832664ca27.png">
+
+### [Acme](https://github.com/helix-editor/helix/blob/master/runtime/themes/acme.toml)
+
+![Acme](https://user-images.githubusercontent.com/92624829/175784106-734e4c04-ec4b-4c47-84a3-af25879caa76.png)
+
+
