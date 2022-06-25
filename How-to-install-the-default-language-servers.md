@@ -449,7 +449,7 @@ injection-regex = "^(ts|typescript)$"
 file-types = ["ts"]
 shebangs = ["deno", "node"]
 roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }}
+config = { enable = true, lint = true, unstable = true }
 language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }
 indent = { tab-width = 2, unit = "  " }
 
