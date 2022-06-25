@@ -449,7 +449,7 @@ injection-regex = "^(ts|typescript)$"
 file-types = ["ts"]
 shebangs = ["deno", "node"]
 roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true , suggest.imports.hosts = { "https://deno.land" = true ,"https://raw.githubusercontent.com"=true }}
+config = { enable = true, lint = true, unstable = true }}
 language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }
 indent = { tab-width = 2, unit = "  " }
 
@@ -460,7 +460,7 @@ injection-regex = "^(tsx)$" # |typescript
 file-types = ["tsx"]
 shebangs = ["deno", "node"]
 roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true, suggest.imports.hosts = { "https://deno.land" = true ,"https://raw.githubusercontent.com"=true } }
+config = { enable = true, lint = true, unstable = true }
 language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
 indent = { tab-width = 2, unit = "  " }
 ```
