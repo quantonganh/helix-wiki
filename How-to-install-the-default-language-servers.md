@@ -415,12 +415,54 @@ Install deno from https://deno.land/#installation
 
 deno requires custom configuration in languages.toml see https://github.com/denoland/deno/issues/14455
 
+
 ```toml
 [[language]]
+name = "javascript"
+scope = "source.js"
+injection-regex = "^(js|javascript)$"
+file-types = ["js", "jsx", "mjs"]
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+comment-token = "//"
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "jsx"
+scope = "source.jsx"
+injection-regex = "jsx"
+file-types = ["jsx"]
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+comment-token = "//"
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
+indent = { tab-width = 2, unit = "  " }
+grammar = "javascript"
+
+[[language]]
 name = "typescript"
-file-types = ["ts","js"]
-language-server = { command = "deno", args = ["lsp"]}
-config = { deno = { enable = true, lint = true } }
+scope = "source.ts"
+injection-regex = "^(ts|typescript)$"
+file-types = ["ts"]
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true , suggest.imports.hosts = { "https://deno.land" = true ,"https://raw.githubusercontent.com"=true }}
+language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "tsx"
+scope = "source.tsx"
+injection-regex = "^(tsx)$" # |typescript
+file-types = ["tsx"]
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true, suggest.imports.hosts = { "https://deno.land" = true ,"https://raw.githubusercontent.com"=true } }
+language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
+indent = { tab-width = 2, unit = "  " }
 ```
 Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a deno lsp extension https://deno.land/manual/language_server/overview.
 
