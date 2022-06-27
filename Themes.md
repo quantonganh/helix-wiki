@@ -115,6 +115,10 @@
 
 ![Noctis Bordo preview](https://user-images.githubusercontent.com/19535809/174642673-26e7482e-6153-484a-a38e-02c9523e313b.png)
 
+### [Meliora](https://github.com/helix-editor/helix/blob/master/runtime/themes/meliora.toml)
+
+![preview](https://user-images.githubusercontent.com/41536253/175828245-7a4a4ca4-0d84-4c6d-95d9-11c6e3dd5087.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
