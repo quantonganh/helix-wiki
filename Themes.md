@@ -156,4 +156,8 @@
 
 ![Acme](https://user-images.githubusercontent.com/92624829/175784106-734e4c04-ec4b-4c47-84a3-af25879caa76.png)
 
+### [Nord Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/nord_light.toml)
+
+![Nord Light](https://user-images.githubusercontent.com/92624829/176864742-a237a539-83cc-4fc6-b17a-76619e693a8d.png)
+
 
