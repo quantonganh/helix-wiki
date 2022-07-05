@@ -380,11 +380,13 @@ npm install -g vls
 
 https://taplo.tamasfe.dev/
 
-The toml language server `taplo` can be installed via:
+The toml language server included in [taplo-cli](https://taplo.tamasfe.dev/cli/introduction.html) can be installed via:
+
+`binaries`: [taplo releases](https://github.com/tamasfe/taplo/releases)
 
 `cargo`:
 ```sh
-cargo install taplo-cli
+cargo install taplo-cli --locked --features lsp
 ```
 
 `yarn`:
