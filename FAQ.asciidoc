@@ -78,6 +78,10 @@ Enable logging via the `-v` flag, with each use (up to `-vvv`) increasing the ve
 
 Check https://docs.helix-editor.com/guides/adding_languages.html
 
+==== Changing grammars at project level
+
+You can specify custom grammars per-project/per-directory by placing the `languages.toml` in `.helix/languages.toml` at the root of your project.
+
 == General Questions
 
 ==== How to write plugins / Is there a plugin system in place yet ?
