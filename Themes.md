@@ -164,4 +164,15 @@
 
 ![Nord Light](https://user-images.githubusercontent.com/92624829/176864742-a237a539-83cc-4fc6-b17a-76619e693a8d.png)
 
+### [Ayu Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/ayu_light.toml)
+![Ayu Light](https://user-images.githubusercontent.com/12304998/181048583-7bc1a7ce-bdce-44f0-9932-8a0aac9965a1.png)
+
+
+### [Ayu Mirage](https://github.com/helix-editor/helix/blob/master/runtime/themes/ayu_mirage.toml)
+![Ayu Mirage](https://user-images.githubusercontent.com/12304998/181048632-a6d08937-bdcd-488a-a475-42c1a564de82.png)
+
+
+### [Ayu Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/ayu_dark.toml)
+![Ayu Dark](https://user-images.githubusercontent.com/12304998/181048699-cec5960e-3fe1-45cb-9e74-4b6871935a37.png)
+
 
