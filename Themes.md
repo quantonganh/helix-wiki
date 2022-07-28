@@ -43,6 +43,10 @@
 
 ![base16_terminal.toml](https://user-images.githubusercontent.com/67773714/147512554-835e4570-b2e2-4293-bf00-dd9af1137044.PNG)
 
+### [Base16 Transparent](https://github.com/helix-editor/helix/blob/master/runtime/themes/base16_transparent.toml)
+
+![base16_transparent](https://user-images.githubusercontent.com/106496265/181654291-9003c27f-144b-474b-8177-fcfc578ab863.png)
+
 ### [Pop Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/pop-dark.toml)
 
 ![pop-dark.toml](https://github.com/workingJ/helix-pop-theme/blob/main/helix-pop-dark-theme-preview.png)
