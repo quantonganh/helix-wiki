@@ -78,6 +78,14 @@ https://github.com/rcjsuen/dockerfile-language-server-nodejs
 npm install -g dockerfile-language-server-nodejs
 ```
 
+## Graphviz dot
+
+https://github.com/nikeee/dot-language-server
+
+```sh
+npm i -g dot-language-server
+```
+
 ## elixir-ls
 
 https://github.com/elixir-lsp/elixir-ls
