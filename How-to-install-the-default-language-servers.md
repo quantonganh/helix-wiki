@@ -68,6 +68,44 @@ Language server for dart.
 
 https://github.com/dart-lang/sdk/tree/master/pkg/analysis_server/tool/lsp_spec
 
+## deno
+
+Install deno from https://deno.land/#installation
+
+deno requires custom configuration in languages.toml see https://github.com/denoland/deno/issues/14455
+
+```toml
+[[language]]
+name = "javascript"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
+
+[[language]]
+name = "jsx"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
+
+[[language]]
+name = "typescript"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }
+
+[[language]]
+name = "tsx"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
+```
+
+Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a deno lsp extension https://deno.land/manual/language_server/overview.
+
 ## dockerls
 
 https://github.com/rcjsuen/dockerfile-language-server-nodejs
@@ -78,7 +116,7 @@ https://github.com/rcjsuen/dockerfile-language-server-nodejs
 npm install -g dockerfile-language-server-nodejs
 ```
 
-## Graphviz dot
+## dot Graphviz
 
 https://github.com/nikeee/dot-language-server
 
@@ -120,6 +158,7 @@ https://github.com/golang/tools/tree/master/gopls
 https://github.com/hrsh7th/vscode-langservers-extracted
 
 `vscode-html-language-server` can be installed via `npm`:
+
 ```sh
 npm i -g vscode-langservers-extracted
 ```
@@ -135,6 +174,7 @@ https://github.com/haskell/haskell-language-server
 https://intelephense.com/
 
 `intelephense` can be installed via `npm`:
+
 ```sh
 npm install -g intelephense
 ```
@@ -234,6 +274,25 @@ Once Lean is installed, you can install the Lean 3 language server by running
 npm install -g lean-language-server
 ```
 
+## lua 
+
+https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
+
+`mac`
+```sh
+brew install lua-language-server
+```
+
+## metals
+
+Scala language server with rich IDE features.
+
+https://scalameta.org/metals/
+
+See full instructions in the Metals documentation:
+
+https://scalameta.org/metals/docs/editors/vim.html#using-an-alternative-lsp-client
+
 ## mint
 
 https://www.mint-lang.com
@@ -241,40 +300,33 @@ https://www.mint-lang.com
 Install Mint using the [instructions](https://www.mint-lang.com/install).
 The language server is included since version 0.12.0.
 
-## R languageserver
-
-An implementation of the Language Server Protocol for R.
-
-https://github.com/REditorSupport/languageserver
-
-The language server can be installed by running `R -e 'install.packages("languageserver")'`.
-
-## rnix
-
-A language server for Nix providing basic completion and formatting via nixpkgs-fmt.
-
-https://github.com/nix-community/rnix-lsp
-
-To install manually, run `cargo install rnix-lsp`. If you are using nix, rnix-lsp is in nixpkgs.
-
-This server accepts configuration via the `settings` key.
-
-## sourcekit-lsp and swift-format
-
-A language server for Swift, formatting provided via swift-format
-
-https://github.com/apple/sourcekit-lsp
-
-https://github.com/apple/swift-format
-
-Follow the [Getting Started](https://github.com/apple/sourcekit-lsp#getting-started) guide to get sourcekit-lsp installed correctly for your OS.
-No additional configuration is needed, though note to use the same toolchain for both your installed LSP, and that you use to build.
-
 ## nimlsp
 
 https://github.com/PMunch/nimlsp
 
-`nimble install nimlsp`
+```sh
+nimble install nimlsp
+```
+
+## ocamllsp
+
+https://github.com/ocaml/ocaml-lsp
+
+The OCaml language server `ocamllsp` can be installed via OPAM:
+
+```sh
+opam install ocaml-lsp-server
+```
+
+## prisma
+
+https://github.com/prisma/language-tools/tree/main/packages/language-server
+
+`prisma-language-server` can be installed via npm:
+
+```sh
+npm install -g @prisma/language-server
+```
 
 ## pylsp
 
@@ -286,6 +338,14 @@ The language server can be installed via `pipx install 'python-lsp-server[all]'`
 Further instructions can be found in the [project's README](https://github.com/python-lsp/python-lsp-server).
 
 Note: This is a community fork of `pyls`.
+
+## R languageserver
+
+An implementation of the Language Server Protocol for R.
+
+https://github.com/REditorSupport/languageserver
+
+The language server can be installed by running `R -e 'install.packages("languageserver")'`.
 
 ## racket_langserver
 
@@ -303,6 +363,36 @@ https://github.com/rescript-lang/rescript-vscode
 
 ReScript language server
 
+## rnix
+
+A language server for Nix providing basic completion and formatting via nixpkgs-fmt.
+
+https://github.com/nix-community/rnix-lsp
+
+To install manually, run `cargo install rnix-lsp`. If you are using nix, rnix-lsp is in nixpkgs.
+
+This server accepts configuration via the `settings` key.
+
+## rust_analyzer
+
+https://github.com/rust-analyzer/rust-analyzer
+
+rust-analyzer (aka rls 2.0), a language server for Rust
+
+See [docs](https://github.com/rust-analyzer/rust-analyzer/tree/master/docs/user#settings) for extra settings.
+
+## sourcekit-lsp and swift-format
+
+A language server for Swift, formatting provided via swift-format
+
+https://github.com/apple/sourcekit-lsp
+
+https://github.com/apple/swift-format
+
+Follow the [Getting Started](https://github.com/apple/sourcekit-lsp#getting-started) guide to get sourcekit-lsp installed correctly for your OS.
+No additional configuration is needed, though note to use the same toolchain for both your installed LSP, and that you use to build.
+
+
 ## solargraph
 
 https://solargraph.org/
@@ -314,24 +404,6 @@ You can install solargraph via gem install.
 ```sh
 gem install --user-install solargraph
 ```
-
-## rust_analyzer
-
-https://github.com/rust-analyzer/rust-analyzer
-
-rust-analyzer (aka rls 2.0), a language server for Rust
-
-See [docs](https://github.com/rust-analyzer/rust-analyzer/tree/master/docs/user#settings) for extra settings.
-
-## metals
-
-Scala language server with rich IDE features.
-
-https://scalameta.org/metals/
-
-See full instructions in the Metals documentation:
-
-https://scalameta.org/metals/docs/editors/vim.html#using-an-alternative-lsp-client
 
 ## solc
 
@@ -347,41 +419,6 @@ https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 
 ```sh
 npm install -g svelte-language-server
-```
-
-## wgsl_analyzer
-
-https://github.com/wgsl-analyzer/wgsl-analyzer
-
-`wgsl_analyzer` can be installed via `cargo`:
-```sh
-cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
-```
-
-
-## zls
-
-Zig LSP implementation + Zig Language Server.
-
-https://github.com/zigtools/zls
-
-## ocamllsp
-
-https://github.com/ocaml/ocaml-lsp
-
-The OCaml language server `ocamllsp` can be installed via OPAM:
-
-```sh
-opam install ocaml-lsp-server
-```
-## vls
-
-https://github.com/vuejs/vetur/tree/master/server
-
-The Vue language server `vls` can be installed via npm:
-
-```sh
-npm install -g vls
 ```
 
 ## toml
@@ -409,60 +446,27 @@ npm install -g @taplo/cli
 
 Run `taplo lsp --help` for more info.
 
+## wgsl_analyzer
 
-## lua 
+https://github.com/wgsl-analyzer/wgsl-analyzer
 
-https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
-
-`mac`
+`wgsl_analyzer` can be installed via `cargo`:
 ```sh
-brew install lua-language-server
+cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
 ```
 
-## deno
+## vls
 
-Install deno from https://deno.land/#installation
+https://github.com/vuejs/vetur/tree/master/server
 
-deno requires custom configuration in languages.toml see https://github.com/denoland/deno/issues/14455
-
-```toml
-[[language]]
-name = "javascript"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
-
-[[language]]
-name = "jsx"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
-
-[[language]]
-name = "typescript"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }
-
-[[language]]
-name = "tsx"
-shebangs = ["deno", "node"]
-roots = ["deno.json", "package.json", "tsconfig.json"]
-config = { enable = true, lint = true, unstable = true }
-language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
-```
-
-Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a deno lsp extension https://deno.land/manual/language_server/overview.
-
-## prisma
-
-https://github.com/prisma/language-tools/tree/main/packages/language-server
-
-`prisma-language-server` can be installed via npm:
+The Vue language server `vls` can be installed via npm:
 
 ```sh
-npm install -g @prisma/language-server
+npm install -g vls
 ```
+
+## zls
+
+Zig LSP implementation + Zig Language Server.
+
+https://github.com/zigtools/zls
