@@ -176,3 +176,7 @@
 
 ### [Ayu Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/ayu_light.toml)
 ![Ayu Light](https://user-images.githubusercontent.com/12304998/181048583-7bc1a7ce-bdce-44f0-9932-8a0aac9965a1.png)
+
+### [FlatWhite](https://github.com/helix-editor/helix/blob/master/runtime/themes/flatwhite.toml)
+![FlatWhite](https://user-images.githubusercontent.com/721090/182021814-27cc1791-492d-4cf3-aad5-3fbed892b376.png)
+
