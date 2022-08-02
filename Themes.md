@@ -111,9 +111,12 @@
 
 ![Night Owl](https://user-images.githubusercontent.com/96927121/166098928-a92d11e4-9ab8-4ac1-8875-db533a271ba5.png)
 
-### [Catppuccin](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin.toml)
-
-![image](https://user-images.githubusercontent.com/62714538/169872279-a0c1d7b8-e502-4835-8b49-18b0c1e9e988.png)
+### [Catppuccin Frappe](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_frappe.toml)
+![Catppuccin Frappe](https://user-images.githubusercontent.com/17070041/182328493-c8f66d1c-11ff-4032-8fd2-596c203056eb.png)
+### [Catppuccin Macchiato](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_macchiato.toml)
+![Catppuccin Macchiato](https://user-images.githubusercontent.com/17070041/182328827-8e037196-e956-453c-9aef-181891982a60.png)
+### [Catppuccin Mocha](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_mocha.toml)
+![Catppuccin Mocha](https://user-images.githubusercontent.com/17070041/182327344-ad338b02-172f-4221-b08a-c928f43bcd7a.png)
 
 ### [Noctis Bordo](https://github.com/helix-editor/helix/blob/master/runtime/themes/noctis_bordo.toml)
 
@@ -180,3 +183,5 @@
 ### [FlatWhite](https://github.com/helix-editor/helix/blob/master/runtime/themes/flatwhite.toml)
 ![FlatWhite](https://user-images.githubusercontent.com/721090/182021814-27cc1791-492d-4cf3-aad5-3fbed892b376.png)
 
+### [Catppuccin Latte](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_latte.toml)
+![Catppuccin Latte](https://user-images.githubusercontent.com/17070041/182329421-e330decc-7ecf-4258-a3c6-78fb1dd58bc8.png)
