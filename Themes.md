@@ -1,6 +1,6 @@
 # Setting theme
 
-`:theme <theme>` command in helix, or `theme = "<theme>"` in `~/.config/helix/config.toml`
+`:theme <theme>` command in helix, or `theme = "<theme>"` in `~/.config/helix/config.toml`. You can also install a custom theme by creating a file with the name of your theme as file name (i.e. mytheme.toml) and placing it under `~/.config/helix/themes` folder. For more information, take a look at the [Theme section of the book](https://github.com/helix-editor/helix/blob/master/book/src/themes.md).
 
 # Available themes
 
