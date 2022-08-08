@@ -381,6 +381,15 @@ rust-analyzer (aka rls 2.0), a language server for Rust
 
 See [docs](https://github.com/rust-analyzer/rust-analyzer/tree/master/docs/user#settings) for extra settings.
 
+## slint-lsp
+
+<https://github.com/slint-ui/slint/tree/HEAD/tools/lsp>  
+<https://slint-ui.com/>
+
+```sh
+cargo install slint-lsp
+```
+
 ## sourcekit-lsp and swift-format
 
 A language server for Swift, formatting provided via swift-format
