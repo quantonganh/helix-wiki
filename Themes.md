@@ -58,6 +58,11 @@
 
 ![rose_pine.toml](https://user-images.githubusercontent.com/14265337/138571680-a8758098-6ca1-472b-afeb-bc51f8d0c574.png)
 
+### [Rosé Pine Moon](https://github.com/helix-editor/helix/blob/master/runtime/themes/rose_pine_moon.toml)
+
+![rose_pine_moon.toml](https://user-images.githubusercontent.com/54471918/183774890-5cf230df-48b8-4baf-9676-92853c82b2ab.png)
+
+
 ### [Solarized Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/solarized_dark.toml)
 
 ![solarized_dark.toml](https://user-images.githubusercontent.com/846275/141829230-1fc719c3-6ea3-4c0c-94a5-a9f5eeb50e9f.png)
