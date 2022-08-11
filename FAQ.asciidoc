@@ -52,6 +52,8 @@ If the LSP for the language is active and supports autoformat, and the auto-form
 
 ==== Access the Helix config directory
 
+You can use `:config-open` to open the config in Helix.
+
 [cols="1,1"]
 |===
 | Platform | Location
@@ -64,6 +66,8 @@ If the LSP for the language is active and supports autoformat, and the auto-form
 ==== Access the log file
 
 Enable logging via the `-v` flag, with each use (up to `-vvv`) increasing the verbosity.
+
+You can use `:log-open` to open the log in Helix.
 
 [cols="1,1"]
 |===
