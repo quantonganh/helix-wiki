@@ -46,7 +46,7 @@ https://github.com/hrsh7th/vscode-langservers-extracted
 npm i -g vscode-langservers-extracted
 ```
 
-## omnisharp
+## OmniSharp
 
 https://github.com/omnisharp/omnisharp-roslyn
 OmniSharp server based on Roslyn workspaces
