@@ -193,3 +193,6 @@
 
 ### [Catppuccin Latte](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_latte.toml)
 ![Catppuccin Latte](https://user-images.githubusercontent.com/17070041/182329421-e330decc-7ecf-4258-a3c6-78fb1dd58bc8.png)
+
+### [Emacs](https://github.com/helix-editor/helix/blob/master/runtime/themes/emacs.toml)
+![Emacs](https://user-images.githubusercontent.com/16749790/184476248-b248d3fd-b548-4c74-a362-7bd1eceb78fe.png)
