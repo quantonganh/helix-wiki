@@ -54,3 +54,13 @@ In a Wayland session, check that the [`wl-clipboard`](https://repology.org/proje
 Check that `win32yank.exe` is in your Windows path.
 
 Either download the [binaries](https://github.com/equalsraf/win32yank/releases/tag/v0.0.4) manually or use scoop (`scoop install win32yank`).
+
+### Panic from "Could not parse queries" (building from source)
+
+You may encounter a panic when opening a file that looks like so:
+
+```
+thread 'main' panicked at 'Could not parse queries for language "<language>". Are your grammars out of sync? Try running 'hx --grammar fetch' and 'hx --grammar build'. This query could not be parsed: QueryError { row: 0, column: 17, offset: 17, message: "heading_content", kind: NodeType }', helix-core/src/syntax.rs:377:43
+```
+
+This happens when the tree-sitter queries (`.scm` files) in your `~/.config/helix/runtime/queries` directory are out of date with the tree-sitter parsers. To fix this, remove the `~/.config/helix/runtime` directory and [link the runtime directory](https://github.com/helix-editor/helix/blob/7711db3a3af8f7ca156c8c71ae4b7ea2dd02d96f/README.md?plain=1#L48-L55) from this repository. Then run `hx -g fetch` and `hx -g build`.
