@@ -98,7 +98,7 @@ provide plugin support. Some links regarding ongoing discussions:
 
 ==== When will the next release be?
 
-We shoot to cut a release every two months. The version is in CalVer format, so if the current latest release is `22.05`, the next will be `22.07` (July, 2022).
+We shoot to cut a release around every two months. The version is in CalVer format, so if the current latest release is `22.05`, the next should be `22.07` (July, 2022).
 
 == Installation
 
