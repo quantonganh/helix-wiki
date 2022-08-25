@@ -30,7 +30,7 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ![monokai.toml preview](https://user-images.githubusercontent.com/67773714/130168602-7fe53f80-8538-4a18-83d7-ec0f260e38f9.PNG)
 
 ### [Doom Acario Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/doom_acario_dark.toml)
-![Doom Acario Dark](https://user-images.githubusercontent.com/47090855/183271271-66044f44-f56a-42a4-877d-fe25a1d7080c.png)
+![Doom Acario Dark](https://user-images.githubusercontent.com/47090855/186710862-816d9f80-e888-499c-bdc1-3b6641ce6bcc.png)
 
 ### [Everforest](https://github.com/helix-editor/helix/blob/master/runtime/themes/everforest_dark.toml)
 
