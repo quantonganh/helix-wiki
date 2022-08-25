@@ -5,7 +5,9 @@ Since https://github.com/helix-editor/helix/pull/2942 Helix can use external for
 - They will override any formatting supplied by the language server
 
 
-# Prettier https://prettier.io/
+# Prettier
+
+https://prettier.io/
 
 * Windows users may need to specify the full path to the `prettier` executable: https://github.com/helix-editor/helix/discussions/3198#discussioncomment-3325065
 
@@ -34,7 +36,9 @@ formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 ```
 
-# shfmt https://github.com/patrickvane/shfmt
+# shfmt
+
+https://github.com/patrickvane/shfmt
 
 ```
 [[language]]
