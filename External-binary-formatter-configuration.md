@@ -40,7 +40,7 @@ auto-format = true
 
 https://github.com/patrickvane/shfmt
 
-```
+```toml
 [[language]]
 name = "bash"
 formatter = { command = 'shfmt', args = ["-i", "4"] }
