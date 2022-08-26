@@ -1,15 +1,14 @@
 Since https://github.com/helix-editor/helix/pull/2942 Helix can use external formatting programs available in the system `$PATH`.
 
 - Add these settings to `languages.toml` inside your config directory
-- `auto-format = true` and other language settings are inherited from https://github.com/helix-editor/helix/blob/master/languages.toml, there is no need to repeat them
+- `auto-format = true` and other language settings are inherited from [languages.toml](https://github.com/helix-editor/helix/blob/master/languages.toml), there is no need to repeat them
 - Specifying an external formatter will replace any formatting supplied by the language server
+- Windows users [*may* need to specify the full path to the executable](https://github.com/helix-editor/helix/discussions/3198#discussioncomment-3325065)
 
 
 # Prettier
 
 https://prettier.io/
-
-* Windows users may need to specify the full path to the `prettier` executable: https://github.com/helix-editor/helix/discussions/3198#discussioncomment-3325065
 
 ```toml
 [[language]]
@@ -35,18 +34,6 @@ name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 ```
-
-# shfmt
-
-https://github.com/patrickvane/shfmt
-
-```toml
-[[language]]
-name = "bash"
-formatter = { command = 'shfmt', args = ["-i", "4"] }
-auto-format = true
-```
-
 # Deno
 
 https://deno.land/
@@ -84,5 +71,16 @@ auto-format = true
 [[language]]
 name = "tsx"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx" ] }
+auto-format = true
+```
+
+# shfmt
+
+https://github.com/patrickvane/shfmt
+
+```toml
+[[language]]
+name = "bash"
+formatter = { command = 'shfmt', args = ["-i", "4"] }
 auto-format = true
 ```
