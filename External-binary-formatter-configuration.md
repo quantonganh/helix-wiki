@@ -42,6 +42,7 @@ Deno's formatter is written in Rust and is *very* fast in comparison to Prettier
 
 - To see available formatting options: `deno fmt --help`
 - `jsonc` is supported by Deno, but not currently by Helix
+- `markdown` does not support formatting as many languages in fenced code blocks as Prettier
 
 ```toml
 [[language]]
