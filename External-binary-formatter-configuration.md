@@ -88,6 +88,9 @@ auto-format = true
 
 # shfmt
 
+- `shfmt` formats shell programs
+- To see available formatting options: `shfmt -h`
+
 https://github.com/patrickvane/shfmt
 
 The following have been tested:
