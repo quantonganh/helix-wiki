@@ -10,6 +10,12 @@ Since https://github.com/helix-editor/helix/pull/2942 Helix can use external for
 
 https://prettier.io/
 
+As of `v2.7.1` these languages are supported:
+
+`flow|babel|babel-flow|babel-ts|typescript|acorn|espree|meriyah|css|less|scss|json|json5|json-stringify|graphql|markdown|mdx|vue|yaml|glimmer|html|angular|lwc`
+
+The following have been tested:
+
 ```toml
 [[language]]
 name = "html"
@@ -38,11 +44,16 @@ auto-format = true
 
 https://deno.land/
 
+As of `v1.25.0` these languages are supported:
+
+`ts, tsx, js, jsx, md, json, jsonc`
+
 Deno's formatter is written in Rust and is *very* fast in comparison to Prettier. The formatting options are mostly copied from Prettier, but there are some differences.
 
 - To see available formatting options: `deno fmt --help`
-- `jsonc` is supported by Deno, but not currently by Helix
 - `markdown` does not support formatting as many languages in fenced code blocks as Prettier
+
+The following have been tested:
 
 ```toml
 [[language]]
@@ -78,6 +89,8 @@ auto-format = true
 # shfmt
 
 https://github.com/patrickvane/shfmt
+
+The following has been tested:
 
 ```toml
 [[language]]
