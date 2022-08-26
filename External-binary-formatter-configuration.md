@@ -1,8 +1,8 @@
 Since https://github.com/helix-editor/helix/pull/2942 Helix can use external formatting programs available in the system `$PATH`.
 
-- These settings should be added to `languages.toml` inside your config directory
-- For each language `auto-format = true` and other settings are inherited from https://github.com/helix-editor/helix/blob/master/languages.toml
-- They will override any formatting supplied by the language server
+- Add these settings to `languages.toml` inside your config directory
+- `auto-format = true` and other language settings are inherited from https://github.com/helix-editor/helix/blob/master/languages.toml, there is no need to repeat them
+- Specifying an external formatter will replace any formatting supplied by the language server
 
 
 # Prettier
@@ -44,5 +44,40 @@ https://github.com/patrickvane/shfmt
 [[language]]
 name = "bash"
 formatter = { command = 'shfmt', args = ["-i", "4"] }
+auto-format = true
+```
+
+# Deno
+
+https://deno.land/
+
+Deno's formatter is written in Rust and is *very* fast in comparison to Prettier. The formatting options are mostly copied from Prettier, but there are some differences.
+
+- To see available formatting options: `deno fmt --help`
+- `jsonc` and `jsx` are supported by Deno, but not currently supported by Helix
+
+```toml
+[[language]]
+name = "javascript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js" ] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json" ] }
+
+[[language]]
+name = "markdown"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md" ] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts" ] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx" ] }
 auto-format = true
 ```
