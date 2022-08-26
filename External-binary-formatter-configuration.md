@@ -90,7 +90,7 @@ auto-format = true
 
 https://github.com/patrickvane/shfmt
 
-The following has been tested:
+The following have been tested:
 
 ```toml
 [[language]]
