@@ -54,7 +54,7 @@ https://deno.land/
 Deno's formatter is written in Rust and is *very* fast in comparison to Prettier. The formatting options are mostly copied from Prettier, but there are some differences.
 
 - To see available formatting options: `deno fmt --help`
-- `jsonc` and `jsx` are supported by Deno, but not currently supported by Helix
+- `jsonc` is supported by Deno, but not currently by Helix
 
 ```toml
 [[language]]
@@ -74,6 +74,11 @@ auto-format = true
 [[language]]
 name = "typescript"
 formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts" ] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx" ] }
 auto-format = true
 
 [[language]]
