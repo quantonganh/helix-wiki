@@ -149,6 +149,8 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Fleetish](https://github.com/helix-editor/helix/blob/master/runtime/themes/fleetish.toml)
 ![Fleetish](https://user-images.githubusercontent.com/2630397/187092679-0da26823-e977-4745-8033-4a8c0643fe1f.png)
 
+### [Sonokai](https://github.com/helix-editor/helix/blob/master/runtime/themes/sonokai.toml)
+![Sonokai](https://github.com/p4ymak/previews/blob/main/helix_sonokai.png)
 
 ## Light
 
