@@ -146,6 +146,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Ayu Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/ayu_dark.toml)
 ![Ayu Dark](https://user-images.githubusercontent.com/12304998/181048699-cec5960e-3fe1-45cb-9e74-4b6871935a37.png)
 
+### [Fleetish](https://github.com/helix-editor/helix/blob/master/runtime/themes/fleetish.toml)
+![Fleetish](https://user-images.githubusercontent.com/2630397/187092679-0da26823-e977-4745-8033-4a8c0643fe1f.png)
+
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
