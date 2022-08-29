@@ -200,4 +200,4 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ![Emacs](https://user-images.githubusercontent.com/16749790/184476248-b248d3fd-b548-4c74-a362-7bd1eceb78fe.png)
 
 ### [PaperColor Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/papercolor-light.toml)
-![PaperColor Light](https://user-images.githubusercontent.com/66054069/185346919-19257e87-5339-4f2b-80c7-cdf70e8f0a31.png)
+![PaperColor Light](https://user-images.githubusercontent.com/66054069/187100712-23703b18-c1c8-45bf-8b5f-4809ad906ac8.png)
