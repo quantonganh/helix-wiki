@@ -25,7 +25,7 @@ go to last line:
 * helix: `ge`
 
 go to line start:
-* vim: `0` or `gg`
+* vim: `0`
 * helix: `gh`
 
 go to line first non-blank character:
