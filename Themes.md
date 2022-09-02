@@ -152,6 +152,9 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Sonokai](https://github.com/helix-editor/helix/blob/master/runtime/themes/sonokai.toml)
 ![Sonokai](https://github.com/p4ymak/previews/blob/main/helix_sonokai.png)
 
+### [Varua](https://github.com/helix-editor/helix/blob/master/runtime/themes/varua.toml)
+![Varua](https://user-images.githubusercontent.com/3883992/188232787-47266a28-7595-4730-a578-731d65e46f5f.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
