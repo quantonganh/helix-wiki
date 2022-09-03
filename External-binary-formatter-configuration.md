@@ -99,6 +99,7 @@ The following have been tested:
 ```toml
 [[language]]
 name = "bash"
+indent = { tab-width = 4, unit = "    " }
 formatter = { command = 'shfmt', args = ["-i", "4"] }
 auto-format = true
 ```
@@ -107,6 +108,7 @@ tabs:
 ```toml
 [[language]]
 name = "bash"
+indent = { tab-width = 4, unit = "\t" }
 formatter = { command = "shfmt" }
 auto-format = true
 ```
