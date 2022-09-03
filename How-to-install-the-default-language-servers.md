@@ -190,6 +190,13 @@ vscode-json-language-server, a language server for JSON and JSON schema
 npm i -g vscode-langservers-extracted
 ```
 
+Available settings can be found here: https://github.com/microsoft/vscode/blob/4f69cdf95a12cef48d405b38bf7812a7f297c310/extensions/json-language-features/server/src/jsonServer.ts#L183
+
+Usage
+```toml
+config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
+```
+
 ## tsserver
 
 https://github.com/theia-ide/typescript-language-server
