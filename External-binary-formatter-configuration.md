@@ -88,16 +88,38 @@ auto-format = true
 
 # shfmt
 
-https://github.com/patrickvane/shfmt
+https://github.com/mvdan/sh#shfmt or https://github.com/patrickvane/shfmt
 
 - `shfmt` formats shell programs
 - To see available formatting options: `shfmt -h`
 
 The following have been tested:
 
+4 spaces:
 ```toml
 [[language]]
 name = "bash"
 formatter = { command = 'shfmt', args = ["-i", "4"] }
+auto-format = true
+```
+
+tabs:
+```toml
+[[language]]
+name = "bash"
+formatter = { command = "shfmt" }
+auto-format = true
+```
+
+# fish_indent
+
+`fish_indent` is built into fish!
+
+The following has been tested:
+
+```toml
+[[language]]
+name = "fish"
+formatter = { command = "fish_indent" }
 auto-format = true
 ```
