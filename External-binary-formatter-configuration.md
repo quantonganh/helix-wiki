@@ -125,3 +125,14 @@ name = "fish"
 formatter = { command = "fish_indent" }
 auto-format = true
 ```
+
+# Black
+
+- `black` is an opinionated formatter for Python
+
+```toml
+[[language]]
+name = "python"
+formatter = { command = "black", args = ["--quiet", "-"] }
+auto-format = true
+```
