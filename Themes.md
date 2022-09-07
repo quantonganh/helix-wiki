@@ -155,6 +155,9 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Varua](https://github.com/helix-editor/helix/blob/master/runtime/themes/varua.toml)
 ![Varua](https://user-images.githubusercontent.com/3883992/188232787-47266a28-7595-4730-a578-731d65e46f5f.png)
 
+### [Rasmus](https://github.com/helix-editor/helix/blob/master/runtime/themes/rasmus.toml)
+![Rasmus](https://user-images.githubusercontent.com/1040966/188791282-838da14c-e23b-4938-88de-bce8da056033.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
