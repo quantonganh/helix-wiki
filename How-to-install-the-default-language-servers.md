@@ -234,28 +234,18 @@ On MacOS installation can also be done via `brew install jdtls`
 
 ## julials
 
-https://github.com/julia-vscode/julia-vscode
+https://github.com/julia-vscode/LanguageServer.jl
 
 LanguageServer.jl can be installed with `julia` and `Pkg`:
 
 ```sh
-julia --project=~/.julia/environments/nvim-lspconfig -e 'using Pkg; Pkg.add("LanguageServer")'
+julia -e 'using Pkg; Pkg.add("LanguageServer")'
 ```
-
-where `~/.julia/environments/nvim-lspconfig` is the location where
-the default configuration expects LanguageServer.jl to be installed.
 
 To update an existing install, use the following command:
 
 ```sh
-julia --project=~/.julia/environments/nvim-lspconfig -e 'using Pkg; Pkg.update()'
-```
-
-Note: In order to have LanguageServer.jl pick up installed packages or dependencies in a
-Julia project, you must make sure that the project is instantiated:
-
-```sh
-julia --project=/path/to/my/project -e 'using Pkg; Pkg.instantiate()'
+julia -e 'using Pkg; Pkg.update()'
 ```
 
 ## kotlin_language_server
