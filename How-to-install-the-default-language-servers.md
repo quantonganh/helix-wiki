@@ -197,6 +197,19 @@ Usage
 config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
 ```
 
+## jsonnet
+
+https://github.com/grafana/jsonnet-language-server
+
+A [Language Server Protocol (LSP)](https://langserver.org/) server for [Jsonnet](https://jsonnet.org/).
+
+Can be installed either via the [latest release binary](https://github.com/grafana/jsonnet-language-server/releases)
+or if you have golang installed, you can use:
+
+```sh
+go install github.com/grafana/jsonnet-language-server@latest
+```
+
 ## tsserver
 
 https://github.com/theia-ide/typescript-language-server
