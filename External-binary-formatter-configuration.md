@@ -136,3 +136,29 @@ name = "python"
 formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 ```
+
+# Rubocop
+
+A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+
+```toml
+[[language]]
+name = "ruby"
+formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "--fix", "--stderr"] }
+auto-format = true
+```
+
+Weird arguments:
+- `--stdin foo.rb`: Rubocop requires a filename for its reports, this is a dummy value to fulfill this. Call it whatever. Make it your own. Have fun with it.
+- `--stderr`: Rubocop absolutely ALWAYS prints any errors it identifies. This sends them to stderr, otherwise they'd show up in your editor.
+
+# StandardRB
+
+A Ruby formatter that supports very little configuration so we can stop arguing about format and get on with our jobs. It's a wrapper around Rubocop so commands are basically identical.
+
+```toml
+[[language]]
+name = "ruby"
+formatter = { command = "bundle", args = ["exec", "standardrb", "--stdin", "foo.rb", "--fix", "--stderr"] }
+auto-format = true
+```
