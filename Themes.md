@@ -158,6 +158,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Rasmus](https://github.com/helix-editor/helix/blob/master/runtime/themes/rasmus.toml)
 ![Rasmus](https://user-images.githubusercontent.com/1040966/188791282-838da14c-e23b-4938-88de-bce8da056033.png)
 
+### [PaperColor Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/papercolor-dark.toml)
+![PaperColor Dark](https://user-images.githubusercontent.com/66054069/189475946-d6e53025-282d-4b26-a848-ebffa4a8686e.png)
+
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
