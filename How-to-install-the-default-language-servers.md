@@ -444,7 +444,7 @@ npm install -g svelte-language-server
 
 https://taplo.tamasfe.dev/
 
-The toml language server included in [taplo-cli](https://taplo.tamasfe.dev/cli/introduction.html) can be installed via:
+The `full` version (with the language server) can be downloaded from:
 
 `binaries`: [taplo releases](https://github.com/tamasfe/taplo/releases)
 
@@ -452,16 +452,7 @@ The toml language server included in [taplo-cli](https://taplo.tamasfe.dev/cli/i
 ```sh
 cargo install taplo-cli --locked --features lsp
 ```
-
-`yarn`:
-```sh
-yarn global add @taplo/cli
-```
-
-`npm`:
-```sh
-npm install -g @taplo/cli
-```
+** The NPM versions of taplo do not contain the language server at this time
 
 Run `taplo lsp --help` for more info.
 
