@@ -4,15 +4,13 @@ For Helix to use these language servers they must first be installed onto your c
 
 Check if your operating system repository has them available, or install them manually following the instructions below.
 
+If your language server does not support stdio, you can use `netcat` as a drop-in proxy, just add this to your `languages.toml`:
+```toml
+[[language]]
+name = "example"
+language-server = { command = "nc", args = ["localhost", "6008"] }
+```
 Much of this information was originally sourced from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
-
-> If your language server does not support stdio, you can use `netcat` as a drop-in proxy, just add this to your languages.toml:
-> ```
-> [[language]]
-> name = "example"
-> ...
-> language-server = { command = "nc", args = ["localhost", "6008"] }
-> ```
 
 ## bashls
 
