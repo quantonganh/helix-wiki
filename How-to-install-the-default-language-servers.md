@@ -291,6 +291,20 @@ https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
 brew install lua-language-server
 ```
 
+## markdown
+ltex-ls provides grammar and spelling errors in markup documents
+
+https://valentjn.github.io/ltex/ltex-ls/installation.html
+
+```toml
+[[language]]
+name = "markdown"
+language-server = { command = "ltex-ls" }
+file-types = ["md"]
+scope = "source.markdown"
+roots = []
+```
+
 ## metals
 
 Scala language server with rich IDE features.
