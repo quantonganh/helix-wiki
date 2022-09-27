@@ -111,8 +111,6 @@ KEYS: All captial alphabet keys
 KEYS*: All KEYS other than U, K and C
 ```
 
-> DISCLAIMER: Might be outdated. Last edited as of 20th November, 2021.
-
 |Keys|Keys|
 |--|--|
 |`H`  |`M`      |
