@@ -131,7 +131,7 @@ KEYS*: All KEYS other than U, K and C
 |`C-l`|`C-\`    |
 |`C-;`|`C-{`    |
 |`C-'`|`C-}`    |
-|`C-:`|`C-\|`   |
+|`C-:`|`C-\|`    |
 |`C-"`|`C-g`    |
 |`C-v`|`C-h`    |
 |`C-.`|`C-n`    |
@@ -143,7 +143,7 @@ KEYS*: All KEYS other than U, K and C
 |`C-#`|`C-&`    |
 |`C-$`|`C-*`    |
 |`C-%`|`C-(`    |
-|'C-)'|`C-_`    |
+|`C-)`|`C-_`    |
 |`C-+`|`C-arrow`|
 |`A--`|`A-nums` |
 |`A-=`|`A-\`    |
