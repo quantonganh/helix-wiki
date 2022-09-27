@@ -1,6 +1,6 @@
-Current keymap ([KLE](http://www.keyboard-layout-editor.com/#/gists/fb432523c4e62a6d3babfdaa0152b5d0)):
+Current keymap ([KLE](http://www.keyboard-layout-editor.com/#/gists/0e45da1f7e56b54c7f287551415b3fa8)):
 
-![Preview](https://user-images.githubusercontent.com/43980777/156772280-9ac0c608-309d-4632-aab9-70dd7dac7e66.png)
+![preview](https://user-images.githubusercontent.com/91177333/192541110-19a94459-9467-41f6-bbd8-56d02e99ba32.png)
 
 We are still thinking about visual mode and there are some issues with kakoune and vim that we want to address.
 
@@ -131,38 +131,34 @@ KEYS*: All KEYS other than U, K and C
 |`C-l`|`C-\`    |
 |`C-;`|`C-{`    |
 |`C-'`|`C-}`    |
-|`C-:`|`C-\|`    |
+|`C-:`|`C-\|`   |
 |`C-"`|`C-g`    |
 |`C-v`|`C-h`    |
-|`C-b`|`C-.`    |
-|`C-n`|`C-/`    |
-|`C-m`|`C-<`    |
-|`C->`|`C-arrow`|
+|`C-.`|`C-n`    |
+|`C-/`|`C-m`    |
+|`C-<`|`C->`    |
 |`C-/`|`C-KEYS` |
 |`C-?`|`C-!`    |
 |`C-@`|`C-^`    |
 |`C-#`|`C-&`    |
 |`C-$`|`C-*`    |
 |`C-%`|`C-(`    |
-|`C-_`|`C-+`    |
+|'C-)'|`C-_`    |
+|`C-+`|`C-arrow`|
 |`A--`|`A-nums` |
 |`A-=`|`A-\`    |
 |`A-_`|`A-a`    |
-|`A-+`|`A-d`    |
+|`A-+`|`A-KEYS*`|
 |`A-~`|`A-f`    |
 |`A-q`|`A-g`    |
 |`A-w`|`A-h`    |
 |`A-e`|`A-j`    |
 |`A-r`|`A-k`    |
 |`A-t`|`A-l`    |
-|`A-y`|`A-:`    |
-|`A-u`|`A-'`    |
-|`A-i`|`A-"`    |
-|`A-o`|`A-z`    |
-|`A-p`|`A-x`    |
-|`A-[`|`A-c`    |
+|`A-y`|`A-'`    |
+|`A-u`|`A-"`    |
+|`A-[`|`A-z`    |
 |`A-]`|`A-v`    |
-|`A-n`|`A-KEYS*` |
 |`A-m`|`A-@`    |
 |`A-/`|`A-#`    |
 |`A-<`|`A-$`    |
@@ -170,5 +166,4 @@ KEYS*: All KEYS other than U, K and C
 |`A-?`|`A-\`    |
 |`A-{`|`A-}`    |
 |`A-^`|`A-*`    |
-|`A-&`|`A-arrow`|
-|`S-arrow`|`C-arrow`|
+|`A-&`|`S-arrow`|
