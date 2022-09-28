@@ -21,6 +21,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ![gruvbox.toml preview](https://github.com/jbaa/helix-gruvbox/blob/main/screenshot.png)
 
+### [Gruvbox Dark Hard](https://github.com/helix-editor/helix/blob/master/runtime/themes/gruvbox_dark_hard.toml)
+
+![gruvbox_dark_hard.toml preview](https://user-images.githubusercontent.com/1664/192896980-a075820c-4cb3-46b2-90a9-c4b641ad6484.png)
+
 ### [VSCode Dark+](https://github.com/helix-editor/helix/blob/master/runtime/themes/dark_plus.toml)
 
 ![dark_plus.toml preview](https://user-images.githubusercontent.com/67773714/124850220-3dbb1700-df6e-11eb-8ef2-b724ba015890.PNG)
