@@ -90,7 +90,7 @@ You can specify custom grammars per-project/per-directory by placing the `langua
 
 ==== How to write plugins / Is there a plugin system in place yet ?
 
-* It's currently under discussion, with the intention of implementing a Lisp dialect for it. The previous plans of using WebAssembly have been scrapped because it's too immature. Some links regarding past discussions:
+* The intention is to implement a Lisp dialect. The previous plans of using WebAssembly have been scrapped because it's too immature. Some links regarding past discussions:
  ** https://github.com/helix-editor/helix/issues/122[Initial discussion]
  ** https://github.com/helix-editor/helix/discussions/580[Pre-RFC discussion]
  ** https://github.com/helix-editor/helix/pull/455[Plugin system MVP]
