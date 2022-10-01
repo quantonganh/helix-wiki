@@ -17,6 +17,11 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ![onedark.toml preview](https://user-images.githubusercontent.com/23398472/121844415-9695e780-cd01-11eb-9e68-9a67b0a0b580.png)
 <sup>Font: mononoki</sup>
 
+### [Onedarker](https://github.com/helix-editor/helix/blob/master/runtime/themes/onedarker.toml)
+
+![onedarker.toml preview](https://user-images.githubusercontent.com/91177333/193414677-18132c40-889c-4077-a418-3d5682550346.png)
+
+
 ### [Gruvbox](https://github.com/helix-editor/helix/blob/master/runtime/themes/gruvbox.toml)
 
 ![gruvbox.toml preview](https://github.com/jbaa/helix-gruvbox/blob/main/screenshot.png)
