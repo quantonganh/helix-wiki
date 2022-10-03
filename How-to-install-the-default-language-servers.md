@@ -248,7 +248,7 @@ The `-data` parameter must be passed to `jdtls` and it must be different for eac
 ```toml
 [[language]]
 name = "java"
-language-server = { command = "jdtls", args = ["-data", "/home/my_user/.cache/jdtls/data/my_project"] }
+language-server = { command = "jdtls", args = ["-data", "/home/my_user/.cache/jdtls/my_project"] }
 ```
 
 Note: the `-data` parameter must be outside the project directory.
