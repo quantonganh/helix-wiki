@@ -239,12 +239,19 @@ Here's an example that disables type checking in JavaScript files.
 
 https://github.com/eclipse/eclipse.jdt.ls
 
-Installation instructions can be found on the [projects README](https://github.com/eclipse/eclipse.jdt.ls)
+Installation instructions can be found on the [projects README](https://github.com/eclipse/eclipse.jdt.ls).
 
-On MacOS installation can also be done via `brew install jdtls`
+On MacOS installation can also be done via `brew install jdtls`.
+
+The `-data` parameter must be passed to `jdtls` and it must be different for each project. This can be achieved by adding a `.helix/languages.toml` configuration to the projects root:
+
+```toml
+[[language]]
+name = "java"
+language-server = { command = "jdtls", args = ["-data", "/home/my_user/.cache/jdtls/data/my_project"] }
+```
 
 ## julials
-
 https://github.com/julia-vscode/LanguageServer.jl
 
 LanguageServer.jl can be installed with `julia` and `Pkg`:
