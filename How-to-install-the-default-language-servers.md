@@ -252,6 +252,7 @@ language-server = { command = "jdtls", args = ["-data", "/home/my_user/.cache/jd
 ```
 
 ## julials
+
 https://github.com/julia-vscode/LanguageServer.jl
 
 LanguageServer.jl can be installed with `julia` and `Pkg`:
