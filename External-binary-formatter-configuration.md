@@ -144,13 +144,15 @@ A Ruby static code analyzer and formatter, based on the community Ruby style gui
 ```toml
 [[language]]
 name = "ruby"
-formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "--fix", "--stderr"] }
+formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "--fix", "--stderr", "--fail-level", "fatal"] }
 auto-format = true
 ```
 
 Weird arguments:
 - `--stdin foo.rb`: Rubocop requires a filename for its reports, this is a dummy value to fulfill this. Call it whatever. Make it your own. Have fun with it.
 - `--stderr`: Rubocop absolutely ALWAYS prints any errors it identifies. This sends them to stderr, otherwise they'd show up in your editor.
+- `--fail-level`: Any error in the rubocop formatter will fail with errorcode 1. This can make you files not being able to save. raising the fail-evel to fatal will leave it on just for cases were rubocop is not working at all.
+
 
 # StandardRB
 
