@@ -243,7 +243,7 @@ Installation instructions can be found on the [projects README](https://github.c
 
 On MacOS installation can also be done via `brew install jdtls`.
 
-The `-data` parameter must be passed to `jdtls` and it must be different for each project. This can be achieved by adding a `.helix/languages.toml` configuration to the project root:
+For jdtls versions before 1.16.0: the `-data` parameter must be passed to `jdtls` and it must be different for each project. This can be achieved by adding a `.helix/languages.toml` configuration to the project root:
 
 ```toml
 [[language]]
