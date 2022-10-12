@@ -77,3 +77,19 @@ runInTerminal = true
 
 Test with: `debug-start binary target/debug/zellij`, for example.
 Status: start/stop debugging works, breakpoints work
+
+## Addendum: For users who can't make any of the above work
+
+To simply install the default debugger that will work out of the box you need to:
+
+1. Install `LLVM`.
+
+The easiest way to do this is to use the pre-compiled binaries from the releases page: https://github.com/llvm/llvm-project/releases, for example, at the time of writing the latest version for Linux is: https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.2/clang+llvm-15.0.2-x86_64-unknown-linux-gnu-rhel86.tar.xz
+
+2. Unpack the entire directory somewhere accessible in your system `$PATH` and create a symbolic link
+
+If you have `~/bin` in your path then unpack `LLVM` there and make a symlink to the `lldb-vscode` file that lives in the `bin` directory.
+
+![Screenshot from 2022-10-12 19-43-46](https://user-images.githubusercontent.com/12832280/195423210-fea5970c-9453-4a8d-8acc-b0cfd5d626e6.png)
+
+Now when you run the debugger in Helix select `launch debug target` and `binary`, then for example, to debug Rust, `target/debug` and the name of your executable.
