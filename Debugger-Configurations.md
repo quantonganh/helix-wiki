@@ -86,7 +86,7 @@ To simply install the default debugger that will work out of the box you need to
 
 The easiest way to do this is to use the pre-compiled binaries from the releases page: https://github.com/llvm/llvm-project/releases, for example, at the time of writing the latest version for Linux is: https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.2/clang+llvm-15.0.2-x86_64-unknown-linux-gnu-rhel86.tar.xz
 
-2. Unpack the entire directory somewhere accessible in your system `$PATH` and create a symbolic link
+2. Unpack the entire directory somewhere accessible in your system `$PATH` and create a symbolic link.
 
 If you have `~/bin` in your path then unpack `LLVM` there and make a symlink to the `lldb-vscode` file that lives in the `bin` directory.
 
