@@ -92,4 +92,4 @@ If you have `~/bin` in your path then unpack `LLVM` there and make a symlink to 
 
 ![Screenshot from 2022-10-12 19-43-46](https://user-images.githubusercontent.com/12832280/195423210-fea5970c-9453-4a8d-8acc-b0cfd5d626e6.png)
 
-Now when you run the debugger in Helix select `launch debug target` and `binary`, then for example, to debug Rust, `target/debug` and the name of your executable.
+Now when you run the debugger in Helix select `launch debug target` and `binary`, then for example, to debug Rust, `target/debug/` and the name of your executable.
