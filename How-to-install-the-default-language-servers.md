@@ -145,6 +145,14 @@ https://github.com/elm-tooling/elm-language-server#installation
 npm install -g elm elm-test elm-format @elm-tooling/elm-language-server
 ```
 
+## gleam
+
+Starting with version `0.21.0`, the Gleam language server is built-in to the `gleam` command-line interface. [See the official announcement for more information.](https://gleam.run/news/v0.21-introducing-the-gleam-language-server/)
+
+```sh
+gleam lsp
+```
+
 ## gopls
 
 Google's lsp server for golang.
