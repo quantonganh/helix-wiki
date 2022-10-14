@@ -1,4 +1,4 @@
-Since https://github.com/helix-editor/helix/pull/2942 Helix can use external formatting programs available in the system `$PATH`.
+Helix can use external formatting programs available in the system `$PATH`.
 
 - Add these settings to `languages.toml` inside your config directory
 - `auto-format = true` and other language settings are inherited from [languages.toml](https://github.com/helix-editor/helix/blob/master/languages.toml), there is no need to repeat them
