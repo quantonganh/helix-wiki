@@ -170,6 +170,8 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [PaperColor Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/papercolor-dark.toml)
 ![PaperColor Dark](https://user-images.githubusercontent.com/66054069/189475946-d6e53025-282d-4b26-a848-ebffa4a8686e.png)
 
+### [Heisenberg](https://github.com/helix-editor/helix/blob/master/runtime/themes/heisenberg.toml)
+![heisenberg](https://user-images.githubusercontent.com/70972101/195756102-c66333ba-a25a-49d1-a1bd-328927b2ccba.png)
 
 ## Light
 
