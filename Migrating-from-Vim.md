@@ -6,6 +6,10 @@ delete a word:
 * vim: `dw`
 * helix: `wd`
 
+change a word:
+* vim: `cw`
+* helix: `ec` or `wc` (includes the whitespace after the word)
+
 delete a character:
 * vim: `x`
 * helix: `d` or `;d`(`;` reduces the selection to a single char)
