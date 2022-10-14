@@ -302,9 +302,12 @@ brew install lua-language-server
 ```
 
 ## markdown
-ltex-ls provides grammar and spelling errors in markup documents
 
-https://valentjn.github.io/ltex/ltex-ls/installation.html
+The default language server is Marksman: https://github.com/artempyanykh/marksman
+
+Binaries are available from: https://github.com/artempyanykh/marksman/releases
+
+As an alternative you can use `ltex-ls` which provides grammar and spelling errors in markup documents: https://valentjn.github.io/ltex/ltex-ls/installation.html
 
 ```toml
 [[language]]
