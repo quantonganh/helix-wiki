@@ -12,6 +12,14 @@ language-server = { command = "nc", args = ["localhost", "6008"] }
 ```
 Much of this information was originally sourced from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
 
+## AWK Language Server
+
+https://github.com/Beaglefoot/awk-language-server
+
+```sh
+npm install -g "awk-language-server@>=0.5.2"
+```
+
 ## bashls
 
 Language server for bash, written using tree sitter in typescript.
