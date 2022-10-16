@@ -6,3 +6,4 @@ Some other helpful resources:
 - Official documentation (latest release): https://docs.helix-editor.com/
 - Official documentation (master branch): https://docs.helix-editor.com/master
 - Official matrix space: https://matrix.to/#/#helix-community:matrix.org
+- Unofficial 中文文档：https://zjp-cn.github.io/helix-book
