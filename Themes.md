@@ -10,7 +10,7 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ### [Bogster](https://github.com/helix-editor/helix/blob/master/runtime/themes/bogster.toml)
 
-![bogster.toml preview](https://user-images.githubusercontent.com/46892771/121819540-e5099e80-cc8d-11eb-806a-35b84a440762.png)
+![bogster.toml preview](https://user-images.githubusercontent.com/46892771/196022898-e1f30825-5ae8-4124-977b-5669e3192e4d.png)
 
 ### [Bogster Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/bogster_light.toml)
 
