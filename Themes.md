@@ -12,6 +12,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ![bogster.toml preview](https://user-images.githubusercontent.com/46892771/121819540-e5099e80-cc8d-11eb-806a-35b84a440762.png)
 
+### [Bogster Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/bogster_light.toml)
+
+![bogster_light.toml preview](https://user-images.githubusercontent.com/46892771/196022807-31d014f4-a52c-4545-a71b-f0f8591877ba.png)
+
 ### [Onedark](https://github.com/helix-editor/helix/blob/master/runtime/themes/onedark.toml)
 
 ![onedark.toml preview](https://user-images.githubusercontent.com/23398472/121844415-9695e780-cd01-11eb-9e68-9a67b0a0b580.png)
