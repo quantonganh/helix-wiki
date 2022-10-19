@@ -177,6 +177,9 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Heisenberg](https://github.com/helix-editor/helix/blob/master/runtime/themes/heisenberg.toml)
 ![heisenberg](https://user-images.githubusercontent.com/70972101/195756102-c66333ba-a25a-49d1-a1bd-328927b2ccba.png)
 
+### [Kanagawa](https://github.com/helix-editor/helix/blob/master/runtime/themes/kanagawa.toml)
+![Kanagawa](https://user-images.githubusercontent.com/1857826/196779182-96f6e179-54ee-4721-a0a6-a44e5401faec.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
