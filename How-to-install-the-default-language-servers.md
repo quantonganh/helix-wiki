@@ -32,6 +32,12 @@ https://github.com/mads-hartmann/bash-language-server
 npm i -g bash-language-server
 ```
 
+## bass
+
+https://github.com/vito/bass/releases/latest
+
+Bass's language server is built in to the `bass` command as `bass --lsp`. See the [Guide](https://bass-lang.org/guide.html#getting-started) for more info.
+
 ## clangd
 
 https://clangd.llvm.org/installation.html
