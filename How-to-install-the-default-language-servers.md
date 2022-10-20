@@ -74,6 +74,14 @@ CMake LSP Implementation.
 
 https://github.com/regen100/cmake-language-server
 
+## D
+
+Serve-D.
+
+https://github.com/Pure-D/serve-d
+
+Install using ```dub fetch serve-d```
+
 ## dartls
 
 Language server for dart.
