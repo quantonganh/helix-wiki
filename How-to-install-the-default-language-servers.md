@@ -446,6 +446,18 @@ rust-analyzer (aka rls 2.0), a language server for Rust
 
 See [docs](https://github.com/rust-analyzer/rust-analyzer/tree/master/docs/user#settings) for extra settings.
 
+## scss
+
+SCSS's language server is available from the vscode-langservers-extracted collection:
+
+https://github.com/hrsh7th/vscode-langservers-extracted
+
+You may install it by running:
+
+```sh
+npm i -g vscode-langservers-extracted
+```
+
 ## slint-lsp
 
 <https://github.com/slint-ui/slint/tree/HEAD/tools/lsp>  
