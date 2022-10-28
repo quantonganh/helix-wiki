@@ -440,9 +440,21 @@ This server accepts configuration via the `settings` key.
 
 ## rust_analyzer
 
+rust-analyzer (aka rls 2.0), a language server for Rust
+
 https://github.com/rust-analyzer/rust-analyzer
 
-rust-analyzer (aka rls 2.0), a language server for Rust
+You can install using `rustup` from Rust 1.64 onwards: https://blog.rust-lang.org/2022/09/22/Rust-1.64.0.html#rust-analyzer-is-now-available-via-rustup
+
+Add the following to your `languages.toml` to enable [clippy](<https://github.com/rust-lang/rust-clippy>) on save:
+
+```toml
+[[language]]
+name = "rust"
+
+[language.config]
+checkOnSave = { command = "clippy" }
+```
 
 See [docs](https://github.com/rust-analyzer/rust-analyzer/tree/master/docs/user#settings) for extra settings.
 
