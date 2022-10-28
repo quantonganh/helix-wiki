@@ -5,6 +5,17 @@ Helix can use external formatting programs available in the system `$PATH`.
 - Specifying an external formatter will replace any formatting supplied by the language server
 - Windows users [*may* need to specify the full path to the executable](https://github.com/helix-editor/helix/discussions/3198#discussioncomment-3325065)
 
+# Clippy
+
+<https://github.com/rust-lang/rust-clippy>
+
+```toml
+[[language]]
+name = "rust"
+
+[language.config]
+checkOnSave = { command = "clippy" }
+```
 
 # Prettier
 
