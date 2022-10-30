@@ -78,13 +78,13 @@ You can use `:log-open` to open the log in Helix.
 | `C:\Users\\____\AppData\Local\helix\helix.log`
 |===
 
-==== Adding a language
+==== Add a language
 
 Check https://docs.helix-editor.com/guides/adding_languages.html
 
-==== Changing grammars at project level
+==== Change grammars at project level
 
-You can specify custom grammars per-project/per-directory by placing the `languages.toml` in `.helix/languages.toml` at the root of your project.
+You can specify custom grammars per-project/per-directory by placing the `languages.toml` in `.helix/languages.toml` at the root of your project. See https://docs.helix-editor.com/languages.html
 
 == General Questions
 
