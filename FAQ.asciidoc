@@ -101,7 +101,7 @@ You can specify custom grammars per-project/per-directory by placing the `langua
 
 ==== When will the next release be?
 
-We shoot to cut a release around every two months. The version is in CalVer format, so if the current latest release is `22.05`, the next should be `22.07` (July, 2022).
+We shoot to cut a release around every two to three months. We use CalVer versioning, so if the current release is v22.08, it was released in August of 2022.
 
 == Installation
 
