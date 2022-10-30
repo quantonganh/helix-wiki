@@ -86,6 +86,10 @@ Check https://docs.helix-editor.com/guides/adding_languages.html
 
 You can specify custom grammars per-project/per-directory by placing the `languages.toml` in `.helix/languages.toml` at the root of your project. See https://docs.helix-editor.com/languages.html
 
+==== Close the LSP documentation popup
+
+`Ctrl-c` closes popups like LSP signature-help, hover, and auto-completion.
+
 == General Questions
 
 ==== How to write plugins / Is there a plugin system in place yet ?
