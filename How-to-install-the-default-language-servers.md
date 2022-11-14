@@ -207,6 +207,10 @@ https://intelephense.com/
 npm install -g intelephense
 ```
 
+## JavaScript
+
+See [tsserver](#tsserver)
+
 ## jsonls
 
 https://github.com/hrsh7th/vscode-langservers-extracted
