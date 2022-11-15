@@ -63,10 +63,32 @@ npm i -g vscode-langservers-extracted
 https://github.com/omnisharp/omnisharp-roslyn
 OmniSharp server based on Roslyn workspaces
 
-`omnisharp-roslyn` can be installed by downloading and extracting a release from [here](https://github.com/OmniSharp/omnisharp-roslyn/releases).
-Omnisharp can also be built from source by following the instructions [here](https://github.com/omnisharp/omnisharp-roslyn#downloading-omnisharp).
+`omnisharp-roslyn` can be installed by downloading and extracting a release for your platform from [here](https://github.com/OmniSharp/omnisharp-roslyn/releases).
+Omnisharp can also be built from source by following the instructions [here](https://github.com/omnisharp/omnisharp-roslyn#downloading-omnisharp). 
 
 Omnisharp requires the [dotnet-sdk](https://dotnet.microsoft.com/download) to be installed.
+
+### Usage
+
+#### Windows
+
+To use Omnisharp, you only need to have the `OmniSharp` binary in your environment path. The default `languages.toml` configuration should work fine:
+
+```
+[[language]]
+name = "c-sharp"
+language-server.command = "OmniSharp"
+```
+
+#### MacOS
+
+Because OmniSharp is not shipped as a binary file, instead as `OmniSharp.dll`, it needs to be run using `dotnet`. As such the `languages.toml` config should be changed to this:
+
+```
+[[language]]
+name = "c-sharp"
+language-server = { command = "dotnet", args = [ "path/to/OmniSharp.dll", "--languageserver" ] }
+```
 
 ## cmake
 
