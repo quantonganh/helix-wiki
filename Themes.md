@@ -186,7 +186,8 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [hex_toxic](https://github.com/helix-editor/helix/blob/master/runtime/themes/hex_toxic.toml)
 ![image](https://user-images.githubusercontent.com/41680373/197332993-fb2cc159-a0b2-4494-a033-815c30d03d59.png)
 
-
+### [Mellow](https://github.com/helix-editor/helix/blob/master/runtime/themes/mellow.toml)
+![Mellow](https://user-images.githubusercontent.com/1040966/202980903-f2133c2f-d5c9-4c27-88ea-3d11779da36f.png)
 
 ## Light
 
