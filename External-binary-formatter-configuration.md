@@ -163,3 +163,14 @@ name = "ruby"
 formatter = { command = "bundle", args = ["exec", "standardrb", "--stdin", "foo.rb", "--fix", "--stderr"] }
 auto-format = true
 ```
+
+# SyntaxTree
+
+Another formatting option for Ruby is [SyntaxTree](https://github.com/ruby-syntax-tree/syntax_tree), which is used "under the hood" by [Prettier for Ruby](https://github.com/prettier/plugin-ruby). It provides a few [configuration](https://github.com/ruby-syntax-tree/syntax_tree#configuration) options, either passed in as arguments or with a local `.streerc` file.
+
+```toml
+[[language]]
+name = "ruby"
+formatter = { command = "bundle", args = ["exec", "stree", "format"] }
+auto-format = true
+```
