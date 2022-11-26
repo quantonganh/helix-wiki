@@ -134,6 +134,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ![Night Owl](https://user-images.githubusercontent.com/96927121/166098928-a92d11e4-9ab8-4ac1-8875-db533a271ba5.png)
 
+### [Nightfox](https://github.com/helix-editor/helix/blob/master/runtime/themes/nightfox.toml)
+
+![Nightfox](https://user-images.githubusercontent.com/3693220/204081448-0005c7f3-cbe5-4167-ba29-d0db7665c44f.png)
+
 ### [Catppuccin Frappe](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_frappe.toml)
 ![Catppuccin Frappe](https://user-images.githubusercontent.com/17070041/182328493-c8f66d1c-11ff-4032-8fd2-596c203056eb.png)
 ### [Catppuccin Macchiato](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_macchiato.toml)
