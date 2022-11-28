@@ -189,6 +189,17 @@ https://github.com/elm-tooling/elm-language-server#installation
 npm install -g elm elm-test elm-format @elm-tooling/elm-language-server
 ```
 
+## gdscript
+
+We need to install nc or netcat. Port 6005 is used in Godot 4.0 beta6. You will find the right value in the editor configuration panel.
+
+```toml
+[[language]]
+name = "gdscript"
+roots = ["project.godot"]
+language-server = { command = "nc", args = ["localhost", "6005"], language-id = "gdscript" }
+```
+
 ## gleam
 
 Starting with version `0.21.0`, the Gleam language server is built-in to the `gleam` command-line interface. [See the official announcement for more information.](https://gleam.run/news/v0.21-introducing-the-gleam-language-server/)
