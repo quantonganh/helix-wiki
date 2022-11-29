@@ -193,6 +193,9 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Mellow](https://github.com/helix-editor/helix/blob/master/runtime/themes/mellow.toml)
 ![Mellow](https://user-images.githubusercontent.com/1040966/202980903-f2133c2f-d5c9-4c27-88ea-3d11779da36f.png)
 
+### [Zenburn](https://github.com/helix-editor/helix/blob/master/runtime/themes/zenburn.toml)
+![Zenburn](https://user-images.githubusercontent.com/1242604/200637342-2a1f5905-5adc-4c29-82cf-b3413cf26e5f.png)
+
 ## Light
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
@@ -248,6 +251,3 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ### [PaperColor Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/papercolor-light.toml)
 ![PaperColor Light](https://user-images.githubusercontent.com/66054069/187100712-23703b18-c1c8-45bf-8b5f-4809ad906ac8.png)
-
-### [Zenburn](https://github.com/helix-editor/helix/blob/master/runtime/themes/zenburn.toml)
-![Zenburn](https://user-images.githubusercontent.com/1242604/200637342-2a1f5905-5adc-4c29-82cf-b3413cf26e5f.png)
