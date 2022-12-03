@@ -23,11 +23,11 @@ If a terminal isn't in the table, it doesn't mean that Helix doesn't work in it,
 # Terminal Features
 ## Focus Events
 [Focus events](https://terminalguide.namepad.de/mode/p1004/) can be emitted by a terminal when it gains or loses focus at the OS level.
-When [3178](https://github.com/helix-editor/helix/pull/3178) lands, Helix will add an option to save when it loses focus.
+[3178](https://github.com/helix-editor/helix/pull/3178) added an option to save when it loses focus.
 
 ## Bracketed Paste
 [Bracketed paste](https://en.wikipedia.org/wiki/Bracketed-paste) lets a terminal tell an application that incoming characters are from the user pasting, not from typing.
-When [3233](https://github.com/helix-editor/helix/pull/3233) lands, Helix will use it to keep pasted text from being autoformatted and to make pasting much faster.
+[3233](https://github.com/helix-editor/helix/pull/3233) keeps pasted text from being autoformatted making pasting much faster.
 
 ## Set OS Clipboard
 [Set clipboard](https://terminalguide.namepad.de/seq/osc-52/) lets an application running in a terminal set the clipboard in the surrounding OS.
