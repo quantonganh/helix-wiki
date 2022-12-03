@@ -27,7 +27,6 @@ formatter = { command = 'prettier', args = ["--parser", "json"] }
 [[language]]
 name = "css"
 formatter = { command = 'prettier', args = ["--parser", "css"] }
-auto-format = true
 
 [[language]]
 name = "javascript"
