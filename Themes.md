@@ -163,8 +163,8 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Ayu Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/ayu_dark.toml)
 ![Ayu Dark](https://user-images.githubusercontent.com/12304998/181048699-cec5960e-3fe1-45cb-9e74-4b6871935a37.png)
 
-### [Fleetish](https://github.com/helix-editor/helix/blob/master/runtime/themes/fleetish.toml)
-![Fleetish](https://user-images.githubusercontent.com/2630397/187092679-0da26823-e977-4745-8033-4a8c0643fe1f.png)
+### [Fleet Dark](https://github.com/helix-editor/helix/blob/master/runtime/themes/fleet_dark.toml)
+![Fleet Dark](https://user-images.githubusercontent.com/2630397/206378943-35355546-ca55-431d-88e1-4064e2dc0f29.png)
 
 ### [Sonokai](https://github.com/helix-editor/helix/blob/master/runtime/themes/sonokai.toml)
 ![Sonokai](https://github.com/p4ymak/previews/blob/main/helix_sonokai.png)
