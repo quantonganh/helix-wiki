@@ -44,8 +44,6 @@ To make search fully case sensitive add the following to `config.toml`:
 smart-case = false
 ```
 
-_Note:_ If you use LSP autocomplete, only the first match will be auto-completed. If you want to auto-complete all matches, you currently have to https://github.com/helix-editor/helix/issues/2016#issuecomment-1136920354[*use this workaround*].
-
 ==== Strip whitespace or format the buffer
 
 If the LSP for the language is active and supports autoformat, and the auto-format option is on (check your and the repo's `languages.toml`), then this will happen on save. If there is an alternative command you can run in the terminal to format, you can pipe the whole buffer to it manually with `%|<formatter><enter>`.
