@@ -196,7 +196,7 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Zenburn](https://github.com/helix-editor/helix/blob/master/runtime/themes/zenburn.toml)
 ![Zenburn](https://user-images.githubusercontent.com/1242604/200637342-2a1f5905-5adc-4c29-82cf-b3413cf26e5f.png)
 
-### [dark_high_contrast](https://github.com/helix-editor/helix/blob/master/runtime/themes/dark_high_contrast.toml)
+### [Dark high contrast](https://github.com/helix-editor/helix/blob/master/runtime/themes/dark_high_contrast.toml)
 ![dark_high_contrast](https://user-images.githubusercontent.com/106496265/206957640-55a02aa8-0c9c-43bd-86d2-8f03ee6a108d.png)
 
 ## Light
