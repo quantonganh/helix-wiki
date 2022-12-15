@@ -1,14 +1,15 @@
 Helix requires a fairly modern terminal for things like [truecolor support](https://github.com/termstandard/colors). Helix also uses some optional terminal features to enhance its operation. The terminals in this table all meet Helix's basic requirements. The table summarizes their support for the optional features.
 
-|           |[Focus Events]|[Bracketed Paste]|[Set OS Clipboard]|
-|-----------|--------------|-----------------|------------------|
-|[Alacritty]| ✅           | ✅              | ✅               |
-|[Kitty]    | ✅           | ✅              | ✅               |
-|[Wezterm]  | ✅           | ✅              | ✅               |
+|           |[Focus Events]|[Bracketed Paste]|[Set OS Clipboard]|[Extended Underlines]|
+|-----------|--------------|-----------------|------------------|------------------|
+|[Alacritty]| ✅           | ✅              | ✅               | ✅               |
+|[Kitty]    | ✅           | ✅              | ✅               | ✅               |
+|[Wezterm]  | ✅           | ✅              | ✅               | ✅               |
 
 [Focus Events]: #focus-events
 [Bracketed Paste]: #bracketed-paste
 [Set OS Clipboard]: #set-os-clipboard
+[Extended Underlines]: #extended-underlines
 [Alacritty]: #alacritty
 [Kitty]: #kitty
 [Wezterm]: #wezterm
@@ -38,6 +39,9 @@ That's `xclip` in X Windows, `wl-copy` on Wayland, `pbcopy` on MacOS, and direct
 
 On systems where that isn't availble, Helix will use this terminal feature to set the clipboard when [3220](https://github.com/helix-editor/helix/pull/3220) lands.
 For example if you're SSH'd into a remote host, Helix will be able to set your OS clipboard if your terminal supports this feature.
+
+## Extended Underlines
+Some terminals support [Kitty's extended underlines.](https://sw.kovidgoyal.net/kitty/underlines/)
 
 # Terminals
 ## Alacritty
