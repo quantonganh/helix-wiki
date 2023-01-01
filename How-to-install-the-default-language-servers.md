@@ -200,6 +200,23 @@ roots = ["project.godot"]
 language-server = { command = "nc", args = ["localhost", "6005"], language-id = "gdscript" }
 ```
 
+**For Windows 10/11**
+
+Use `winget` to install `nmap`. This will install `ncat`.
+
+```powershell
+winget install nmap
+```
+
+In Godot 3.5.1 port used is `6008`. You have to change the command used also. Instead of `nc` type `ncat` and modify the port. You can find the port when you open the Godot editor and navigate here: `Editor -> Editor Settings -> Network -> Language Server -> Remote Port`.
+
+```toml
+[[language]]
+name = "gdscript"
+roots = ["project.godot"]
+language-server = { command = "ncat", args = ["localhost", "6008"], language-id = "gdscript" }
+```
+
 ## gleam
 
 Starting with version `0.21.0`, the Gleam language server is built-in to the `gleam` command-line interface. [See the official announcement for more information.](https://gleam.run/news/v0.21-introducing-the-gleam-language-server/)
