@@ -458,6 +458,24 @@ Further instructions can be found in the [project's README](https://github.com/p
 
 Note: This is a community fork of `pyls`.
 
+## pyright
+
+Pyright is a fast type checker and language server from microsoft, meant for large Python source bases. It is the lsp part of pylance (the vscode python daemon).
+
+https://github.com/microsoft/pyright
+
+The language server can be installed by running `npm install --location=global pyright`
+
+It has odd handling of client configuration so the following addition to `languages.toml` is required:
+
+```toml
+[[language]]
+name = "python"
+roots = ["pyproject.toml"]
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+config = {} # <- this is the important line
+```
+
 ## R languageserver
 
 An implementation of the Language Server Protocol for R.
