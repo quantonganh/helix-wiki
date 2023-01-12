@@ -92,7 +92,14 @@ You can specify custom grammars per-project/per-directory by placing the `langua
 
 ==== How to write plugins / Is there a plugin system in place yet ?
 
-* The intention is to implement a Lisp dialect. The previous plans of using WebAssembly have been scrapped because it's too immature. Some links regarding past discussions:
+* Current status as of December 2022:
+____
+There's two prototypes we're exploring that could potentially exist side by side: a typed list/ML-like implementation for scripting and a Rust based interface for things that require performance. Could potentially run both in wasm but I'm personally a bit unhappy with how big wasm implementations are, easily several orders of magnitude compared to the editor
+
+_Originally posted in https://github.com/helix-editor/helix/discussions/3806#discussioncomment-4438007_
+____
+
+* Past discussions:
  ** https://github.com/helix-editor/helix/issues/122[Initial discussion]
  ** https://github.com/helix-editor/helix/discussions/580[Pre-RFC discussion]
  ** https://github.com/helix-editor/helix/pull/455[Plugin system MVP]
