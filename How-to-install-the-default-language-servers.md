@@ -404,13 +404,12 @@ roots = []
 
 ## metals
 
-Scala language server with rich IDE features.
+Scala language server with rich IDE features. 
 
 https://scalameta.org/metals/
 
-See full instructions in the Metals documentation:
-
-https://scalameta.org/metals/docs/editors/vim.html#using-an-alternative-lsp-client
+1. Install [Coursier](https://get-coursier.io/)
+2. Run `coursier install metals`
 
 ## mint
 
