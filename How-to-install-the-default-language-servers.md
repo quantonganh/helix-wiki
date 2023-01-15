@@ -457,6 +457,13 @@ Further instructions can be found in the [project's README](https://github.com/p
 
 Note: This is a community fork of `pyls`.
 
+### python-lsp-ruff
+
+[python-lsp/python-lsp-ruff](https://github.com/python-lsp/python-lsp-ruff) provides support for [ruff (below)](#ruff).
+See [installation instructions](https://github.com/python-lsp/python-lsp-ruff#install).
+
+The plugin supports [some configuration](https://github.com/python-lsp/python-lsp-ruff#configuration), but it should work out of the box after installing.
+
 ## pyright
 
 Pyright is a fast type checker and language server from microsoft, meant for large Python source bases. It is the lsp part of pylance (the vscode python daemon).
@@ -495,7 +502,8 @@ auto-format = true
 
 **Note** that ruff lacks basic features and is meant to be used alongside another LSP ([helix-editor/helix#5399 (comment)](https://github.com/helix-editor/helix/issues/5399#issuecomment-1373470899), [charliermarsh/ruff-lsp#23](https://github.com/charliermarsh/ruff-lsp/issues/23), [charliermarsh/ruff-lsp#23 (comment)](https://github.com/charliermarsh/ruff-lsp/issues/23#issuecomment-1367903296)).
 
-[pylsp](#pylsp) recently gained support for ruff via the [python-lsp/python-lsp-ruff plugin](https://github.com/python-lsp/python-lsp-ruff).
+As an alternative, [pylsp](#pylsp) has support for ruff via a plugin.
+[See instructions for Helix here](#python-lsp-ruff)
 
 ## R languageserver
 
