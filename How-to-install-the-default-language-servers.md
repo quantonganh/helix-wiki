@@ -475,6 +475,28 @@ language-server = { command = "pyright-langserver", args = ["--stdio"] }
 config = {} # <- this is the important line
 ```
 
+## ruff
+
+[charliermarsh/ruff](https://github.com/charliermarsh/ruff) is an extremely fast Python linter, written in Rust (see [installation instructions](https://github.com/charliermarsh/ruff#installation-and-usage)).
+
+A LSP for it is available through [charliermarsh/ruff-lsp](https://github.com/charliermarsh/ruff-lsp) (see [installation instructions](https://github.com/charliermarsh/ruff-lsp#installation-and-usage)).
+
+A suggested Helix configuration using ruff-lsp is given below (based on [charliermarsh/ruff-lsp#example-helix](https://github.com/charliermarsh/ruff-lsp#example-helix)):
+
+```toml
+[[language]]
+name = "python"
+language-server = { command = "ruff-lsp" }
+
+# In case you'd like to use ruff alongside black for code formatting:
+formatter = { command = "black", args = ["--quiet", "-"] }
+auto-format = true
+```
+
+**Note** that ruff lacks basic features and is meant to be used alongside another LSP ([helix-editor/helix#5399 (comment)](https://github.com/helix-editor/helix/issues/5399#issuecomment-1373470899), [charliermarsh/ruff-lsp#23](https://github.com/charliermarsh/ruff-lsp/issues/23), [charliermarsh/ruff-lsp#23 (comment)](https://github.com/charliermarsh/ruff-lsp/issues/23#issuecomment-1367903296)).
+
+[pylsp](#pylsp) recently gained support for ruff via the [python-lsp/python-lsp-ruff plugin](https://github.com/python-lsp/python-lsp-ruff).
+
 ## R languageserver
 
 An implementation of the Language Server Protocol for R.
