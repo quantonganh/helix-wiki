@@ -448,18 +448,21 @@ npm install -g @prisma/language-server
 
 ## pylsp
 
-A Python 3.6+ implementation of the Language Server Protocol.
+[python-lsp/python-lsp-server](https://github.com/python-lsp/python-lsp-server) (`pylsp`) is a fork of the python-language-server project (`pyls`), maintained by the Spyder IDE team and the community.
+It is a Python 3.7+ implementation of the [Language Server Protocol](https://github.com/Microsoft/language-server-protocol) (versions <1.4 should still work with Python 3.6).
 
-https://github.com/python-lsp/python-lsp-server
+Installation instructions can be found in the [project's README](https://github.com/python-lsp/python-lsp-server#installation), but it consists of installing a package using `pip` (or [`pipx`](https://github.com/pypa/pipx)):
 
-The language server can be installed via `pipx install 'python-lsp-server[all]'`.
-Further instructions can be found in the [project's README](https://github.com/python-lsp/python-lsp-server).
+```console
+pip install -U 'python-lsp-server[all]'
+```
 
-Note: This is a community fork of `pyls`.
+The `[all]` above refers to the optional providers supported.
+You can fine-tune what to install following the instructions [here](https://github.com/python-lsp/python-lsp-server#installation).
 
 ### python-lsp-ruff
 
-[python-lsp/python-lsp-ruff](https://github.com/python-lsp/python-lsp-ruff) provides support for [ruff (below)](#ruff).
+[python-lsp/python-lsp-ruff](https://github.com/python-lsp/python-lsp-ruff) is a plugin for pylsp that provides support for [ruff (see below)](#ruff).
 See [installation instructions](https://github.com/python-lsp/python-lsp-ruff#install).
 
 The plugin supports [some configuration](https://github.com/python-lsp/python-lsp-ruff#configuration), but it should work out of the box after installing.
