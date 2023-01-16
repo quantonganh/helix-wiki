@@ -38,6 +38,37 @@ https://github.com/vito/bass/releases/latest
 
 Bass's language server is built in to the `bass` command as `bass --lsp`. See the [Guide](https://bass-lang.org/guide.html#getting-started) for more info.
 
+## bqn
+
+bqnlsp: https://git.sr.ht/~detegr/bqnlsp
+, which depends on
+[cbqn-sys](https://github.com/Detegr/cbqn-sys) and 
+[cbqn-rs](https://github.com/Detegr/cbqn-rs)
+
+Sample settings in `languages.toml`
+
+```toml
+[[language]]
+name = "bqn"
+scope = "scope.bqn"
+injection-regex = "^bqn"
+file-types = ["bqn"]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+roots = ["*.bqn"]
+language-server = { command = "bqnlsp", language-id = "bqn" }
+```
+
+Note: you can input the glyphs by [key remapping](https://docs.helix-editor.com/remapping.html) in `config.toml` like:
+
+```toml
+[keys.insert."\\"]
+"=" = [ ":insert-output /bin/echo -n ×", "move_char_right" ]
+minus = [ ":insert-output /bin/echo -n ÷", "move_char_right" ]
+"+" = [ ":insert-output /bin/echo -n ⋆", "move_char_right" ]
+...
+```
+
 ## clangd
 
 https://clangd.llvm.org/installation.html
