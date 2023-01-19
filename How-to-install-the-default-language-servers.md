@@ -238,6 +238,7 @@ Use `winget` to install `nmap`. This will install `ncat`.
 ```powershell
 winget install nmap
 ```
+Once installed, make sure the folder that `nmap` is now located at is added to your PATH, as `winget` fails to do this automatically for some people.
 
 In Godot 3.5.1 port used is `6008`. You have to change the command used also. Instead of `nc` type `ncat` and modify the port. You can find the port when you open the Godot editor and navigate here: `Editor -> Editor Settings -> Network -> Language Server -> Remote Port`.
 
