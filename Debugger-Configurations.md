@@ -93,3 +93,11 @@ If you have `~/bin` in your path then unpack `LLVM` there and make a symlink to 
 ![Screenshot from 2022-10-12 19-43-46](https://user-images.githubusercontent.com/12832280/195423210-fea5970c-9453-4a8d-8acc-b0cfd5d626e6.png)
 
 Now when you run the debugger in Helix select `launch debug target` and `binary`, then for example, to debug Rust, `target/debug/` and the name of your executable.
+
+## Addendum 2: For users who installed a debugger successfully but cannot attach to a running process
+
+If on Linux, trying to attach to a running process for debugging and being refused by the adapter due to a message similar to `Operation not permitted`, ensure `ptrace` is not blocking you. This can be done by following this [Microsoft troubleshooting guide](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
+
+Summary of steps needed to be done are one of:
+1. Ensure `/proc/sys/kernel/yama/ptrace_scope` has a `0` as value, instead of 1
+2. If the file is not present or Yama is not used, use `libcap2-bin` to assign ptrace specific permissions to the debug adapter (overriding the command used by Helix, usually set in a `languages.toml` file).
