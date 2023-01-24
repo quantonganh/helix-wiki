@@ -27,6 +27,19 @@ select = "underline"
 j = { k = "normal_mode" }
 ----
 
+==== Map unicode characters like `ö` to keybinding
+
+- The TOML standard requires that these characters are quoted:
++
+[source,toml]
+----
+[keys.normal]
+ö = "extend_line_up" # This line is invalid TOML
+"ö" = "extend_line_up" # This line is valid TOML
+----
+
+
+
 ==== Use my terminal's 16 color palette as a theme
 
 - You can use color names like `red`, `light-blue`, etc to refer to
