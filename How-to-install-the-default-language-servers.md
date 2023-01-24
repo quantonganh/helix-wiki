@@ -38,7 +38,7 @@ https://github.com/vito/bass/releases/latest
 
 Bass's language server is built in to the `bass` command as `bass --lsp`. See the [Guide](https://bass-lang.org/guide.html#getting-started) for more info.
 
-## bqn
+## BQN
 
 bqnlsp: https://git.sr.ht/~detegr/bqnlsp
 , which depends on
@@ -50,12 +50,13 @@ Sample settings in `languages.toml`
 ```toml
 [[language]]
 name = "bqn"
-scope = "scope.bqn"
-injection-regex = "^bqn"
 file-types = ["bqn"]
 comment-token = "#"
 indent = { tab-width = 2, unit = "  " }
-roots = ["*.bqn"]
+shebangs = ["bqn", "cbqn"]
+roots = []
+injection-regex = "bqn"
+scope = "scope.bqn"
 language-server = { command = "bqnlsp", language-id = "bqn" }
 ```
 
