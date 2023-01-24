@@ -96,11 +96,15 @@ Now when you run the debugger in Helix select `launch debug target` and `binary`
 
 ### MacOS users
 
+1. Install LLVM:
+
 ```
 brew install llvm
 ```
 
-Then add `/usr/local/opt/llvm/bin` your PATH, usually in your ~/.bashrc or .zshrc file.
+2. Add `/usr/local/opt/llvm/bin` your PATH, usually in your ~/.bashrc or .zshrc file.
+
+3. Restart your shell
 
 ## Addendum 2: For users who installed a debugger successfully but cannot attach to a running process
 
