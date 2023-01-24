@@ -94,6 +94,14 @@ If you have `~/bin` in your path then unpack `LLVM` there and make a symlink to 
 
 Now when you run the debugger in Helix select `launch debug target` and `binary`, then for example, to debug Rust, `target/debug/` and the name of your executable.
 
+### MacOS users
+
+```
+brew install llvm
+```
+
+Then add `/usr/local/opt/llvm/bin` your PATH, usually in your ~/.bashrc or .zshrc file.
+
 ## Addendum 2: For users who installed a debugger successfully but cannot attach to a running process
 
 If on Linux, trying to attach to a running process for debugging and being refused by the adapter due to a message similar to `Operation not permitted`, ensure `ptrace` is not blocking you. This can be done by following this [Microsoft troubleshooting guide](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
