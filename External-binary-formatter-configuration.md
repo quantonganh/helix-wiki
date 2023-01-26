@@ -38,6 +38,15 @@ name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 ```
+
+The following appears to work for `.tsx` files, but is not officially supported by Prettier:
+
+```toml
+[[language]]
+name = "tsx"
+formatter = { command = 'prettier', args = ["--stdin-filename", "file.tsx"] }
+auto-format = true
+```
 # Deno
 
 https://deno.land/
