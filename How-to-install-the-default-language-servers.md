@@ -264,6 +264,8 @@ Google's lsp server for golang.
 
 https://github.com/golang/tools/tree/master/gopls
 
+The folder for go packages (typically $HOME/go/bin) will need to be added to your PATH as well
+
 ## html
 
 https://github.com/hrsh7th/vscode-langservers-extracted
