@@ -18,6 +18,14 @@ Helix requires a fairly modern terminal for things like [truecolor support](http
 These terminals don't meet the basic reqirements:
 * [Apple's Terminal.app](#terminalapp)
 
+### Chinese, Japanese and Korean script
+
+These terminals have been reported to exhibit rendering issues for CJK characters on Windows:
+* PowerShell ([#5753](https://github.com/helix-editor/helix/issues/5753))
+* Alacritty ([#5753 comment](https://github.com/helix-editor/helix/issues/5753#issuecomment-1411461592))
+
+Wezterm has been recommended for use on Windows in response.
+
 ## Adding terminals
 If a terminal isn't in the table, it doesn't mean that Helix doesn't work in it, just that no one has tested it. To add a terminal, please add an entry for it to the [terminals section](#terminals) with the version you used and when you tested.
 
