@@ -44,7 +44,7 @@ The following appears to work for `.tsx` files, but is not officially supported 
 ```toml
 [[language]]
 name = "tsx"
-formatter = { command = 'prettier', args = ["--stdin-filename", "file.tsx"] }
+formatter = { command = 'prettier', args = ["--stdin-filepath", "file.tsx"] }
 auto-format = true
 ```
 # Deno
