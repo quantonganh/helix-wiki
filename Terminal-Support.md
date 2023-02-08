@@ -15,7 +15,7 @@ Helix requires a fairly modern terminal for things like [truecolor support](http
 [Wezterm]: #wezterm
 
 ## Unsupported Terminals
-These terminals don't meet the basic reqirements:
+These terminals don't meet the basic requirements:
 * [Apple's Terminal.app](#terminalapp)
 
 ### Chinese, Japanese and Korean script
