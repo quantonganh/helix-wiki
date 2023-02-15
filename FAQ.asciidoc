@@ -121,6 +121,10 @@ ____
 
 We shoot to cut a release around every two to three months. We use CalVer versioning, so if the current release is v22.08, it was released in August of 2022.
 
+==== Is a Vi/Vim keymap planned?
+
+We are not interested in supporting alternative paradigms. The core of Helix's editing is based on `Selection -> Action`, and it would require extensive changes to create a true Vi/Vim keymap. However, there is a third-party keymap: https://github.com/LGUG2Z/helix-vim
+
 == Installation
 
 === Error when building tree-sitter language grammars in Fedora
