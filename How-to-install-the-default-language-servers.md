@@ -432,10 +432,24 @@ As an alternative you can use `ltex-ls` which provides grammar and spelling erro
 [[language]]
 name = "markdown"
 language-server = { command = "ltex-ls" }
-file-types = ["md"]
-scope = "source.markdown"
-roots = []
 ```
+
+Additional configuration settings can be added, for example to disable the profanity rules and add the word 'builtin' to two dictionaries:
+
+```toml
+config = { ltex.disabledRules = { "en-US" = [
+  "PROFANITY",
+], "en-GB" = [
+  "PROFANITY",
+] }, ltex.dictionary = { "en-US" = [
+  "builtin",
+], "en-GB" = [
+  "builtin",
+] } }
+```
+
+Currently the ability to add to your user dictionary while running Helix is not supported, so adding words to the config is the best workaround.
+
 
 ## metals
 
