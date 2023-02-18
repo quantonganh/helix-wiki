@@ -12,10 +12,6 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ![bogster.toml preview](https://user-images.githubusercontent.com/46892771/196022898-e1f30825-5ae8-4124-977b-5669e3192e4d.png)
 
-### [Bogster Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/bogster_light.toml)
-
-![bogster_light.toml preview](https://user-images.githubusercontent.com/46892771/196022807-31d014f4-a52c-4545-a71b-f0f8591877ba.png)
-
 ### [Onedark](https://github.com/helix-editor/helix/blob/master/runtime/themes/onedark.toml)
 
 ![onedark.toml preview](https://user-images.githubusercontent.com/23398472/121844415-9695e780-cd01-11eb-9e68-9a67b0a0b580.png)
@@ -200,6 +196,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ![dark_high_contrast](https://user-images.githubusercontent.com/106496265/206957640-55a02aa8-0c9c-43bd-86d2-8f03ee6a108d.png)
 
 ## Light
+
+### [Bogster Light](https://github.com/helix-editor/helix/blob/master/runtime/themes/bogster_light.toml)
+
+![bogster_light.toml preview](https://user-images.githubusercontent.com/46892771/196022807-31d014f4-a52c-4545-a71b-f0f8591877ba.png)
 
 ### [Ingrid](https://github.com/helix-editor/helix/blob/master/runtime/themes/ingrid.toml)
 
