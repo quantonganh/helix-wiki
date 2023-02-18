@@ -426,6 +426,11 @@ The default language server is Marksman: https://github.com/artempyanykh/marksma
 
 Binaries are available from: https://github.com/artempyanykh/marksman/releases
 
+`mac`
+```sh
+brew install marksman
+```
+
 As an alternative you can use `ltex-ls` which provides grammar and spelling errors in markup documents: https://valentjn.github.io/ltex/ltex-ls/installation.html
 
 ```toml
