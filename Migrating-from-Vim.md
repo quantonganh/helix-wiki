@@ -71,6 +71,12 @@ block selection:
 * vim: `C-v`, then expand your selection vertically and horizontally
 * helix: There's no "block selection" mode, so instead you'd use multiple cursors. Expand your block selection vertically by adding new cursors on the line below with `C`, and horizontally using standard movements
 
+search "foo" and replace with "bar" in the current selection:
+* vim: `:s/foo/bar/g<ret>`
+* helix: `sfoo<ret>cbar<esc>,`
+
+Explanation: `s` will open a prompt in the command line for a regex, and select all matches inside the selection (effectively adding a new cursor on each match). Pressing enter will then finalise this step, and allow the `c` to change the selections to "bar". When done, go back to normal mode with `<esc>`, and keep only the primary selection with `,` (remove all the additional cursors).
+
 Helix enables easy movement in `insert` mode without switching to `normal` mode. When in `insert` mode, you can use the same set of keybindings as in [GNU Readline Emacs Key Binding](https://en.wikipedia.org/wiki/GNU_Readline#Emacs_keyboard_shortcuts). Such as `Ctrl-b`, `Ctrl-f`, `Alt-b`, `Alt-f`, `Ctrl-d`, `Alt-d`, `Ctrl-a`, `Ctrl-e`. For more, you can see the [book](https://docs.helix-editor.com/keymap.html#insert-mode). So if you are previously an Emacs user, or used this keybindings in the Bash/Zsh shell, or on macOS, you should feel at home in Helix.
 
 
