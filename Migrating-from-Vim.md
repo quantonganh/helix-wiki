@@ -81,6 +81,10 @@ select the whole file:
 * vim: `ggVG`
 * helix: `%`
 
+reload a file from disk:
+* vim: `:e<ret>`
+* helix: `:reload<ret>` (or `:reload-all<ret>` to reload all the buffers)
+
 Helix enables easy movement in `insert` mode without switching to `normal` mode. When in `insert` mode, you can use the same set of keybindings as in [GNU Readline Emacs Key Binding](https://en.wikipedia.org/wiki/GNU_Readline#Emacs_keyboard_shortcuts). Such as `Ctrl-b`, `Ctrl-f`, `Alt-b`, `Alt-f`, `Ctrl-d`, `Alt-d`, `Ctrl-a`, `Ctrl-e`. For more, you can see the [book](https://docs.helix-editor.com/keymap.html#insert-mode). So if you are previously an Emacs user, or used this keybindings in the Bash/Zsh shell, or on macOS, you should feel at home in Helix.
 
 
