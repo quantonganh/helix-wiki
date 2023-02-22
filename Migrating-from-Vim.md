@@ -85,6 +85,10 @@ reload a file from disk:
 * vim: `:e<ret>`
 * helix: `:reload<ret>` (or `:reload-all<ret>` to reload all the buffers)
 
+setting a bookmark (bookmarking a location):
+* vim: `ma` to set bookmark with name a. Use `` `a `` to go back to this bookmarked location.
+* helix: there are no named bookmarks, but you can save a location in the jumplist with `C-s`, then jump back to that location by opening the jumplist picker with `<space>-j`, or back in the jumplist with `C-o` and forward with `C-i`
+
 Helix enables easy movement in `insert` mode without switching to `normal` mode. When in `insert` mode, you can use the same set of keybindings as in [GNU Readline Emacs Key Binding](https://en.wikipedia.org/wiki/GNU_Readline#Emacs_keyboard_shortcuts). Such as `Ctrl-b`, `Ctrl-f`, `Alt-b`, `Alt-f`, `Ctrl-d`, `Alt-d`, `Ctrl-a`, `Ctrl-e`. For more, you can see the [book](https://docs.helix-editor.com/keymap.html#insert-mode). So if you are previously an Emacs user, or used this keybindings in the Bash/Zsh shell, or on macOS, you should feel at home in Helix.
 
 
