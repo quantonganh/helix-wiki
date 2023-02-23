@@ -221,7 +221,11 @@ https://github.com/elm-tooling/elm-language-server#installation
 npm install -g elm elm-test elm-format @elm-tooling/elm-language-server
 ```
 
-## unison language server
+## unison
+
+Unison language server.
+
+More info: https://github.com/unisonweb/unison/blob/trunk/docs/language-server.markdown
 
 Requirements:
 - `ucm` started
