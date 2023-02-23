@@ -221,6 +221,28 @@ https://github.com/elm-tooling/elm-language-server#installation
 npm install -g elm elm-test elm-format @elm-tooling/elm-language-server
 ```
 
+## unison language server
+
+Requirements:
+- `ucm` started
+- `ncat`, `nc` or `netcat`
+
+To `~/.config/helix/languages.toml` append this code:
+
+```toml
+[[language]]
+name = "unison"
+scope = "source.unison"
+injection-regex = "unison"
+file-types = ["u"]
+shebangs = []
+roots = []
+auto-format = false
+comment-token = "--"
+indent = { tab-width = 4, unit = "    " }
+language-server = { command = "ncat", args = ["localhost", "5757"] }
+```
+
 ## gdscript
 
 We need to install nc or netcat. Port 6005 is used in Godot 4.0 beta6. You will find the right value in the editor configuration panel.
