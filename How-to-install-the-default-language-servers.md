@@ -631,7 +631,15 @@ https://github.com/rust-analyzer/rust-analyzer
 You can install using `rustup` from Rust 1.64 onwards: https://blog.rust-lang.org/2022/09/22/Rust-1.64.0.html#rust-analyzer-is-now-available-via-rustup:
 
 1. `rustup component add rust-analyzer`, currently (using rustup 1.25.1) this does not automatically add the binary to your PATH.
-2. Symlink the location of the newly installed binary into your PATH. For example: `sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer`
+2. Symlink the location of the newly installed binary into your PATH. For example: `sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer`. Alternatively, you can bypass creating a symlink by altering the language server command in `languages.toml` like so:
+```toml
+[[language]]
+name = "rust"
+
+[language.language-server]
+command = "rustup"
+args = ["run", "stable", "rust-analyzer"]
+```
 
 Add the following to your `languages.toml` to enable [clippy](<https://github.com/rust-lang/rust-clippy>) on save:
 
