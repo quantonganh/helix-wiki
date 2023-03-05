@@ -230,7 +230,7 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ### [OneLight](https://github.com/helix-editor/helix/blob/master/runtime/themes/onelight.toml)
 
-<img width="715" alt="WX20220427-212817@2x" src="https://user-images.githubusercontent.com/716514/165530761-3e8f3464-ceb8-4314-99b0-1a832664ca27.png">
+![20230305-225817@2x](https://user-images.githubusercontent.com/716514/222968245-982ff7c4-c348-44c7-b36e-dda9d3620194.png)
 
 ### [Acme](https://github.com/helix-editor/helix/blob/master/runtime/themes/acme.toml)
 
