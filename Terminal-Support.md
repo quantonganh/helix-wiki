@@ -2,7 +2,7 @@ Helix requires a fairly modern terminal for things like [truecolor support](http
 
 |           |[Focus Events]|[Bracketed Paste]|[Set OS Clipboard]|[Extended Underlines]|[Enhanced Keyboard Protocol]|
 |-----------|--------------|-----------------|------------------|---------------------|----------------------------|
-|[Alacritty]| ✅           | ✅              | ✅               | ✅ (partial)        | ❌                         |
+|[Alacritty]| ✅           | ✅              | ✅               | 🆗 (partial)        | ❌                         |
 |[Kitty]    | ✅           | ✅              | ✅               | ✅                  | ✅                         |
 |[Wezterm]  | ✅           | ✅              | ✅               | ✅                  | ✅ (with config)           |
 
