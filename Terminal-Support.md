@@ -10,6 +10,7 @@ Helix requires a fairly modern terminal for things like [truecolor support](http
 [Bracketed Paste]: #bracketed-paste
 [Set OS Clipboard]: #set-os-clipboard
 [Extended Underlines]: #extended-underlines
+[Enhanced Keyboard Protocol]: #enhanced-keyboard-protocol
 [Alacritty]: #alacritty
 [Kitty]: #kitty
 [Wezterm]: #wezterm
