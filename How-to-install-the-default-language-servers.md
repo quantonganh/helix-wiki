@@ -647,11 +647,11 @@ Add the following to your `languages.toml` to enable [clippy](<https://github.co
 [[language]]
 name = "rust"
 
-[language.config]
-check = { command = "clippy" }
+[language.config.check]
+command = "clippy"
 ```
 
-See [docs](https://rust-analyzer.github.io/manual.html) for extra settings. Everything under the rust-analyzer key goes under language.config key in helix (for example, `rust-analyzer.check.command = "clippy"` is put into the `language.toml` as above.)
+See [docs](https://rust-analyzer.github.io/manual.html) for extra settings. Everything under the rust-analyzer key goes under language.config key in helix (for example, `rust-analyzer.check.command = "clippy"` is translated into the `language.toml` as above.)
 
 ## scss
 
