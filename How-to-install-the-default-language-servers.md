@@ -651,7 +651,7 @@ name = "rust"
 check = { command = "clippy" }
 ```
 
-See [docs](https://github.com/rust-analyzer/rust-analyzer/tree/master/docs/user#settings) for extra settings.
+See [docs](https://rust-analyzer.github.io/manual.html) for extra settings. Everything under the rust-analyzer key goes under language.config key in helix (for example, `rust-analyzer.check.command = "clippy"` is put into the `language.toml` as above.)
 
 ## scss
 
