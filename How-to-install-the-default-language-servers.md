@@ -648,7 +648,7 @@ Add the following to your `languages.toml` to enable [clippy](<https://github.co
 name = "rust"
 
 [language.config]
-checkOnSave = { command = "clippy" }
+check = { command = "clippy" }
 ```
 
 See [docs](https://github.com/rust-analyzer/rust-analyzer/tree/master/docs/user#settings) for extra settings.
