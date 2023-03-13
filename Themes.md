@@ -34,6 +34,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ![dark_plus.toml preview](https://user-images.githubusercontent.com/67773714/124850220-3dbb1700-df6e-11eb-8ef2-b724ba015890.PNG)
 
+### [Molokai](https://github.com/helix-editor/helix/blob/master/runtime/themes/molokai.toml)
+
+![molokai.toml preview](https://user-images.githubusercontent.com/19353212/224791089-eacb7fb4-8484-4f1e-a7bd-1896b58ccf7d.png)
+
 ### [Monokai](https://github.com/helix-editor/helix/blob/master/runtime/themes/monokai.toml)
 
 ![monokai.toml preview](https://user-images.githubusercontent.com/67773714/130168602-7fe53f80-8538-4a18-83d7-ec0f260e38f9.PNG)
