@@ -674,6 +674,15 @@ npm i -g vscode-langservers-extracted
 cargo install slint-lsp
 ```
 
+## smithy-language-server
+
+For Smithy projects the following LSP is used:
+https://github.com/disneystreaming/smithy-language-server
+
+[coursier](https://get-coursier.io/) must be installed so that the language server can be launched. To install coursier please see their [installation instructions](https://get-coursier.io/docs/cli-installation#native-launcher).
+Since coursier will take care of everything else, no other steps are necessary.
+
+
 ## sourcekit-lsp and swift-format
 
 A language server for Swift, formatting provided via swift-format
