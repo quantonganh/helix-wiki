@@ -67,7 +67,7 @@ Note: you can input the glyphs by [key remapping](https://docs.helix-editor.com/
 "=" = [ ":insert-output /bin/echo -n ×", "move_char_right" ]
 minus = [ ":insert-output /bin/echo -n ÷", "move_char_right" ]
 "+" = [ ":insert-output /bin/echo -n ⋆", "move_char_right" ]
-...
+# ...
 ```
 
 ## clangd
