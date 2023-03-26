@@ -94,7 +94,7 @@ If you have `~/bin` in your path then unpack `LLVM` there and make a symlink to 
 
 Now when you run the debugger in Helix select `launch debug target` and `binary`, then for example, to debug Rust, `target/debug/` and the name of your executable.
 
-### MacOS users
+### macOS users
 
 1. Install LLVM: `brew install llvm`
 2. Add `/usr/local/opt/llvm/bin` your PATH, usually in your ~/.bashrc or .zshrc file.
