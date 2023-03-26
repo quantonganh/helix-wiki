@@ -498,12 +498,13 @@ https://www.mint-lang.com
 Install Mint using the [instructions](https://www.mint-lang.com/install).
 The language server is included since version 0.12.0.
 
-## nimlsp
+## Nim
 
-https://github.com/PMunch/nimlsp
+https://github.com/nim-lang/langserver
 
 ```sh
-nimble install nimlsp
+# May require choosenim
+nimble install nimlangserver
 ```
 
 ## ocamllsp
