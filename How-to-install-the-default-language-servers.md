@@ -568,7 +568,7 @@ config = {} # <- this is the important line
 
 ## regols (OpenPolicyAgent)
 
-Is an implementation of the language server protocol for OpenPolicyAgent's rego.
+An implementation of the language server protocol for OpenPolicyAgent's rego.
 
 You can download it from its [releases page](https://github.com/kitagry/regols/releases), or
 
