@@ -566,6 +566,16 @@ language-server = { command = "pyright-langserver", args = ["--stdio"] }
 config = {} # <- this is the important line
 ```
 
+## regols (OpenPolicyAgent)
+
+Is an implementation of the language server protocol for OpenPolicyAgent's rego.
+
+You can download it from its [releases page](https://github.com/kitagry/regols/releases), or
+
+```sh
+$ go install github.com/kitagry/regols@latest
+```
+
 ## ruff
 
 [charliermarsh/ruff](https://github.com/charliermarsh/ruff) is an extremely fast Python linter, written in Rust (see [installation instructions](https://github.com/charliermarsh/ruff#installation-and-usage)).
