@@ -13,8 +13,7 @@ As of `v2.7.1` these languages are supported:
 
 `flow|babel|babel-flow|babel-ts|typescript|acorn|espree|meriyah|css|less|scss|json|json5|json-stringify|graphql|markdown|mdx|vue|yaml|glimmer|html|angular|lwc`
 
-The following have been tested:
-Note: the args `--parser` is unlikely needed.
+The following have been tested: *Note: the args `--parser` is unlikely needed.*
 
 ```toml
 [[language]]
@@ -43,7 +42,7 @@ auto-format = true
 ```toml
 [[language]]
 name = "tsx"
-formatter = { command = 'prettier' }
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 ```
 
