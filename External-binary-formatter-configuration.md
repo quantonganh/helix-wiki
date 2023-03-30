@@ -14,6 +14,7 @@ As of `v2.7.1` these languages are supported:
 `flow|babel|babel-flow|babel-ts|typescript|acorn|espree|meriyah|css|less|scss|json|json5|json-stringify|graphql|markdown|mdx|vue|yaml|glimmer|html|angular|lwc`
 
 The following have been tested:
+Note: the args `--parser` is unlikely needed.
 
 ```toml
 [[language]]
@@ -39,14 +40,19 @@ formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 ```
 
-The following appears to work for `.tsx` files, but is not officially supported by Prettier:
-
 ```toml
 [[language]]
 name = "tsx"
-formatter = { command = 'prettier', args = ["--stdin-filepath", "file.tsx"] }
+formatter = { command = 'prettier' }
 auto-format = true
 ```
+
+Note: For **Windows** you may need to add `.cmd` to the command, example:
+
+```
+command = 'prettier.cmd'
+```
+
 # Deno
 
 https://deno.land/
