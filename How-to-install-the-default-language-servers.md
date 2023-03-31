@@ -23,11 +23,11 @@ npm install -g "awk-language-server@>=0.5.2"
 
 ## Bash
 
-Language server for bash, written using tree sitter in typescript.
+Language server for Bash, written using tree-sitter in TypeScript.
 
 https://github.com/mads-hartmann/bash-language-server
 
-`bash-language-server` can be installed via `npm`:
+`bash-language-server` can be installed via `NPM`:
 
 ```sh
 npm i -g bash-language-server
@@ -41,8 +41,8 @@ Bass's language server is built in to the `bass` command as `bass --lsp`. See th
 
 ## BQN
 
-bqnlsp: https://git.sr.ht/~detegr/bqnlsp
-, which depends on
+bqnlsp: https://git.sr.ht/~detegr/bqnlsp, which depends on:
+
 [cbqn-sys](https://github.com/Detegr/cbqn-sys) and 
 [cbqn-rs](https://github.com/Detegr/cbqn-rs)
 
@@ -78,7 +78,7 @@ https://clangd.llvm.org/installation.html
 **NOTE:** Clang >= 9 is recommended!
 
 clangd relies on a [JSON compilation database](https://clang.llvm.org/docs/JSONCompilationDatabase.html) specified
-as compile_commands.json or, for simpler projects, a compile_flags.txt.
+as `compile_commands.json` or, for simpler projects, a `compile_flags.txt`.
 For details on how to automatically generate one using CMake look [here](https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html). Alternatively, you can use [Bear](https://github.com/rizsotto/Bear).
 
 ## CSS
@@ -179,7 +179,7 @@ config = { enable = true, lint = true, unstable = true }
 language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
 ```
 
-Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a deno lsp extension https://deno.land/manual/language_server/overview.
+Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a Deno lsp extension https://deno.land/manual/language_server/overview.
 
 ## Docker
 
@@ -250,7 +250,7 @@ language-server = { command = "ncat", args = ["localhost", "5757"] }
 
 ## GDScript
 
-We need to install nc or netcat. Port 6005 is used in Godot 4.0 beta6. You will find the right value in the editor configuration panel.
+We need to install `nc` or `netcat`. Port 6005 is used in Godot 4.0 beta6. You will find the right value in the editor configuration panel.
 
 ```toml
 [[language]]
@@ -287,7 +287,7 @@ gleam lsp
 
 ## Go
 
-Google's lsp server for golang.
+Google's LSP server for golang.
 
 https://github.com/golang/tools/tree/master/gopls
 
@@ -381,13 +381,13 @@ Here's an example that disables type checking in JavaScript files.
   "exclude": ["node_modules"]
 }
 ```
-## Java Eclipse JDT Language Server
+## Java
 
 https://github.com/eclipse/eclipse.jdt.ls
 
 Installation instructions can be found on the [projects README](https://github.com/eclipse/eclipse.jdt.ls).
 
-On MacOS installation can also be done via `brew install jdtls`.
+On macOS installation can also be done via `brew install jdtls`.
 
 For `jdtls` versions older than `1.16.0`: the `-data` parameter must be passed to `jdtls` and it must be different for each project. This can be achieved by adding a `.helix/languages.toml` configuration to the project root:
 
@@ -421,7 +421,7 @@ A Kotlin language server which was developed for internal usage and
 released afterward. Maintaining is not done by the original author,
 but by fwcd.
 
-It is built via gradle and developed on github.
+It is built via gradle and developed on GitHub.
 Source and additional description:
 https://github.com/fwcd/kotlin-language-server
 
@@ -466,7 +466,7 @@ name = "markdown"
 language-server = { command = "ltex-ls" }
 ```
 
-Additional configuration settings can be added, for example to disable the profanity rules and add the word 'builtin' to two dictionaries:
+Additional configuration settings can be added, for example to disable the profanity rules and add the word `builtin` to two dictionaries:
 
 ```toml
 config = { ltex.disabledRules = { "en-US" = [
@@ -480,7 +480,7 @@ config = { ltex.disabledRules = { "en-US" = [
 ] } }
 ```
 
-Currently the ability to add to your user dictionary while running Helix is not supported, so adding words to the config is the best workaround.
+Currently, the ability to add to your user dictionary while running Helix is not supported, so adding words to the config is the best workaround.
 
 
 ## Scala
@@ -551,7 +551,7 @@ The plugin supports [some configuration](https://github.com/python-lsp/python-ls
 
 ## Python - pyright
 
-Pyright is a fast type checker and language server from microsoft, meant for large Python source bases. It is the lsp part of pylance (the vscode python daemon).
+Pyright is a fast type checker and language server from Microsoft, meant for large Python source bases. It is the LSP part of pylance (the VS Code python daemon).
 
 https://github.com/microsoft/pyright
 
@@ -571,7 +571,7 @@ config = {} # <- this is the important line
 
 [charliermarsh/ruff](https://github.com/charliermarsh/ruff) is an extremely fast Python linter, written in Rust (see [installation instructions](https://github.com/charliermarsh/ruff#installation-and-usage)).
 
-A LSP for it is available through [charliermarsh/ruff-lsp](https://github.com/charliermarsh/ruff-lsp) (see [installation instructions](https://github.com/charliermarsh/ruff-lsp#installation-and-usage)).
+An LSP for it is available through [charliermarsh/ruff-lsp](https://github.com/charliermarsh/ruff-lsp) (see [installation instructions](https://github.com/charliermarsh/ruff-lsp#installation-and-usage)).
 
 A suggested Helix configuration using ruff-lsp is given below (based on [charliermarsh/ruff-lsp#example-helix](https://github.com/charliermarsh/ruff-lsp#example-helix)):
 
@@ -622,7 +622,7 @@ Install via `raco`: `raco pkg install racket-langserver`
 
 https://github.com/rescript-lang/rescript-vscode
 
-ReScript language server
+// ReScript language server.
 
 ## Nix
 
@@ -711,9 +711,9 @@ No additional configuration is needed, though note to use the same toolchain for
 
 https://solargraph.org/
 
-solargraph, a language server for Ruby
+Solargraph, a language server for Ruby
 
-You can install solargraph via gem install.
+You can install Solargraph via gem install.
 
 ```sh
 gem install --user-install solargraph
@@ -747,7 +747,7 @@ The `full` version (with the language server) can be downloaded from:
 ```sh
 cargo install taplo-cli --locked --features lsp
 ```
-** The NPM versions of taplo do not contain the language server at this time
+** The NPM versions of taplo does not contain the language server at this time
 
 Run `taplo lsp --help` for more info.
 
@@ -764,7 +764,7 @@ cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
 
 https://github.com/vuejs/vetur/tree/master/server
 
-The Vue language server `vls` can be installed via npm:
+The Vue language server `vls` can be installed via NPM:
 
 ```sh
 npm install -g vls
