@@ -1,3 +1,4 @@
+
 To show the list of default language servers for your version of Helix please use `hx --health`.
 
 For Helix to use these language servers they must first be installed onto your computer. Once installed they will be used automatically with no further setup needed.
@@ -12,7 +13,7 @@ language-server = { command = "nc", args = ["localhost", "6008"] }
 ```
 Much of this information was originally sourced from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
 
-## AWK Language Server
+## AWK
 
 https://github.com/Beaglefoot/awk-language-server
 
@@ -20,7 +21,7 @@ https://github.com/Beaglefoot/awk-language-server
 npm install -g "awk-language-server@>=0.5.2"
 ```
 
-## bashls
+## Bash
 
 Language server for bash, written using tree sitter in typescript.
 
@@ -32,7 +33,7 @@ https://github.com/mads-hartmann/bash-language-server
 npm i -g bash-language-server
 ```
 
-## bass
+## Bass
 
 https://github.com/vito/bass/releases/latest
 
@@ -80,7 +81,7 @@ clangd relies on a [JSON compilation database](https://clang.llvm.org/docs/JSONC
 as compile_commands.json or, for simpler projects, a compile_flags.txt.
 For details on how to automatically generate one using CMake look [here](https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html). Alternatively, you can use [Bear](https://github.com/rizsotto/Bear).
 
-## cssls
+## CSS
 
 https://github.com/hrsh7th/vscode-langservers-extracted
 
@@ -112,7 +113,7 @@ name = "c-sharp"
 language-server.command = "OmniSharp"
 ```
 
-#### MacOS
+#### macOS
 
 Because OmniSharp is not shipped as a binary file, instead as `OmniSharp.dll`, it needs to be run using `dotnet`. As such the `languages.toml` config should be changed to this:
 
@@ -122,7 +123,7 @@ name = "c-sharp"
 language-server = { command = "dotnet", args = [ "path/to/OmniSharp.dll", "--languageserver" ] }
 ```
 
-## cmake
+## CMake
 
 CMake LSP Implementation.
 
@@ -136,17 +137,17 @@ https://github.com/Pure-D/serve-d
 
 Install using ```dub fetch serve-d```
 
-## dartls
+## Dart
 
 Language server for dart.
 
 https://github.com/dart-lang/sdk/tree/master/pkg/analysis_server/tool/lsp_spec
 
-## deno
+## Deno
 
-Install deno from https://deno.land/#installation
+Install Deno from https://deno.land/#installation
 
-deno requires custom configuration in languages.toml see https://github.com/denoland/deno/issues/14455
+Deno requires custom configuration in `languages.toml` see https://github.com/denoland/deno/issues/14455
 
 ```toml
 [[language]]
@@ -180,7 +181,7 @@ language-server = { command = "deno", args = ["lsp"], language-id = "typescriptr
 
 Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a deno lsp extension https://deno.land/manual/language_server/overview.
 
-## dockerls
+## Docker
 
 https://github.com/rcjsuen/dockerfile-language-server-nodejs
 
@@ -198,7 +199,7 @@ https://github.com/nikeee/dot-language-server
 npm i -g dot-language-server
 ```
 
-## elixir-ls
+## Elixir
 
 https://github.com/elixir-lsp/elixir-ls
 
@@ -213,7 +214,7 @@ chmod +x /path/to/elixir-ls/language_server.sh
 
 You also need to rename `language_server.sh` to `elixir-ls` and add it to your `$PATH`, because that's how `helix` expects to find it.
 
-## elmls
+## Elm
 
 https://github.com/elm-tooling/elm-language-server#installation
 
@@ -221,7 +222,7 @@ https://github.com/elm-tooling/elm-language-server#installation
 npm install -g elm elm-test elm-format @elm-tooling/elm-language-server
 ```
 
-## unison
+## Unison
 
 Unison language server.
 
@@ -247,7 +248,7 @@ indent = { tab-width = 4, unit = "    " }
 language-server = { command = "ncat", args = ["localhost", "5757"] }
 ```
 
-## gdscript
+## GDScript
 
 We need to install nc or netcat. Port 6005 is used in Godot 4.0 beta6. You will find the right value in the editor configuration panel.
 
@@ -276,7 +277,7 @@ roots = ["project.godot"]
 language-server = { command = "ncat", args = ["localhost", "6008"], language-id = "gdscript" }
 ```
 
-## gleam
+## Gleam
 
 Starting with version `0.21.0`, the Gleam language server is built-in to the `gleam` command-line interface. [See the official announcement for more information.](https://gleam.run/news/v0.21-introducing-the-gleam-language-server/)
 
@@ -284,7 +285,7 @@ Starting with version `0.21.0`, the Gleam language server is built-in to the `gl
 gleam lsp
 ```
 
-## gopls
+## Go
 
 Google's lsp server for golang.
 
@@ -292,7 +293,7 @@ https://github.com/golang/tools/tree/master/gopls
 
 The folder for go packages (typically $HOME/go/bin) will need to be added to your PATH as well
 
-## html
+## HTML
 
 https://github.com/hrsh7th/vscode-langservers-extracted
 
@@ -302,13 +303,13 @@ https://github.com/hrsh7th/vscode-langservers-extracted
 npm i -g vscode-langservers-extracted
 ```
 
-## hls
+## Haskell
 
 Haskell Language Server.
 
 https://github.com/haskell/haskell-language-server
 
-## intelephense
+## PHP
 
 https://intelephense.com/
 
@@ -322,7 +323,7 @@ npm install -g intelephense
 
 See [tsserver](#tsserver)
 
-## jsonls
+## JSON
 
 https://github.com/hrsh7th/vscode-langservers-extracted
 
@@ -340,7 +341,7 @@ Usage
 config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
 ```
 
-## jsonnet
+## Jsonnet
 
 https://github.com/grafana/jsonnet-language-server
 
@@ -353,7 +354,7 @@ or if you have golang installed, you can use:
 go install github.com/grafana/jsonnet-language-server@latest
 ```
 
-## tsserver
+## TypeScript
 
 https://github.com/theia-ide/typescript-language-server
 
@@ -398,7 +399,7 @@ language-server = { command = "jdtls", args = ["-data", "/home/my_user/.cache/jd
 
 Note: the `-data` parameter must be outside the project directory.
 
-## julials
+## Julia
 
 https://github.com/julia-vscode/LanguageServer.jl
 
@@ -414,17 +415,17 @@ To update an existing install, use the following command:
 julia -e 'using Pkg; Pkg.update()'
 ```
 
-## kotlin_language_server
+## Kotlin
 
-A kotlin language server which was developed for internal usage and
-released afterwards. Maintaining is not done by the original author,
+A Kotlin language server which was developed for internal usage and
+released afterward. Maintaining is not done by the original author,
 but by fwcd.
 
 It is built via gradle and developed on github.
 Source and additional description:
 https://github.com/fwcd/kotlin-language-server
 
-## lean3ls
+## Lean 3
 
 https://github.com/leanprover/lean-client-js/tree/master/lean-language-server
 
@@ -437,7 +438,7 @@ Once Lean is installed, you can install the Lean 3 language server by running
 npm install -g lean-language-server
 ```
 
-## lua 
+## Lua 
 
 https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
 
@@ -446,7 +447,7 @@ https://github.com/sumneko/lua-language-server/wiki/Precompiled-Binaries
 brew install lua-language-server
 ```
 
-## markdown
+## Markdown
 
 The default language server is Marksman: https://github.com/artempyanykh/marksman
 
@@ -482,7 +483,7 @@ config = { ltex.disabledRules = { "en-US" = [
 Currently the ability to add to your user dictionary while running Helix is not supported, so adding words to the config is the best workaround.
 
 
-## metals
+## Scala
 
 Scala language server with rich IDE features. 
 
@@ -491,14 +492,14 @@ https://scalameta.org/metals/
 1. Install [Coursier](https://get-coursier.io/)
 2. Run `coursier install metals`
 
-## mint
+## Mint
 
 https://www.mint-lang.com
 
 Install Mint using the [instructions](https://www.mint-lang.com/install).
 The language server is included since version 0.12.0.
 
-## nim
+## Nim
 
 https://github.com/nim-lang/langserver
 
@@ -507,7 +508,7 @@ https://github.com/nim-lang/langserver
 nimble install nimlangserver
 ```
 
-## ocamllsp
+## OCaml
 
 https://github.com/ocaml/ocaml-lsp
 
@@ -517,7 +518,7 @@ The OCaml language server `ocamllsp` can be installed via OPAM:
 opam install ocaml-lsp-server
 ```
 
-## prisma
+## Prisma
 
 https://github.com/prisma/language-tools/tree/main/packages/language-server
 
@@ -527,7 +528,7 @@ https://github.com/prisma/language-tools/tree/main/packages/language-server
 npm install -g @prisma/language-server
 ```
 
-## pylsp
+## Python - pylsp
 
 [python-lsp/python-lsp-server](https://github.com/python-lsp/python-lsp-server) (`pylsp`) is a fork of the python-language-server project (`pyls`), maintained by the Spyder IDE team and the community.
 It is a Python 3.7+ implementation of the [Language Server Protocol](https://github.com/Microsoft/language-server-protocol) (versions <1.4 should still work with Python 3.6).
@@ -548,7 +549,7 @@ See [installation instructions](https://github.com/python-lsp/python-lsp-ruff#in
 
 The plugin supports [some configuration](https://github.com/python-lsp/python-lsp-ruff#configuration), but it should work out of the box after installing.
 
-## pyright
+## Python - pyright
 
 Pyright is a fast type checker and language server from microsoft, meant for large Python source bases. It is the lsp part of pylance (the vscode python daemon).
 
@@ -566,17 +567,7 @@ language-server = { command = "pyright-langserver", args = ["--stdio"] }
 config = {} # <- this is the important line
 ```
 
-## regols (OpenPolicyAgent)
-
-An implementation of the language server protocol for OpenPolicyAgent's rego.
-
-You can download it from its [releases page](https://github.com/kitagry/regols/releases), or
-
-```sh
-$ go install github.com/kitagry/regols@latest
-```
-
-## ruff
+## Python - ruff
 
 [charliermarsh/ruff](https://github.com/charliermarsh/ruff) is an extremely fast Python linter, written in Rust (see [installation instructions](https://github.com/charliermarsh/ruff#installation-and-usage)).
 
@@ -599,7 +590,17 @@ auto-format = true
 As an alternative, [pylsp](#pylsp) has support for ruff via a plugin.
 [See instructions for Helix here](#python-lsp-ruff)
 
-## R languageserver
+## OpenPolicyAgent
+
+An implementation of the language server protocol for OpenPolicyAgent's rego.
+
+You can download it from its [releases page](https://github.com/kitagry/regols/releases), or
+
+```sh
+$ go install github.com/kitagry/regols@latest
+```
+
+## R
 
 An implementation of the Language Server Protocol for R.
 
@@ -607,7 +608,7 @@ https://github.com/REditorSupport/languageserver
 
 The language server can be installed by running `R -e 'install.packages("languageserver")'`.
 
-## racket_langserver
+## Racket
 
 [https://github.com/jeapostrophe/racket-langserver](https://github.com/jeapostrophe/racket-langserver)
 
@@ -617,13 +618,13 @@ functionality that mimics DrRacket's code tools as closely as possible.
 
 Install via `raco`: `raco pkg install racket-langserver`
 
-## rescriptls
+## ReScript
 
 https://github.com/rescript-lang/rescript-vscode
 
 ReScript language server
 
-## rnix
+## Nix
 
 A language server for Nix providing basic completion and formatting via nixpkgs-fmt.
 
@@ -633,7 +634,7 @@ To install manually, run `cargo install rnix-lsp`. If you are using nix, rnix-ls
 
 This server accepts configuration via the `settings` key.
 
-## rust_analyzer
+## Rust
 
 rust-analyzer (aka rls 2.0), a language server for Rust
 
@@ -664,7 +665,7 @@ command = "clippy"
 
 See [docs](https://rust-analyzer.github.io/manual.html) for extra settings. Everything under the rust-analyzer key goes under language.config key in helix (for example, `rust-analyzer.check.command = "clippy"` is translated into the `language.toml` as above.)
 
-## scss
+## SCSS
 
 SCSS's language server is available from the vscode-langservers-extracted collection:
 
@@ -676,7 +677,7 @@ You may install it by running:
 npm i -g vscode-langservers-extracted
 ```
 
-## slint-lsp
+## Slint
 
 <https://github.com/slint-ui/slint/tree/HEAD/tools/lsp>  
 <https://slint-ui.com/>
@@ -685,7 +686,7 @@ npm i -g vscode-langservers-extracted
 cargo install slint-lsp
 ```
 
-## smithy-language-server
+## Smithy
 
 For Smithy projects the following LSP is used:
 https://github.com/disneystreaming/smithy-language-server
@@ -694,7 +695,7 @@ https://github.com/disneystreaming/smithy-language-server
 Since coursier will take care of everything else, no other steps are necessary.
 
 
-## sourcekit-lsp and swift-format
+## Swift
 
 A language server for Swift, formatting provided via swift-format
 
@@ -706,7 +707,7 @@ Follow the [Getting Started](https://github.com/apple/sourcekit-lsp#getting-star
 No additional configuration is needed, though note to use the same toolchain for both your installed LSP, and that you use to build.
 
 
-## solargraph
+## Solargraph
 
 https://solargraph.org/
 
@@ -724,7 +725,7 @@ solc is the native language server for the Solidity language.
 
 https://docs.soliditylang.org/en/latest/installing-solidity.html
 
-## svelte
+## Svelte
 
 https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 
@@ -734,7 +735,7 @@ https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 npm install -g svelte-language-server
 ```
 
-## toml
+## TOML
 
 https://taplo.tamasfe.dev/
 
@@ -750,7 +751,7 @@ cargo install taplo-cli --locked --features lsp
 
 Run `taplo lsp --help` for more info.
 
-## wgsl_analyzer
+## WGSL
 
 https://github.com/wgsl-analyzer/wgsl-analyzer
 
@@ -759,7 +760,7 @@ https://github.com/wgsl-analyzer/wgsl-analyzer
 cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
 ```
 
-## vls
+## Vue
 
 https://github.com/vuejs/vetur/tree/master/server
 
@@ -769,7 +770,7 @@ The Vue language server `vls` can be installed via npm:
 npm install -g vls
 ```
 
-## zls
+## Zig
 
 Zig LSP implementation + Zig Language Server.
 
