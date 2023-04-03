@@ -85,6 +85,10 @@ reload a file from disk:
 * vim: `:e<ret>`
 * helix: `:reload<ret>` (or `:reload-all<ret>` to reload all the buffers)
 
+run shell command:
+* vim: `:!command`
+* helix: `:sh command`
+
 setting a bookmark (bookmarking a location):
 * vim: `ma` to set bookmark with name a. Use `` `a `` to go back to this bookmarked location.
 * helix: there are no named bookmarks, but you can save a location in the jumplist with `C-s`, then jump back to that location by opening the jumplist picker with `<space>-j`, or back in the jumplist with `C-o` and forward with `C-i`
