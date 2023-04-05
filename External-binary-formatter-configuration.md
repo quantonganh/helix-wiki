@@ -9,7 +9,7 @@ Helix can use external formatting programs available in the system `$PATH`.
 
 https://prettier.io/
 
-As of `v2.7.1` these languages are supported:
+As of `v2.8.4` these languages are supported:
 
 `flow|babel|babel-flow|babel-ts|typescript|acorn|espree|meriyah|css|less|scss|json|json5|json-stringify|graphql|markdown|mdx|vue|yaml|glimmer|html|angular|lwc`
 
