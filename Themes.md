@@ -8,6 +8,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ## Dark
 
+### [Ferra](https://github.com/helix-editor/helix/blob/master/runtime/themes/ferra.toml)
+
+![ferra.toml preview](https://user-images.githubusercontent.com/2248455/230448154-ac42c602-de75-4459-ae8d-c0b6b0345d9b.png)
+
 ### [Bogster](https://github.com/helix-editor/helix/blob/master/runtime/themes/bogster.toml)
 
 ![bogster.toml preview](https://user-images.githubusercontent.com/46892771/196022898-e1f30825-5ae8-4124-977b-5669e3192e4d.png)
