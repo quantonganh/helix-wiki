@@ -187,3 +187,16 @@ name = "ruby"
 formatter = { command = "bundle", args = ["exec", "stree", "format"] }
 auto-format = true
 ```
+
+# gdformat
+
+https://github.com/Scony/godot-gdscript-toolkit
+
+A formatter for GDScript.
+
+```toml
+[[language]]
+name = "gdscript"
+formatter = { command = "gdformat", args = ["-"] }
+auto-format = true
+```
