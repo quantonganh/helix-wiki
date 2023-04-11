@@ -8,7 +8,7 @@ Vim, and to a lesser extent neovim, have long been resistant to growing too many
 * **Unimpaired** -- A set of bindings on `[` and `]` to jump to the prior and next of a textobject. This is made more powerful by tree-sitter driven textobjects.
 * **Space mode** -- A common set of miscellaneous bindings inspired by the many user bindings in vim distributions like spacevim
 * **Surround/match mode** -- A flexible way to manipulate braces, quotes and other pairings around your selections bound to `m`, made even more powerful as it includes the ability to expand selections by tree-sitter driven textobjects.
-* **Fuzzy pickers** -- Interactive search, symbol selection and more with levenstein matching driven by the excellent implementations from `rg` and `skim`.
+* **Fuzzy pickers** -- Interactive search, symbol selection and more with Levenshtein matching driven by the excellent implementations from `rg` and `skim`.
 
 # Kakoune
 
