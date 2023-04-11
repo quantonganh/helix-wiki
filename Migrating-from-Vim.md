@@ -44,8 +44,7 @@ delete to line end:
 * vim: `D`
 * helix: `vgld` or `t<ret>d`
 
-Note due to [go to line end does not select the text](https://github.com/helix-editor/helix/issues/1630
-), `v` is required.
+Note: `v` is used along with `gl` (go to line end), because [`gl` does not select text](https://github.com/helix-editor/helix/issues/1630).
 
 `t<ret>` selects "'til" the newline represented by `<ret>`.
 
