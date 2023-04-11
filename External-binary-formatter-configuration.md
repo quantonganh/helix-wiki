@@ -200,3 +200,29 @@ name = "gdscript"
 formatter = { command = "gdformat", args = ["-"] }
 auto-format = true
 ```
+
+# fourmolu
+
+https://github.com/fourmolu/fourmolu
+
+Fourmolu is a formatter for Haskell source code. It is a fork of Ormolu, with the intention to continue to merge upstream improvements.
+
+```toml
+[[language]]
+name = "haskell"
+auto-format = true
+formatter = { command = "zsh", args = ["-c", "fourmolu --stdin-input-file $(pwd)" ] }
+```
+
+# stylish-haskell
+
+https://github.com/haskell/stylish-haskell
+
+A simple Haskell code prettifier. This tool tries to help where necessary without getting in the way.
+
+```toml
+[[language]]
+name = "haskell"
+auto-format = true
+formatter = { command = "stylish-haskell", args = [] }
+```
