@@ -699,10 +699,10 @@ cargo install slint-lsp
 ## Smithy
 
 For Smithy projects the following LSP is used:
-https://github.com/disneystreaming/smithy-language-server
+https://github.com/awslabs/smithy-language-server
 
 [coursier](https://get-coursier.io/) must be installed so that the language server can be launched. To install coursier please see their [installation instructions](https://get-coursier.io/docs/cli-installation#native-launcher).
-Since coursier will take care of everything else, no other steps are necessary.
+Since coursier will take care of everything else, no other steps are necessary!
 
 
 ## Swift
