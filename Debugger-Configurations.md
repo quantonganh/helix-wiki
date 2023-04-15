@@ -41,7 +41,7 @@ sudo rm "codelldb-x86_64-linux.zip"
 
 Create the symlink from `codelldb_adapter/adapter/codelldb` to `/usr/bin/codelldb` and you're done.
 ```sh
-ln -s codelldb_adapter/adapter/codelldb /usr/bin/codelldb
+ln -s $(pwd)/codelldb_adapter/adapter/codelldb /usr/bin/codelldb
 ```
 
 Test: `codelldb -h`
