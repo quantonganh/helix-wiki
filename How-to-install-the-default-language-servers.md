@@ -780,6 +780,17 @@ The Vue language server `vls` can be installed via NPM:
 npm install -g vls
 ```
 
+## YAML
+
+https://github.com/redhat-developer/yaml-language-server
+
+`yaml-language-server` can be installed via `brew` on Mac:
+
+```sh
+brew install yaml-language-server
+```
+
+
 ## Zig
 
 Zig LSP implementation + Zig Language Server.
