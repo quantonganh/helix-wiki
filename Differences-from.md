@@ -12,7 +12,7 @@ Vim, and to a lesser extent neovim, have long been resistant to growing too many
 
 # Kakoune
 
-Kakoune's strength is in being a first class citizen of the shell environment it runs in, and really defines very little about the editor with all the functionality helix provides being possible through shell integrations and external sidecar processes like kak-lsp and kak-tree. The downside of this approach is that you need to configure and maintain a number of plugins in varying languages in order to acheive all the functionality Helix includes. Helix prefers instead to include common functionality as part of the core editor.
+Kakoune's strength is in being a first class citizen of the shell environment it runs in, and really defines very little about the editor with all the functionality helix provides being possible through shell integrations and external sidecar processes like kak-lsp and kak-tree. The downside of this approach is that you need to configure and maintain a number of plugins in varying languages in order to achieve all the functionality Helix includes. Helix prefers instead to include common functionality as part of the core editor.
 
 Besides approach to core features, Helix's editing model, while derived from Kakoune, differs in some important ways:
 
