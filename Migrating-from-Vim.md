@@ -12,7 +12,7 @@ change a word:
 
 delete a character:
 * vim: `x`
-* helix: `d` or `;d`(`;` reduces the selection to a single char)
+* helix: `d` or `;d` (`;` reduces the selection to a single char)
 
 copy a line:
 * vim: `yy`
