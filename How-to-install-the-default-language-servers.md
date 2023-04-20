@@ -458,6 +458,11 @@ Binaries are available from: https://github.com/artempyanykh/marksman/releases
 brew install marksman or yay -S marksman-bin
 ```
 
+`Windows`
+```pwsh
+scoop install marksman
+```
+
 As an alternative you can use `ltex-ls` which provides grammar and spelling errors in markup documents: https://valentjn.github.io/ltex/ltex-ls/installation.html
 
 ```toml
