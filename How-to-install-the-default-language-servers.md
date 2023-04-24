@@ -533,6 +533,17 @@ The OCaml language server `ocamllsp` can be installed via OPAM:
 opam install ocaml-lsp-server
 ```
 
+## Perl
+
+https://github.com/bscan/PerlNavigator
+
+Provides syntax checking, autocompletion, perlcritic, code navigation, hover for Perl.
+
+Implemented as a Language Server using the Microsoft LSP libraries along with Perl doing the syntax checking and parsing.
+
+Perl Navigator can be installed by downloading the latest release for your platform at [the project's releases page](https://github.com/bscan/PerlNavigator/releases) and putting the perlnavigator executable somewhere in your PATH.
+
+
 ## Prisma
 
 https://github.com/prisma/language-tools/tree/main/packages/language-server
