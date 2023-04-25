@@ -64,7 +64,7 @@ search for the word under the cursor:
 * vim: `*`
 * helix: `A-o*n` (if there's an LSP) or `be*n`
 
-Explanation: if there's an LSP, `A-o` expands selection to the parent syntax node (with would be the word in our case). Then `*` uses the current selection as the search pattern, and `n` goes to the next occurence. `be` selects to the begining of the word, and `e` selects to the end of the word, effectively selecting the whole word.
+Explanation: if there's an LSP, `A-o` expands selection to the parent syntax node (with would be the word in our case). Then `*` uses the current selection as the search pattern, and `n` goes to the next occurence. `b` selects to the begining of the word, and `e` selects to the end of the word, effectively selecting the whole word.
 
 block selection:
 * vim: `C-v`, then expand your selection vertically and horizontally
