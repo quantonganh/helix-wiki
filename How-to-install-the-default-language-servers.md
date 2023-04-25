@@ -449,11 +449,13 @@ brew install lua-language-server
 
 ## Markdown
 
+### Marksman
+
 The default language server is Marksman: https://github.com/artempyanykh/marksman
 
 Binaries are available from: https://github.com/artempyanykh/marksman/releases
 
-`mac and linux`
+`macOS and Linux`
 ```sh
 brew install marksman or yay -S marksman-bin
 ```
@@ -462,6 +464,8 @@ brew install marksman or yay -S marksman-bin
 ```pwsh
 scoop install marksman
 ```
+
+### ltex-ls
 
 As an alternative you can use `ltex-ls` which provides grammar and spelling errors in markup documents: https://valentjn.github.io/ltex/ltex-ls/installation.html
 
@@ -485,7 +489,7 @@ config = { ltex.disabledRules = { "en-US" = [
 ] } }
 ```
 
-Currently, the ability to add to your user dictionary while running Helix is not supported, so adding words to the config is the best workaround.
+Currently, [the ability to add to your user dictionary while running Helix is not supported](https://github.com/valentjn/ltex-ls/issues/231), so adding words to the config is the best workaround.
 
 
 ## Scala
