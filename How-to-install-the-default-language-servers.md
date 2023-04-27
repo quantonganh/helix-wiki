@@ -666,21 +666,14 @@ This server accepts configuration via the `settings` key.
 
 ## Rust
 
-rust-analyzer (aka rls 2.0), a language server for Rust
+rust-analyzer (aka rls 2.0), a language server for Rust.
 
 https://github.com/rust-analyzer/rust-analyzer
 
-You can install using `rustup` from Rust 1.64 onwards: https://blog.rust-lang.org/2022/09/22/Rust-1.64.0.html#rust-analyzer-is-now-available-via-rustup:
+You can install rust-analyzer using `rustup` starting from Rust 1.64, and it will be added to your system's `$PATH` [starting from Rustup 1.26.0](https://blog.rust-lang.org/2023/04/25/Rustup-1.26.0.html#whats-new-in-rustup-1260):
 
-1. `rustup component add rust-analyzer`, currently (using rustup 1.25.1) this does not automatically add the binary to your PATH.
-2. Symlink the location of the newly installed binary into your PATH. For example: `sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer`. Alternatively, you can bypass creating a symlink by altering the language server command in `languages.toml` like so:
-```toml
-[[language]]
-name = "rust"
-
-[language.language-server]
-command = "rustup"
-args = ["run", "stable", "rust-analyzer"]
+```sh
+rustup component add rust-analyzer
 ```
 
 Add the following to your `languages.toml` to enable [clippy](<https://github.com/rust-lang/rust-clippy>) on save:
