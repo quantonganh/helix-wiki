@@ -75,4 +75,4 @@ displayed instead of the tab-bar and instead of the status-bar.
 This could happen because you upgraded Helix from an old version to a much newer version.  
 The following is known to help:  
 - `rm -rf $HOME/.cache/zellij`
-- `hellix kill-all-sessions`
+- `zellij kill-all-sessions`
