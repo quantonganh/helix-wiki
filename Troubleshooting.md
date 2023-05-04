@@ -66,3 +66,13 @@ thread 'main' panicked at 'Could not parse queries for language "<language>". Ar
 ```
 
 This happens when the tree-sitter queries (`.scm` files) in your `~/.config/helix/runtime/queries` directory are out of date with the tree-sitter parsers. To fix this, remove the `~/.config/helix/runtime` directory and [link the runtime directory](https://github.com/helix-editor/helix/blob/7711db3a3af8f7ca156c8c71ae4b7ea2dd02d96f/README.md?plain=1#L48-L55) from this repository. Then run `hx -g fetch` and `hx -g build`.
+
+### ERROR failed to create instance and plugin env for plugin
+
+When starting Helix, you could get the message:  
+`ERROR failed to create instance and plugin env for plugin`  
+displayed instead of the tab-bar and instead of the status-bar.  
+This could happen because you upgraded Helix from an old version to a much newer version.  
+The following is known to help:  
+- `rm -rf $HOME/.cache/zellij`
+- `hellix kill-all-sessions`
