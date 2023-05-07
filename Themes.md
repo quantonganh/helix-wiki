@@ -8,6 +8,10 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 
 ## Dark
 
+### [Jellybeans](https://github.com/helix-editor/helix/blob/master/runtime/themes/jellybeans.toml)
+
+![jellybeans.toml preview](https://user-images.githubusercontent.com/60609268/236675740-6bda502d-ca32-4ee6-8be3-2a363a10b805.png)
+
 ### [Ferra](https://github.com/helix-editor/helix/blob/master/runtime/themes/ferra.toml)
 
 ![ferra.toml preview](https://user-images.githubusercontent.com/2248455/230448154-ac42c602-de75-4459-ae8d-c0b6b0345d9b.png)
