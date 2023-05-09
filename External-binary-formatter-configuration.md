@@ -149,22 +149,24 @@ formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 ```
 
-# Rubocop
+# RuboCop
 
 A Ruby static code analyzer and formatter, based on the community Ruby style guide.
 
 ```toml
 [[language]]
 name = "ruby"
-formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "--fix", "--stderr", "--fail-level", "fatal"] }
+config = { solargraph = { diagnostics = true, formatting = false } }
+formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
 auto-format = true
 ```
 
-Weird arguments:
-- `--stdin foo.rb`: Rubocop requires a filename for its reports, this is a dummy value to fulfill this. Call it whatever. Make it your own. Have fun with it.
-- `--stderr`: Rubocop absolutely ALWAYS prints any errors it identifies. This sends them to stderr, otherwise they'd show up in your editor.
-- `--fail-level`: Any error in the rubocop formatter will fail with errorcode 1. This can make you files not being able to save. raising the fail-evel to fatal will leave it on just for cases were rubocop is not working at all.
+Argument explanations:
+- `--stdin foo.rb`: RuboCop requires a filename for its reports, this is a dummy value to fulfill this. Call it whatever. Make it your own. Have fun with it.
+- `--stderr`: RuboCop absolutely ALWAYS prints any errors it identifies. This sends them to stderr, otherwise they'd show up in your editor.
+- `--fail-level`: Any error in the RuboCop formatter will fail with error code "1." This can prevent your files from saving. Raising the `fail-level` to "fatal" will leave it on just for cases were RuboCop is not working at all.
 
+The "config" block will prevent diagnostics from also breaking if formatting fails.
 
 # StandardRB
 
