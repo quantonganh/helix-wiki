@@ -321,7 +321,11 @@ npm install -g intelephense
 
 ## JavaScript
 
-See [tsserver](#tsserver)
+https://github.com/typescript-language-server/typescript-language-server
+
+```sh
+npm install -g typescript-language-server typescript
+```
 
 ## JSON
 
