@@ -321,11 +321,7 @@ npm install -g intelephense
 
 ## JavaScript
 
-https://github.com/typescript-language-server/typescript-language-server
-
-```sh
-npm install -g typescript-language-server typescript
-```
+See [tsserver](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#typescript).
 
 ## JSON
 
