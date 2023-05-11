@@ -125,6 +125,20 @@ We shoot to cut a release around every two to three months. We use CalVer versio
 
 We are not interested in supporting alternative paradigms. The core of Helix's editing is based on `Selection -> Action`, and it would require extensive changes to create a true Vi/Vim keymap. However, there is a third-party keymap: https://github.com/LGUG2Z/helix-vim
 
+==== Can the `j`/`k` bindings be changed to ignore soft wrapping when using a count like `3j`===
+
+`j` and `k` are intentionally mapped to *visual* vertical movement. This is a more intuitive default that makes working with heavily soft-wrapped text (like this Markdown document) much easier. **Textual** vertical movement is bound to `gk` and `gj`. So you can use `3gj` and `3gk` instead of `3j` and `3k` to jump to a relative line number.
+
+These commands are intentionally separate (with no special casing for `count != 0`) as they represent the fundamental vertical movement primitives. All other vertical movement behavior can be created by combining these commands using conditions. For example: 
+
+``` scheme
+(if (!= count 0) (move_line_up count) (move_vertical_line_up 0))
+```
+
+If these fundamental primitives had such special handling built in,
+that would limit what could be implemented. Furthermore, helix is slightly opinionated towards unsurprising and consistent behavior.
+
+
 == Installation
 
 === Error when building tree-sitter language grammars in Fedora
