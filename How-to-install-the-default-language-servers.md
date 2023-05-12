@@ -13,6 +13,36 @@ language-server = { command = "nc", args = ["localhost", "6008"] }
 ```
 Much of this information was originally sourced from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
 
+## Astro
+
+
+https://github.com/withastro/language-tools/tree/main/packages/language-server
+
+```sh
+npm install -g @astrojs/language-server
+```
+
+Sample settings in `languages.toml`
+
+```toml
+[[language]]
+name = "astro"
+scope = "source.astro"
+injection-regex = "astro"
+file-types = ["astro"]
+roots = ["package.json", "astro.config.mjs"]
+language-server = { command = "astro-ls", args = ["--stdio"] }
+config = { "typescript" = { serverPath = "/home/user/path_to_my_project/node_modules/typescript/lib/tsserverlibrary.js" }, "environment" = "node" }
+```
+
+Please note that a valid absolute path to `tsserverlibrary.js` must be passed to the LSP config. The `config` key above could be omitted from the global config file and an additional config file in the workspace at `.helix/languages.toml` can be added to pass a different path for each project:
+
+```toml
+[[language]]
+name = "astro"
+config = { "typescript" = { serverPath = "/home/user/path_to_my_project/node_modules/typescript/lib/tsserverlibrary.js" }, "environment" = "node" }
+```
+
 ## AWK
 
 https://github.com/Beaglefoot/awk-language-server
