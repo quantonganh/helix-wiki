@@ -833,6 +833,18 @@ https://github.com/redhat-developer/yaml-language-server
 brew install yaml-language-server
 ```
 
+Example on configuring the language server with a schema.
+```toml
+[[language]]
+name = "yaml"
+
+[language.config.yaml]
+format = { enable = true }
+validation = true
+
+[language.config.yaml.schemas]
+"https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
+```
 
 ## Zig
 
