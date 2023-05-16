@@ -833,6 +833,12 @@ https://github.com/redhat-developer/yaml-language-server
 brew install yaml-language-server
 ```
 
+or via `npm`:
+
+```sh
+npm i -g yaml-language-server@next
+```
+
 Example on configuring the language server with a schema.
 ```toml
 [[language]]
