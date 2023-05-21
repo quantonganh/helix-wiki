@@ -712,7 +712,8 @@ Add the following to your `languages.toml` to enable [clippy](<https://github.co
 [[language]]
 name = "rust"
 
-[language.config.check]
+# On older versions of Helix, try using [language.config.check] instead
+[language-server.rust-analyzer.config.check]
 command = "clippy"
 ```
 
