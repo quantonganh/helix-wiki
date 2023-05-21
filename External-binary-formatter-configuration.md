@@ -168,6 +168,11 @@ Argument explanations:
 
 The "config" block will prevent diagnostics from also breaking if formatting fails.
 
+If not using RuboCop via Bundler, you can modify the `formatter` command accordingly (omitting the `bundle exec` prepend):
+```ruby
+formatter = { command = "rubocop", args = ["--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
+```
+
 # StandardRB
 
 A Ruby formatter that supports very little configuration so we can stop arguing about format and get on with our jobs. It's a wrapper around Rubocop so commands are basically identical.
