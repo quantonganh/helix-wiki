@@ -840,17 +840,15 @@ or via `npm`:
 npm i -g yaml-language-server@next
 ```
 
-Example on configuring the language server with a schema.
+Example configuration using json schemas.
 ```toml
-[[language]]
-name = "yaml"
-
-[language.config.yaml]
+[language-server.yaml-language-server.config.yaml]
 format = { enable = true }
 validation = true
 
-[language.config.yaml.schemas]
+[language-server.yaml-language-server.config.yaml.schemas]
 "https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
+"https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
 ```
 
 ## Zig
