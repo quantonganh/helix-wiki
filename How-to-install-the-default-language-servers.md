@@ -557,6 +557,16 @@ https://github.com/nim-lang/langserver
 nimble install nimlangserver
 ```
 
+## Nix
+
+A language server for Nix providing basic completion and formatting via nixpkgs-fmt.
+
+https://github.com/nix-community/rnix-lsp
+
+To install manually, run `cargo install rnix-lsp`. If you are using nix, rnix-lsp is in nixpkgs.
+
+This server accepts configuration via the `settings` key.
+
 ## OCaml
 
 https://github.com/ocaml/ocaml-lsp
@@ -683,16 +693,6 @@ Install via `raco`: `raco pkg install racket-langserver`
 https://github.com/rescript-lang/rescript-vscode
 
 // ReScript language server.
-
-## Nix
-
-A language server for Nix providing basic completion and formatting via nixpkgs-fmt.
-
-https://github.com/nix-community/rnix-lsp
-
-To install manually, run `cargo install rnix-lsp`. If you are using nix, rnix-lsp is in nixpkgs.
-
-This server accepts configuration via the `settings` key.
 
 ## Rust
 
