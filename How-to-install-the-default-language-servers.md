@@ -7,9 +7,13 @@ Check if your operating system repository has them available, or install them ma
 
 If your language server does not support stdio, you can use `netcat` as a drop-in proxy, just add this to your `languages.toml`:
 ```toml
+[language-server.example]
+command = "nc" 
+args = [ "127.0.0.1", "6008"]
+
 [[language]]
 name = "example"
-language-server = { command = "nc", args = ["localhost", "6008"] }
+language-servers = ["example"] 
 ```
 Much of this information was originally sourced from [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), thanks to those authors!
 
@@ -283,10 +287,13 @@ language-server = { command = "ncat", args = ["localhost", "5757"] }
 We need to install `nc` or `netcat`. Port 6005 is used in Godot 4.0 beta6. You will find the right value in the editor configuration panel.
 
 ```toml
+[language-server.godot]
+command = "nc" 
+args = [ "127.0.0.1", "6005"]
+
 [[language]]
 name = "gdscript"
-roots = ["project.godot"]
-language-server = { command = "nc", args = ["localhost", "6005"], language-id = "gdscript" }
+language-servers = ["godot"] 
 ```
 
 **For Windows 10/11**
@@ -301,10 +308,13 @@ Once installed, make sure the folder that `nmap` is now located at is added to y
 In Godot 3.5.1 port used is `6008`. You have to change the command used also. Instead of `nc` type `ncat` and modify the port. You can find the port when you open the Godot editor and navigate here: `Editor -> Editor Settings -> Network -> Language Server -> Remote Port`.
 
 ```toml
+[language-server.godot]
+command = "ncat" 
+args = [ "127.0.0.1", "6008"]
+
 [[language]]
 name = "gdscript"
-roots = ["project.godot"]
-language-server = { command = "ncat", args = ["localhost", "6008"], language-id = "gdscript" }
+language-servers = ["godot"] 
 ```
 
 ## Gleam
