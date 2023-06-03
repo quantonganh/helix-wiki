@@ -59,7 +59,7 @@ Either download the [binaries](https://github.com/equalsraf/win32yank/releases/t
 
 #### Mouse Mode
 
-Trying to yank with the mouse will yank it to the middle mouse clipboard rather than the system clipboard.
+Trying to yank with the mouse will yank it to the middle mouse clipboard rather than the system clipboard. Clipboards that don't have this secondary clipboard will not have anything yanked.
 
 ### Panic from "Could not parse queries" (building from source)
 
