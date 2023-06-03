@@ -55,11 +55,11 @@ In a Wayland session, check that the [`wl-clipboard`](https://repology.org/proje
 
 Check that `win32yank.exe` is in your Windows path.
 
+Either download the [binaries](https://github.com/equalsraf/win32yank/releases/tag/v0.0.4) manually or use scoop (`scoop install win32yank`).
+
 #### Mouse Mode
 
 Trying to yank with the mouse will yank it to the middle mouse clipboard rather than the system clipboard.
-
-Either download the [binaries](https://github.com/equalsraf/win32yank/releases/tag/v0.0.4) manually or use scoop (`scoop install win32yank`).
 
 ### Panic from "Could not parse queries" (building from source)
 
