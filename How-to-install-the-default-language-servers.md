@@ -293,7 +293,7 @@ args = [ "127.0.0.1", "6005"]
 
 [[language]]
 name = "gdscript"
-language-servers = ["godot"] 
+language-server = ["godot"] 
 ```
 
 **For Windows 10/11**
