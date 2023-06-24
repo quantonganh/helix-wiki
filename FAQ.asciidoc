@@ -138,6 +138,9 @@ These commands are intentionally separate (with no special casing for `count != 
 If these fundamental primitives had such special handling built in,
 that would limit what could be implemented. Furthermore, helix is slightly opinionated towards unsurprising and consistent behavior.
 
+==== How do I build or run code from within Helix?
+
+This is not currently supported. You should build and run code in a separate terminal pane or split.
 
 == Installation
 
