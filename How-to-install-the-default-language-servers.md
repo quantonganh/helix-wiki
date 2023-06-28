@@ -256,6 +256,15 @@ https://github.com/elm-tooling/elm-language-server#installation
 npm install -g elm elm-test elm-format @elm-tooling/elm-language-server
 ```
 
+## Forth
+
+https://github.com/alexanderbrevig/forth-lsp#install
+
+```sh
+cargo install forth-lsp
+```
+
+
 ## Unison
 
 Unison language server.
