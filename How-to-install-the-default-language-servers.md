@@ -569,13 +569,28 @@ nimble install nimlangserver
 
 ## Nix
 
-A language server for Nix providing basic completion and formatting via nixpkgs-fmt.
+The default language server is `nil` since the 2022-12 release.
 
-https://github.com/nix-community/rnix-lsp
+https://github.com/oxalica/nil
 
-To install manually, run `cargo install rnix-lsp`. If you are using nix, rnix-lsp is in nixpkgs.
+This program is available in [NixOS/nixpkgs](https://github.com/NixOS/nixpkgs) under attribute `nil`,
+and is regularly updated.
 
-This server accepts configuration via the `settings` key.
+- If you use `nix-env`, run `nix-env -iA nixpkgs.nil`
+- If you use `nix profile`, run `nix profile install nixpkgs#nil`
+- Check out the GitHub repository for additional options
+
+The formatter `nixpkgs-fmt` is not included and can be installed with `nix-env -iA nixpkgs.nixpkgs-fmt`
+
+To set up the formatter, set the following in your `languages.toml` :
+
+```toml
+[[language]]
+name = "nix"
+formatter = { command = "nixpkgs-fmt" }
+```
+
+To use the previous default language server, check out https://github.com/nix-community/rnix-lsp
 
 ## OCaml
 
