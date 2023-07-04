@@ -864,10 +864,10 @@ cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
 
 https://github.com/vuejs/language-tools/tree/master/packages/vue-language-server
 
-The Vue language server `vue-language-server` can be installed via NPM:
+The Vue language server `vue-language-server` can be installed via npm, at the moment [later versions than 1.7.8 do not work](https://github.com/vuejs/language-tools/issues/3269).
 
 ```sh
-npm install -g @vue/language-server
+npm install -g @vue/language-server@1.7.8
 ```
 
 ## YAML
