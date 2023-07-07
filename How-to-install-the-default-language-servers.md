@@ -664,13 +664,6 @@ The language server can be installed by running `npm install --location=global p
 It has odd handling of client configuration so the following addition to `languages.toml` is required:
 
 ```toml
-# add the language server
-[language-server.pyright]
-command = "pyright-langserver"
-args = ["--stdio"]
-# will get "Async jobs timed out" errors if this empty config is not added
-config = {}
-
 [[language]]
 name = "python"
 scope = "source.python"
@@ -679,8 +672,10 @@ file-types = ["py","pyi","py3","pyw","ptl",".pythonstartup",".pythonrc","SConstr
 shebangs = ["python"]
 roots = ["setup.py", "setup.cfg", "pyproject.toml"]
 comment-token = "#"
-language-servers = [ "pyright" ]
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
 indent = { tab-width = 4, unit = "    " }
+# will get "Async jobs timed out" errors if this empty config is not added
+config = {}
 ```
 
 ## Python - ruff
