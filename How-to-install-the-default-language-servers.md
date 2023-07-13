@@ -264,6 +264,13 @@ https://github.com/alexanderbrevig/forth-lsp#install
 cargo install forth-lsp
 ```
 
+## FSharp/F#
+
+https://github.com/fsharp/FsAutoComplete
+
+```sh
+dotnet tool install --global fsautocomplete
+```
 
 ## Unison
 
