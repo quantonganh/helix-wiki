@@ -873,6 +873,20 @@ The Vue language server `vue-language-server` can be installed via npm, at the m
 npm install -g @vue/language-server@1.7.8
 ```
 
+To make TypeScript recognize imports of `.vue` files, install [typescript-vue-plugin](https://www.npmjs.com/package/typescript-vue-plugin) and add the following to `tsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "plugins": [
+       {
+         "name": "typescript-vue-plugin"
+       }
+    ]
+  } 
+}
+```
+
 ## YAML
 
 https://github.com/redhat-developer/yaml-language-server
