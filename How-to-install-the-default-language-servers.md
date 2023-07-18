@@ -348,9 +348,9 @@ The folder for go packages (typically $HOME/go/bin) will need to be added to you
 ### Install tools
 
 ```
-go install github.com/golang/tools/tree/master/gopls@latest # LSP
-go install github.com/go-delve/delve/cmd/dlv@latest         # Debugger
-go install golang.org/x/tools/cmd/goimports@latest          # Formatter
+go install golang.org/x/tools/gopls@latest          # LSP
+go install github.com/go-delve/delve/cmd/dlv@latest # Debugger
+go install golang.org/x/tools/cmd/goimports@latest  # Formatter
 ```
 
 ### Autoformatting
