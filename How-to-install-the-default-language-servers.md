@@ -343,11 +343,28 @@ gleam lsp
 
 ## Go
 
-Google's LSP server for golang.
+The folder for go packages (typically $HOME/go/bin) will need to be added to your PATH for any of the below to work.
 
-https://github.com/golang/tools/tree/master/gopls
+### Install tools
 
-The folder for go packages (typically $HOME/go/bin) will need to be added to your PATH as well
+```
+go install github.com/golang/tools/tree/master/gopls@latest # LSP
+go install github.com/go-delve/delve/cmd/dlv@latest         # Debugger
+go install golang.org/x/tools/cmd/goimports@latest          # Formatter
+```
+
+### Autoformatting
+
+The LSP formatter (`gofmt`) does not fix imports, `goimports` should be used instead.
+
+`languages.toml`
+
+```
+[[languages]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+```
 
 ## HTML
 
