@@ -194,7 +194,7 @@ name = "typescript"
 shebangs = ["deno"]
 roots = ["deno.json","deno.jsonc"]
 file-types = ["js","ts","jsx","tsx"]
-language-servers = ["deno-lsp"]
+language-server = ["deno-lsp"]
 ```
 
 Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a Deno lsp extension https://deno.land/manual/language_server/overview.
