@@ -184,17 +184,33 @@ Install Deno from https://deno.land/#installation
 Deno requires custom configuration in `languages.toml` see https://github.com/denoland/deno/issues/14455
 
 ```toml
-[language-server.deno-lsp]
-command = "deno"
-args = ["lsp"]
-config = { enable = true }
+[[language]]
+name = "javascript"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
+
+[[language]]
+name = "jsx"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "javascriptreact" }
 
 [[language]]
 name = "typescript"
-shebangs = ["deno"]
-roots = ["deno.json","deno.jsonc"]
-file-types = ["js","ts","jsx","tsx"]
-language-server = ["deno-lsp"]
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }
+
+[[language]]
+name = "tsx"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "typescriptreact" }
 ```
 
 Note that some lsp commands are not currently supported, in particular `go_to_definition` because it requires a Deno lsp extension https://deno.land/manual/language_server/overview.
