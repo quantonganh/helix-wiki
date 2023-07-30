@@ -157,6 +157,8 @@ name = "c-sharp"
 language-server = { command = "dotnet", args = [ "path/to/OmniSharp.dll", "--languageserver" ] }
 ```
 
+If the language server immediately exits or otherwise doesn't appear to work, try running `dotnet restore` and/or `dotnet build` in the current project directory.
+
 ## CMake
 
 CMake LSP Implementation.
