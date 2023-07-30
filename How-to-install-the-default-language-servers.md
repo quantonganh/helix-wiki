@@ -857,6 +857,8 @@ https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 npm install -g svelte-language-server
 ```
 
+For integration with `.js` and `.ts` files, see https://www.npmjs.com/package/typescript-svelte-plugin.
+
 ## TOML
 
 https://taplo.tamasfe.dev/
