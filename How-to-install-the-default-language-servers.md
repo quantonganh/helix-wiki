@@ -884,6 +884,48 @@ https://github.com/wgsl-analyzer/wgsl-analyzer
 cargo install --git https://github.com/wgsl-analyzer/wgsl-analyzer wgsl_analyzer
 ```
 
+## V
+
+https://github.com/v-analyzer/v-analyzer
+
+install and build:
+
+```sh
+git clone https://github.com/v-analyzer/v-analyzer
+cd v-analyzer
+v build.vsh release
+```
+
+config path:
+
+set the v-analyzer to PATH:
+
+```shell
+PATH=$HOME/v/v-analyzer/bin:$PATH
+```
+
+config helix languages.toml:
+
+```toml
+[language-server]
+vlang-language-server = {command = "v-analyzer", args = [""]}
+
+[[language]]
+auto-format = true
+comment-token = "//"
+file-types = ["v", "vv", "vsh"]
+indent = {tab-width = 4, unit = "\t"}
+language-servers = ["vlang-language-server"]
+name = "v"
+roots = ["v.mod"]
+scope = "source.v"
+shebangs = ["v run"]
+
+[[grammar]]
+name = "v"
+source = {git = "https://github.com/v-analyzer/v-analyzer", subpath = "tree_sitter_v", rev = "e14fdf6e661b10edccc744102e4ccf0b187aa8ad"}
+```
+
 ## Vue
 
 https://github.com/vuejs/language-tools/tree/master/packages/vue-language-server
