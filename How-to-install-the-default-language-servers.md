@@ -898,10 +898,10 @@ v build.vsh release
 
 config path:
 
-set the v-analyzer to PATH:
+set the v-analyzer to environment variable:
 
 ```shell
-PATH=$HOME/v/v-analyzer/bin:$PATH
+PATH=your/path/v-analyzer/bin:$PATH
 ```
 
 config helix languages.toml:
