@@ -576,15 +576,6 @@ https://scalameta.org/metals/
 1. Install [Coursier](https://get-coursier.io/)
 2. Run `coursier install metals`
 
-## Markdoc
-
-[markdoc-ls](https://github.com/markdoc-extra/markdoc-ls) - an experimental language server for markdoc.
-
-Install using
-
-```sh
-npm install -g markdoc-ls
-```
 ## Sql
 
 https://github.com/joe-re/sql-language-server
@@ -602,6 +593,16 @@ scope = "source.sql"
 injection-regex = "sql"
 file-types = ["sql"]
 language-server = { command = "sql-language-server", args = ["up", "--method", "stdio"] }
+```
+
+## Markdoc
+
+[markdoc-ls](https://github.com/markdoc-extra/markdoc-ls) - an experimental language server for markdoc.
+
+Install using
+
+```sh
+npm install -g markdoc-ls
 ```
 
 ## Mint
