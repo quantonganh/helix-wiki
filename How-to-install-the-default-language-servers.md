@@ -585,6 +585,24 @@ Install using
 ```sh
 npm install -g markdoc-ls
 ```
+## Sql
+
+https://github.com/joe-re/sql-language-server
+
+```sh
+npm i -g sql-language-server
+```
+
+`languages.toml` setting
+
+```toml
+[[language]]
+name = "sql"
+scope = "source.sql"
+injection-regex = "sql"
+file-types = ["sql"]
+language-server = { command = "sql-language-server", args = ["up", "--method", "stdio"] }
+```
 
 ## Mint
 
@@ -982,3 +1000,4 @@ validation = true
 Zig LSP implementation + Zig Language Server.
 
 https://github.com/zigtools/zls
+
