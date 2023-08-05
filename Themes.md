@@ -153,6 +153,9 @@ To preview instantly, you can always `:theme <tab><tab>...`.
 ### [Catppuccin Mocha](https://github.com/helix-editor/helix/blob/master/runtime/themes/catppuccin_mocha.toml)
 ![Catppuccin Mocha](https://user-images.githubusercontent.com/17070041/182327344-ad338b02-172f-4221-b08a-c928f43bcd7a.png)
 
+### [New Moon](https://github.com/helix-editor/helix/blob/master/runtime/themes/new_moon.toml)
+![New Moon](https://github.com/helix-editor/helix/assets/38333092/9e949aec-0ff7-40d6-a418-02ebde5a71fb)
+
 ### [Noctis Bordo](https://github.com/helix-editor/helix/blob/master/runtime/themes/noctis_bordo.toml)
 
 ![Noctis Bordo preview](https://user-images.githubusercontent.com/19535809/174642673-26e7482e-6153-484a-a38e-02c9523e313b.png)
