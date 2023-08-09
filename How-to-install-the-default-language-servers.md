@@ -29,25 +29,18 @@ npm install -g @astrojs/language-server
 Sample settings in `languages.toml`
 
 ```toml
+[language-server.astro]
+command = "astro-ls"
+args = ["--stdio"]
+config.typescript.tsdk = "/usr/local/lib/node_modules/typescript/lib"
+config.environment = "node"
+
 [[language]]
 name = "astro"
-scope = "source.astro"
-injection-regex = "astro"
-file-types = ["astro"]
-roots = ["package.json", "astro.config.mjs"]
-language-server = { command = "astro-ls", args = ["--stdio"] }
-config = { "typescript" = { serverPath = "/home/user/path_to_my_project/node_modules/typescript/lib/tsserverlibrary.js" }, "environment" = "node" }
+language-servers = [ "astro" ]
 ```
 
-Please note that a valid absolute path to `tsserverlibrary.js` must be passed to the LSP config. The `config` key above could be omitted from the global config file and an additional config file in the workspace at `.helix/languages.toml` can be added to pass a different path for each project:
-
-```toml
-[[language]]
-name = "astro"
-config = { "typescript" = { serverPath = "/home/user/path_to_my_project/node_modules/typescript/lib/tsserverlibrary.js" }, "environment" = "node" }
-```
-
-You can find where your global libraries are installed by running `npm list -g | head -1`.
+Please note that a valid `config.typescript.tsdk` path must be passed to the LSP config. You will need `typescript` installed. If you have `typescript` installed globally you can find where by running `npm list -g | head -1`.
 
 ## AWK
 
