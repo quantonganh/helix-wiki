@@ -47,6 +47,8 @@ name = "astro"
 config = { "typescript" = { serverPath = "/home/user/path_to_my_project/node_modules/typescript/lib/tsserverlibrary.js" }, "environment" = "node" }
 ```
 
+You can find where your global libraries are installed by running `npm list -g | head -1`.
+
 ## AWK
 
 https://github.com/Beaglefoot/awk-language-server
