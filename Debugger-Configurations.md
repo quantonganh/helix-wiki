@@ -1,6 +1,15 @@
 This page can provide additional debugger configurations beyond [the ones shipped by default in Helix](https://github.com/helix-editor/helix/blob/master/languages.toml).
 
 ## Install Debuggers
+
+### lldb-vscode
+
+#### macOS users
+
+1. Install LLVM: `brew install llvm`
+2. Add `/usr/local/opt/llvm/bin` your PATH, usually in your ~/.bashrc or .zshrc file.
+3. Restart your shell
+
 ### Codelldb [![GitHub release (latest by date)](https://img.shields.io/github/v/release/vadimcn/vscode-lldb)](https://github.com/vadimcn/vscode-lldb/releases/)
 `linux (tested in ubuntu)`: 
 
@@ -47,11 +56,67 @@ ln -s $(pwd)/codelldb_adapter/adapter/codelldb /usr/bin/codelldb
 Test: `codelldb -h`
 
 ## Configure Debuggers
-### Rust (with `codelldb`)
+
+### Rust (with `lldb-vscode`)
 
 Helix supports debugging Rust, by default, with [`lldb-vscode`](https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode), which is part of `llvm/lldb`.
+However, there is an issue where [string variables are displayed as memory addresses instead of their actual values](https://github.com/helix-editor/helix/issues/7007).
 
-However, you can also use [`vscode-lldb`](https://github.com/vadimcn/vscode-lldb)'s [adapter](https://github.com/vadimcn/vscode-lldb/tree/master/adapter) named `codelldb`. (Note, the names can be confusing. `vscode-lldb` is a separate project from the aforementioned `lldb-vscode`.)
+To resolve this, [rust-lldb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-lldb) provides a solution by executing specific lldb commands before loading the program:
+
+```sh
+$ rust-lldb target/debug/hello_cargo
+(lldb) command script import "/opt/homebrew/Cellar/rust/1.71.0/lib/rustlib/etc/lldb_lookup.py"
+(lldb) command source -s 0 '/opt/homebrew/Cellar/rust/1.71.0/lib/rustlib/etc/lldb_commands'
+Executing commands in '/opt/homebrew/Cellar/rust/1.71.0/lib/rustlib/etc/lldb_commands'.
+```
+
+Once these commands are executed, the debugger can display the contents of local string variables:
+
+```lldb
+(lldb) b src/main.rs:5
+Breakpoint 1: where = hello_cargo`hello_cargo::main::h24135e338b19c0c6 + 212 at main.rs:5:5, address = 0x0000000100003cc0
+(lldb) run
+Process 62497 launched: '/path/to/hello_cargo/target/debug/hello_cargo' (arm64)
+Process 62497 stopped
+* thread #1, name = 'main', queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100003cc0 hello_cargo`hello_cargo::main::h24135e338b19c0c6 at main.rs:5:5
+   2        let s = "world";
+   3        let x = 2;
+   4        let b = true;
+-> 5        println!("Hello, {} {} {}!", s, x, b);
+   6    }
+(lldb) frame variable
+(&str) s = "world" {
+  data_ptr = 0x0000000100039d70 "worldHello,  !\n"
+  length = 5
+}
+(int) x = 2
+(bool) b = true
+(lldb)
+```
+
+Within `lldb-vscode`, we can replicate this functionality by using [initCommands](https://github.com/llvm/llvm-project/tree/main/lldb/tools/lldb-vscode#launch-configuration-settings):
+
+```toml
+[[language]]
+name = "rust"
+
+[language.debugger]
+name = "lldb-vscode"
+transport = "stdio"
+command = "lldb-vscode"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}", initCommands = [ "command script import /opt/homebrew/Cellar/rust/1.71.0/lib/rustlib/etc/lldb_lookup.py", "command source -s 0 /opt/homebrew/Cellar/rust/1.71.0/lib/rustlib/etc/lldb_commands" ] }
+```
+
+### Rust (with `codelldb`)
+
+You can also use [`vscode-lldb`](https://github.com/vadimcn/vscode-lldb)'s [adapter](https://github.com/vadimcn/vscode-lldb/tree/master/adapter) named `codelldb`. (Note, the names can be confusing. `vscode-lldb` is a separate project from the aforementioned `lldb-vscode`.)
 
 ```toml
 [[language]]
@@ -93,12 +158,6 @@ If you have `~/bin` in your path then unpack `LLVM` there and make a symlink to 
 ![Screenshot from 2022-10-12 19-43-46](https://user-images.githubusercontent.com/12832280/195423210-fea5970c-9453-4a8d-8acc-b0cfd5d626e6.png)
 
 Now when you run the debugger in Helix select `launch debug target` and `binary`, then for example, to debug Rust, `target/debug/` and the name of your executable.
-
-### macOS users
-
-1. Install LLVM: `brew install llvm`
-2. Add `/usr/local/opt/llvm/bin` your PATH, usually in your ~/.bashrc or .zshrc file.
-3. Restart your shell
 
 ## Addendum 2: For users who installed a debugger successfully but cannot attach to a running process
 
